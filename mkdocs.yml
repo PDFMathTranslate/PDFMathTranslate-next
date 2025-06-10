@@ -131,6 +131,9 @@ extra:
       link: https://github.com/PDFMathTranslate/PDFMathTranslate-next
     - icon: fontawesome/brands/python
       link: https://pypi.org/project/pdf2zh-next/
+  extra:
+    version:
+      provider: mike
 
 # Extensions
 markdown_extensions:
