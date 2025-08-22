@@ -1,6 +1,6 @@
 [project]
 name = "pdf2zh-next"
-version = "2.4.2"
+version = "2.4.2+sg.1"
 description = "Latex PDF Translator"
 authors = [
     { name = "awwaawwa", email = "aw@funstory.ai" },

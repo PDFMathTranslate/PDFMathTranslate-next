@@ -35,12 +35,6 @@ class SungrowTranslator(BaseTranslator):
         self.password = sungrow_settings.sungrow_password
         self.tenant_id = sungrow_settings.sungrow_tenant_id
         self.scene = sungrow_settings.sungrow_scene
-        self.timeout = (
-            int(sungrow_settings.sungrow_timeout)
-            if sungrow_settings.sungrow_timeout
-            else 60
-        )
-
         self.basic_auth = (self.username, self.password)
 
         # 验证设置

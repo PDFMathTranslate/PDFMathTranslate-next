@@ -172,3 +172,4 @@ cython_debug/
 uv.lock
 *.pdf
 *.docx
+.claude/
