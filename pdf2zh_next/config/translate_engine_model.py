@@ -67,7 +67,7 @@ class OpenAISettings(BaseModel):
             self.openai_base_url = re.sub(
                 "/chat/completions/?$", "", self.openai_base_url
             )
-        if self.openai_send_temprature:
+        if self.openai_temperature:
             int(self.openai_temperature)
         if self.openai_send_reasoning_effort and not self.openai_reasoning_effort:
             raise ValueError(
@@ -561,7 +561,7 @@ class OpenAICompatibleSettings(BaseModel):
         if not self.openai_compatible_model:
             raise ValueError("OpenAI Compatible model is required")
         if self.openai_compatible_send_temperature:
-            int(self.openai_compatible_temperature)
+            int(self.openai_compatible_send_temperature)
         if (
             self.openai_compatible_send_reasoning_effort
             and not self.openai_compatible_reasoning_effort
