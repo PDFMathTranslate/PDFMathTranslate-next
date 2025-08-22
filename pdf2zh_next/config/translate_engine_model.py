@@ -597,6 +597,40 @@ class OpenAICompatibleSettings(BaseModel):
 GUI_PASSWORD_FIELDS.append("openai_compatible_api_key")
 GUI_SENSITIVE_FIELDS.append("openai_compatible_base_url")
 
+class SungrowSettings(BaseModel):
+    """Sungrow Translation API settings"""
+
+    translate_engine_type: Literal["Sungrow"] = Field(default="Sungrow")
+    
+    sungrow_api_url: str | None = Field(
+        default=None, description="Sungrow translation API server URL"
+    )
+    sungrow_username: str | None = Field(
+        default=None, description="Sungrow API basic auth username"
+    )
+    sungrow_password: str | None = Field(
+        default=None, description="Sungrow API basic auth password"
+    )
+    sungrow_tenant_id: str | None = Field(
+        default=None, description="Sungrow API tenant ID"
+    )
+    sungrow_scene: str = Field(
+        default="UNIVERSAL", description="Translation scene for Sungrow service"
+    )
+
+    def validate_settings(self) -> None:
+        if not self.sungrow_api_url:
+            raise ValueError("Sungrow API URL is required")
+        if not self.sungrow_username:
+            raise ValueError("Sungrow username is required")
+        if not self.sungrow_password:
+            raise ValueError("Sungrow password is required")
+        if not self.sungrow_tenant_id:
+            raise ValueError("Sungrow tenant ID is required")
+
+
+GUI_PASSWORD_FIELDS.extend(["sungrow_username", "sungrow_password"])
+GUI_SENSITIVE_FIELDS.extend(["sungrow_api_url", "sungrow_tenant_id"])
 
 ## Please add the translator configuration class above this location.
 
@@ -623,6 +657,7 @@ TRANSLATION_ENGINE_SETTING_TYPE: TypeAlias = (
     | GroqSettings
     | QwenMtSettings
     | OpenAICompatibleSettings
+    | SungrowSettings
 )
 
 # 不支持的翻译引擎
