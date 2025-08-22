@@ -53,8 +53,8 @@ class OpenAISettings(BaseModel):
         default=None,
         description="Reasoning effort for OpenAI service (minimal/low/medium/high)",
     )
-    openai_send_temprature: bool | None = Field(
-        default=None, description="Send temprature to OpenAI service"
+    openai_send_temperature: bool | None = Field(
+        default=None, description="Send temperature to OpenAI service"
     )
     openai_send_reasoning_effort: bool | None = Field(
         default=None, description="Send reasoning effort to OpenAI service"
@@ -67,8 +67,14 @@ class OpenAISettings(BaseModel):
             self.openai_base_url = re.sub(
                 "/chat/completions/?$", "", self.openai_base_url
             )
-        if self.openai_temperature:
-            int(self.openai_temperature)
+        if self.openai_send_temperature:
+            if self.openai_temperature is not None:
+                try:
+                    int(self.openai_temperature)
+                except ValueError:
+                    raise ValueError("Temperature must be a valid number")
+            else:
+                raise ValueError("Temperature value is required when send temperature is enabled")
         if self.openai_send_reasoning_effort and not self.openai_reasoning_effort:
             raise ValueError(
                 "Reasoning effort is required when send reasoning effort is enabled"
@@ -561,7 +567,13 @@ class OpenAICompatibleSettings(BaseModel):
         if not self.openai_compatible_model:
             raise ValueError("OpenAI Compatible model is required")
         if self.openai_compatible_send_temperature:
-            int(self.openai_compatible_send_temperature)
+            if self.openai_compatible_temperature is not None:
+                try:
+                    int(self.openai_compatible_temperature)
+                except ValueError:
+                    raise ValueError("Temperature must be a valid number")
+            else:
+                raise ValueError("Temperature value is required when send temperature is enabled")
         if (
             self.openai_compatible_send_reasoning_effort
             and not self.openai_compatible_reasoning_effort
@@ -577,7 +589,7 @@ class OpenAICompatibleSettings(BaseModel):
             openai_base_url=self.openai_compatible_base_url,
             openai_temperature=self.openai_compatible_temperature,
             openai_reasoning_effort=self.openai_compatible_reasoning_effort,
-            openai_send_temprature=self.openai_compatible_send_temperature,
+            openai_send_temperature=self.openai_compatible_send_temperature,
             openai_send_reasoning_effort=self.openai_compatible_send_reasoning_effort,
         )
 

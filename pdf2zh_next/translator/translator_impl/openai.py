@@ -40,7 +40,7 @@ class OpenAITranslator(BaseTranslator):
             settings.translate_engine_settings.openai_reasoning_effort
         )
         self.send_temperature = (
-            settings.translate_engine_settings.openai_send_temprature
+            settings.translate_engine_settings.openai_send_temperature
         )
         self.send_reasoning_effort = (
             settings.translate_engine_settings.openai_send_reasoning_effort
