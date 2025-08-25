@@ -5,9 +5,7 @@ from pdf2zh_next.config.cli_env_model import CLIEnvSettingsModel
 from pdf2zh_next.config.model import BasicSettings
 from pdf2zh_next.config.model import PDFSettings
 from pdf2zh_next.config.model import TranslationSettings
-from pdf2zh_next.config.model import WatermarkOutputMode
 from pdf2zh_next.config.translate_engine_model import OpenAISettings
-from pydantic import ValidationError
 
 
 class TestBasicSettings:
@@ -103,22 +101,35 @@ class TestPDFSettings:
         assert settings.disable_rich_text_translate is False
         assert settings.enhance_compatibility is False
         assert settings.use_alternating_pages_dual is False
-        assert settings.watermark_output_mode == WatermarkOutputMode.Watermarked
+        assert settings.watermark_output_mode == "watermarked"
         assert settings.max_pages_per_part is None
         assert settings.translate_table_text is True
 
     def test_watermark_mode_validation(self):
         """Test watermark mode validation"""
         # Valid modes
-        settings = PDFSettings(watermark_output_mode=WatermarkOutputMode.NoWatermark)
-        assert settings.watermark_output_mode == WatermarkOutputMode.NoWatermark
+        settings = CLIEnvSettingsModel(
+            openai=True,
+            openai_detail={"openai_api_key": "test-key"},
+            pdf={"watermark_output_mode": "no_watermark"},
+        ).to_settings_model()
+        assert settings.pdf.watermark_output_mode == "no_watermark"
 
-        settings = PDFSettings(watermark_output_mode=WatermarkOutputMode.Both)
-        assert settings.watermark_output_mode == WatermarkOutputMode.Both
+        settings = CLIEnvSettingsModel(
+            openai=True,
+            openai_detail={"openai_api_key": "test-key"},
+            pdf={"watermark_output_mode": "both"},
+        ).to_settings_model()
+        assert settings.pdf.watermark_output_mode == "both"
 
-        # Invalid mode
-        with pytest.raises(ValidationError):
-            PDFSettings(watermark_output_mode="invalid")
+        # Invalid mode will be caught in validate_settings, not during initialization
+        settings = CLIEnvSettingsModel(
+            openai=True,
+            openai_detail={"openai_api_key": "test-key"},
+            pdf={"watermark_output_mode": "invalid"},
+        ).to_settings_model()
+        with pytest.raises(ValueError, match="Invalid watermark output mode"):
+            settings.validate_settings()
 
     def test_output_modes_mutual_exclusion(self):
         """Test mutual exclusion of PDF output modes"""

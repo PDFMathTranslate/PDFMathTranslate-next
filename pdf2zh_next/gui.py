@@ -534,14 +534,7 @@ def _build_translate_settings(
     translate_settings.pdf.use_alternating_pages_dual = use_alternating_pages_dual
 
     # Map watermark mode from UI to enum
-    if watermark_output_mode == "Watermarked":
-        from pdf2zh_next.config.model import WatermarkOutputMode
-
-        translate_settings.pdf.watermark_output_mode = WatermarkOutputMode.Watermarked
-    elif watermark_output_mode == "No Watermark":
-        from pdf2zh_next.config.model import WatermarkOutputMode
-
-        translate_settings.pdf.watermark_output_mode = WatermarkOutputMode.NoWatermark
+    translate_settings.pdf.watermark_output_mode = watermark_output_mode.lower().replace(" ", "_")
 
     # Update Advanced PDF Settings
     translate_settings.pdf.skip_clean = skip_clean
@@ -1305,7 +1298,7 @@ with gr.Blocks(
                 choices=["Watermarked", "No Watermark"],
                 label="Watermark mode",
                 value="Watermarked"
-                if settings.pdf.watermark_output_mode.value == "watermarked"
+                if settings.pdf.watermark_output_mode == "watermarked"
                 else "No Watermark",
             )
 

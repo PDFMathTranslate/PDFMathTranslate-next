@@ -43,6 +43,8 @@ class MagicDefault:
     pass
 
 
+
+
 def build_args_parser(
     parser: argparse.ArgumentParser | None = None,
     settings_model: type[BaseModel] | None = None,
