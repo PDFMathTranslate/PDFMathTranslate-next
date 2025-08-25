@@ -19,7 +19,7 @@ import tomlkit
 from pydantic import BaseModel
 
 from pdf2zh_next.config.cli_env_model import CLIEnvSettingsModel
-from pdf2zh_next.config.model import SettingsModel
+from pdf2zh_next.config.model import SettingsModel, WatermarkOutputMode
 from pdf2zh_next.config.translate_engine_model import TRANSLATION_ENGINE_METADATA
 from pdf2zh_next.const import DEFAULT_CONFIG_DIR
 from pdf2zh_next.const import DEFAULT_CONFIG_FILE
@@ -41,6 +41,13 @@ _no_duplicate_field_name.add("support_llm")
 
 class MagicDefault:
     pass
+
+
+def watermark_output_mode_converter(value):
+    """Convert watermark output mode value for backward compatibility"""
+    if value in ("NoWaterMark", "NoWatermark"):
+        return WatermarkOutputMode.NoWatermark.value
+    return value
 
 
 def build_args_parser(
@@ -124,9 +131,14 @@ def build_args_parser(
                 elif arg == NoneType:
                     continue
                 else:
+                    # Use special converter for WatermarkOutputMode for backward compatibility
+                    converter_func = arg
+                    if arg == WatermarkOutputMode:
+                        converter_func = lambda x: WatermarkOutputMode(watermark_output_mode_converter(x))
+                    
                     parser.add_argument(
                         f"--{args_name}",
-                        type=arg,
+                        type=converter_func,
                         default=MagicDefault,
                         help=field_detail.description,
                     )
