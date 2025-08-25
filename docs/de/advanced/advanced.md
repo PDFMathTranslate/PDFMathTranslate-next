@@ -4,17 +4,23 @@
 
 <h3 id="toc">Inhaltsverzeichnis</h3>
 
-- [Kommandozeilen-Argumente](#kommandozeilen-argumente)
-- [Teilweise Übersetzung](#teilweise-übersetzung)
+- [Befehlszeilenargumente](#befehlszeilenargumente)
+  - [Argumente](#argumente)
+  - [GUI-Argumente](#gui-argumente)
+- [#### Anleitung zur Ratenbegrenzungskonfiguration](#anleitung-zur-ratenbegrenzungskonfiguration)
+  - [#### RPM (Anfragen pro Minute) Ratenbegrenzung](#rpm-anfragen-pro-minute-ratenbegrenzung)
+  - [#### Begrenzung gleichzeitiger Verbindungen](#begrenzung-gleichzeitiger-verbindungen)
+  - [#### Best Practices](#best-practices)
+- [Partielle Übersetzung](#partielle-übersetzung)
 - [Quell- und Zielsprachen angeben](#quell--und-zielsprachen-angeben)
-- [Übersetzen mit Ausnahmen](#übersetzen-mit-ausnahmen)
+- [Übersetzung mit Ausnahmen](#übersetzung-mit-ausnahmen)
 - [Benutzerdefinierte Eingabeaufforderung](#benutzerdefinierte-eingabeaufforderung)
 - [Benutzerdefinierte Konfiguration](#benutzerdefinierte-konfiguration)
 - [Bereinigung überspringen](#bereinigung-überspringen)
 - [Übersetzungscache](#übersetzungscache)
 - [Bereitstellung als öffentlicher Dienst](#bereitstellung-als-öffentlicher-dienst)
 - [Authentifizierung und Willkommensseite](#authentifizierung-und-willkommensseite)
-- [Glossar-Unterstützung](#glossar-unterstützung)
+- [Glossarunterstützung](#glossarunterstützung)
 
 ---
 
@@ -87,6 +93,64 @@ In der folgenden Tabelle listen wir alle erweiterten Optionen zur Referenz auf:
 | `--disable-gui-sensitive-input` | Deaktiviert sensible Eingaben in der GUI            | `pdf2zh --gui --disable-gui-sensitive-input`    |
 | `--disable-config-auto-save`    | Automatisches Speichern der Konfiguration deaktivieren | `pdf2zh --gui --disable-config-auto-save`       |
 | `--server-port`                 | WebUI-Port                             | `pdf2zh --gui --server-port 7860`               |
+
+[⬆️ Zurück zum Anfang](#toc)
+
+---
+
+#### Anleitung zur Ratenbegrenzungskonfiguration
+
+Bei der Verwendung von Übersetzungsdiensten ist eine korrekte Ratenbegrenzungskonfiguration entscheidend, um API-Fehler zu vermeiden und die Leistung zu optimieren. Diese Anleitung erklärt, wie die Parameter `--qps` und `--pool-max-worker` basierend auf den verschiedenen Einschränkungen des Upstream-Dienstes konfiguriert werden.
+
+> [!TIP]
+>
+> Es wird empfohlen, dass die pool_size 1000 nicht überschreitet. Wenn die nach folgender Methode berechnete pool_size 1000 überschreitet, verwenden Sie bitte 1000.
+
+##### RPM (Anfragen pro Minute) Ratenbegrenzung
+
+Wenn der Upstream-Dienst RPM-Beschränkungen hat, verwenden Sie die folgende Berechnung:
+
+**Berechnungsformel:**
+- `qps = floor(rpm / 60)`
+- `pool_size = qps * 10`
+
+> [!NOTE]
+> Der Faktor 10 ist ein empirischer Koeffizient, der in den meisten Szenarien gut funktioniert.
+
+**Beispiel:**
+Wenn Ihr Übersetzungsdienst eine Begrenzung von 600 RPM hat:
+- `qps = floor(600 / 60) = 10`
+- `pool_size = 10 * 10 = 100`
+
+```bash
+pdf2zh example.pdf --qps 10 --pool-max-worker 100
+```
+
+##### Begrenzung gleichzeitiger Verbindungen
+
+Wenn der Upstream-Dienst Einschränkungen bei gleichzeitigen Verbindungen hat (wie der offizielle GLM-Dienst), verwenden Sie diesen Ansatz:
+
+**Berechnungsformel:**
+- `pool_size = max(floor(0.9 * official_concurrent_limit), official_concurrent_limit - 20)`
+- `qps = pool_size`
+
+**Beispiel:**
+Wenn Ihr Übersetzungsdienst 50 gleichzeitige Verbindungen zulässt:
+- `pool_size = max(floor(0.9 * 50), 50 - 20) = max(45, 30) = 45`
+- `qps = 45`
+
+```bash
+pdf2zh example.pdf --qps 45 --pool-max-worker 45
+```
+
+##### Best Practices
+
+> [!TIP]
+> - Beginnen Sie immer mit konservativen Werten und erhöhen Sie diese schrittweise, falls erforderlich
+> - Überwachen Sie die Antwortzeiten und Fehlerraten Ihres Dienstes
+> - Unterschiedliche Dienste können unterschiedliche Optimierungsstrategien erfordern
+> - Berücksichtigen Sie Ihren spezifischen Anwendungsfall und die Dokumentgröße bei der Festlegung dieser Parameter
+
 
 [⬆️ Zurück zum Anfang](#toc)
 

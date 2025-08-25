@@ -1,7 +1,7 @@
 <!-- CHUNK ID: chunk_23005398  CHUNK TYPE: paragraph START_LINE:1 -->
 [**Getting Started**](./getting-started.md) > **Installation** > **uv** _(current)_
 
-<!-- CHUNK ID: h_rule_c9571c81  CHUNK TYPE: h_rule START_LINE:3 -->
+<!-- CHUNK ID: h_rule_9395e6da  CHUNK TYPE: h_rule START_LINE:3 -->
 ---
 
 <!-- CHUNK ID: chunk_D43EE31C  CHUNK TYPE: header START_LINE:5 -->
@@ -15,7 +15,7 @@ uv is an extremely fast Python package and project manager, written in Rust.
 <br>
 To install uv on your computer, please refer to [this article](https://docs.astral.sh/uv/getting-started/installation/).
 
-<!-- CHUNK ID: h_rule_36b85a2b  CHUNK TYPE: h_rule START_LINE:13 -->
+<!-- CHUNK ID: h_rule_2a1a2c53  CHUNK TYPE: h_rule START_LINE:13 -->
 ---
 
 <!-- CHUNK ID: chunk_6EBC627B  CHUNK TYPE: header START_LINE:15 -->

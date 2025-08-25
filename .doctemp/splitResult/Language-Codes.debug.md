@@ -1,7 +1,7 @@
 <!-- CHUNK ID: chunk_0D65A508  CHUNK TYPE: paragraph START_LINE:1 -->
 [**Advanced**](./introduction.md) > **Language Code** _(current)_
 
-<!-- CHUNK ID: h_rule_45a0feae  CHUNK TYPE: h_rule START_LINE:3 -->
+<!-- CHUNK ID: h_rule_785a9d6e  CHUNK TYPE: h_rule START_LINE:3 -->
 ---
 
 <!-- CHUNK ID: chunk_00D95362  CHUNK TYPE: header START_LINE:5 -->

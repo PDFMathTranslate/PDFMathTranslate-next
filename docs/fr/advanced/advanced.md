@@ -5,16 +5,22 @@
 <h3 id="toc">Table des matières</h3>
 
 - [Arguments de ligne de commande](#arguments-de-ligne-de-commande)
+  - [Arguments](#arguments)
+  - [Arguments GUI](#arguments-gui)
+- [Guide de configuration des limites de débit](#guide-de-configuration-des-limites-de-débit)
+  - [Limitation du taux RPM (Requêtes Par Minute)](#limitation-du-taux-rpm-requêtes-par-minute)
+  - [Limitation des connexions simultanées](#limitation-des-connexions-simultanées)
+  - [Meilleures pratiques](#meilleures-pratiques)
 - [Traduction partielle](#traduction-partielle)
 - [Spécifier les langues source et cible](#spécifier-les-langues-source-et-cible)
-- [Traduire avec exceptions](#traduire-avec-exceptions)
+- [Traduction avec exceptions](#traduction-avec-exceptions)
 - [Invite personnalisée](#invite-personnalisée)
 - [Configuration personnalisée](#configuration-personnalisée)
 - [Ignorer le nettoyage](#ignorer-le-nettoyage)
 - [Cache de traduction](#cache-de-traduction)
-- [Déploiement en tant que services publics](#déploiement-en-tant-que-services-publics)
+- [Déploiement en tant que service public](#déploiement-en-tant-que-service-public)
 - [Authentification et page d'accueil](#authentification-et-page-daccueil)
-- [Prise en charge du glossaire](#prise-en-charge-du-glossaire)
+- [Support du glossaire](#support-du-glossaire)
 
 ---
 
@@ -87,6 +93,66 @@ Dans le tableau suivant, nous listons toutes les options avancées pour référe
 | `--disable-gui-sensitive-input` | Désactiver la saisie sensible de l'interface graphique | `pdf2zh --gui --disable-gui-sensitive-input`    |
 | `--disable-config-auto-save`    | Désactiver l'enregistrement automatique de la configuration | `pdf2zh --gui --disable-config-auto-save`       |
 | `--server-port`                 | Port de l'interface Web                             | `pdf2zh --gui --server-port 7860`               |
+
+[⬆️ Retour en haut](#toc)
+
+---
+
+#### Guide de configuration des limites de débit
+
+Lors de l'utilisation des services de traduction, une configuration appropriée des limites de débit est cruciale pour éviter les erreurs d'API et optimiser les performances. Ce guide explique comment configurer les paramètres `--qps` et `--pool-max-worker` en fonction des différentes limitations des services en amont.
+
+> [!TIP]
+>
+> Il est recommandé que le pool_size ne dépasse pas 1000. Si le pool_size calculé par la méthode suivante dépasse 1000, veuillez utiliser 1000.
+
+##### Limitation du taux RPM (Requêtes Par Minute)
+
+Lorsque le service en amont a des limitations RPM, utilisez le calcul suivant :
+
+**Formule de calcul :**
+- `qps = floor(rpm / 60)`
+- `pool_size = qps * 10`
+
+> [!NOTE]
+> Le facteur de 10 est un coefficient empirique qui fonctionne généralement bien pour la plupart des scénarios.
+
+### TEXTE ORIGINAL
+
+**Exemple :**
+Si votre service de traduction a une limite de 600 RPM :
+- `qps = floor(600 / 60) = 10`
+- `pool_size = 10 * 10 = 100`
+
+```bash
+pdf2zh example.pdf --qps 10 --pool-max-worker 100
+```
+
+##### Limitation des connexions simultanées
+
+Lorsque le service en amont a des limitations de connexions simultanées (comme le service officiel GLM), utilisez cette approche :
+
+**Formule de calcul :**
+- `pool_size = max(floor(0.9 * official_concurrent_limit), official_concurrent_limit - 20)`
+- `qps = pool_size`
+
+**Exemple :**
+Si votre service de traduction autorise 50 connexions simultanées :
+- `pool_size = max(floor(0.9 * 50), 50 - 20) = max(45, 30) = 45`
+- `qps = 45`
+
+```bash
+pdf2zh example.pdf --qps 45 --pool-max-worker 45
+```
+
+##### Meilleures pratiques
+
+> [!TIP]
+> - Commencez toujours avec des valeurs conservatrices et augmentez-les progressivement si nécessaire
+> - Surveillez les temps de réponse et les taux d'erreur de votre service
+> - Différents services peuvent nécessiter différentes stratégies d'optimisation
+> - Prenez en compte votre cas d'utilisation spécifique et la taille des documents lors de la configuration de ces paramètres
+
 
 [⬆️ Retour en haut](#toc)
 

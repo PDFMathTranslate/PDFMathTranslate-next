@@ -1,7 +1,7 @@
 <!-- CHUNK ID: chunk_E5616440  CHUNK TYPE: paragraph START_LINE:1 -->
 [**Getting Started**](./getting-started.md) > **Installation** > **Windows EXE** _(current)_
 
-<!-- CHUNK ID: h_rule_8d890ba6  CHUNK TYPE: h_rule START_LINE:3 -->
+<!-- CHUNK ID: h_rule_07de0c91  CHUNK TYPE: h_rule START_LINE:3 -->
 ---
 
 <!-- CHUNK ID: chunk_F372470F  CHUNK TYPE: header START_LINE:5 -->

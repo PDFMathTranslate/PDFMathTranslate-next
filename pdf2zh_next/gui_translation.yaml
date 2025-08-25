@@ -1,0 +1,1528 @@
+en:
+  Language: Language
+  '## File': '## File'
+  File: File
+  Link: Link
+  Type: Type
+  '## Translation Options': '## Translation Options'
+  Free translation service provided by [SiliconFlow](https://siliconflow.cn): Free
+    translation service provided by [SiliconFlow](https://siliconflow.cn)
+  Service: Service
+  OpenAI model to use: OpenAI model to use
+  Base URL for OpenAI API: Base URL for OpenAI API
+  API key for OpenAI service: API key for OpenAI service
+  Temperature for OpenAI service: Temperature for OpenAI service
+  Reasoning effort for OpenAI service (minimal/low/medium/high): Reasoning effort
+    for OpenAI service (minimal/low/medium/high)
+  Send temprature to OpenAI service: Send temprature to OpenAI service
+  Send reasoning effort to OpenAI service: Send reasoning effort to OpenAI service
+  DeepL auth key: DeepL auth key
+  DeepSeek model to use: DeepSeek model to use
+  API key for DeepSeek service: API key for DeepSeek service
+  Ollama model to use: Ollama model to use
+  Ollama host: Ollama host
+  The max number of token to predict.: The max number of token to predict.
+  Xinference model to use: Xinference model to use
+  Xinference host: Xinference host
+  AzureOpenAI model to use: AzureOpenAI model to use
+  Base URL for AzureOpenAI API: Base URL for AzureOpenAI API
+  API key for AzureOpenAI service: API key for AzureOpenAI service
+  API version for AzureOpenAI service: API version for AzureOpenAI service
+  ModelScope model to use: ModelScope model to use
+  API key for ModelScope service: API key for ModelScope service
+  Zhipu model to use: Zhipu model to use
+  API key for Zhipu service: API key for Zhipu service
+  Base URL for SiliconFlow API: Base URL for SiliconFlow API
+  SiliconFlow model to use: SiliconFlow model to use
+  API key for SiliconFlow service: API key for SiliconFlow service
+  Enable thinking for SiliconFlow service: Enable thinking for SiliconFlow service
+  Send enable thinking param to SiliconFlow service: Send enable thinking param to
+    SiliconFlow service
+  Tencent Mechine Translation secret ID: Tencent Mechine Translation secret ID
+  Tencent Mechine Translation secret Key: Tencent Mechine Translation secret Key
+  Gemini model to use: Gemini model to use
+  API key for Gemini service: API key for Gemini service
+  Azure endpoint: Azure endpoint
+  Azure API Key: Azure API Key
+  AnythingLLM url: AnythingLLM url
+  AnythingLLM API Key: AnythingLLM API Key
+  Dify url: Dify url
+  Dify API Key: Dify API Key
+  Grok model to use: Grok model to use
+  API key for Grok service: API key for Grok service
+  Groq model to use: Groq model to use
+  API key for Groq service: API key for Groq service
+  QwenMt model to use: QwenMt model to use
+  Base URL for QwenMt API: Base URL for QwenMt API
+  API key for QwenMt service: API key for QwenMt service
+  the target domain to guide translation style for QwenMt service: the target domain
+    to guide translation style for QwenMt service
+  OpenAI Compatible model to use: OpenAI Compatible model to use
+  Base URL for OpenAI Compatible service: Base URL for OpenAI Compatible service
+  API key for OpenAI Compatible service: API key for OpenAI Compatible service
+  Temperature for OpenAI Compatible service: Temperature for OpenAI Compatible service
+  Reasoning effort for OpenAI Compatible service (minimal/low/medium/high): Reasoning
+    effort for OpenAI Compatible service (minimal/low/medium/high)
+  Send temperature to OpenAI Compatible service: Send temperature to OpenAI Compatible
+    service
+  Send reasoning effort to OpenAI Compatible service: Send reasoning effort to OpenAI
+    Compatible service
+  Translate from: Translate from
+  Translate to: Translate to
+  Pages: Pages
+  Page range (e.g., 1,3,5-10,-5): Page range (e.g., 1,3,5-10,-5)
+  e.g., 1,3,5-10: e.g., 1,3,5-10
+  Effective only when a page range is specified.: Effective only when a page range
+    is specified.
+  Only include translated pages in the output PDF.: Only include translated pages
+    in the output PDF.
+  '## PDF Output Options': '## PDF Output Options'
+  Disable monolingual output: Disable monolingual output
+  Disable bilingual output: Disable bilingual output
+  Put translated pages first in dual mode: Put translated pages first in dual mode
+  Use alternating pages for dual PDF: Use alternating pages for dual PDF
+  Watermarked: Watermarked
+  No Watermark: No Watermark
+  Watermark mode: Watermark mode
+  Custom prompt for translation: Custom prompt for translation
+  Custom prompt for the translator: Custom prompt for the translator
+  RPS (Requests Per Second): RPS (Requests Per Second)
+  Custom System Prompt: Custom System Prompt
+  e.g. /no_think You are a professional, authentic machine translation engine.: e.g.
+    /no_think You are a professional, authentic machine translation engine.
+  Minimum text length to translate: Minimum text length to translate
+  RPC service for document layout analysis (optional): RPC service for document layout
+    analysis (optional)
+  http://host:port: http://host:port
+  Pool maximum workers (if not set or set to 0, will use RPS as the number of workers): Pool
+    maximum workers (if not set or set to 0, will use RPS as the number of workers)
+  Disable auto extract glossary: Disable auto extract glossary
+  save automatically extracted glossary: save automatically extracted glossary
+  Auto: Auto
+  serif: serif
+  sans-serif: sans-serif
+  script: script
+  Primary font family for translated text: Primary font family for translated text
+  Glossary File: Glossary File
+  '### PDF Options': '### PDF Options'
+  Skip clean (maybe improve compatibility): Skip clean (maybe improve compatibility)
+  Disable rich text translation (maybe improve compatibility): Disable rich text translation
+    (maybe improve compatibility)
+  Enhance compatibility (auto-enables skip_clean and disable_rich_text): Enhance compatibility
+    (auto-enables skip_clean and disable_rich_text)
+  Force split short lines into different paragraphs: Force split short lines into
+    different paragraphs
+  Split threshold factor for short lines: Split threshold factor for short lines
+  Translate table text (experimental): Translate table text (experimental)
+  Skip scanned detection: Skip scanned detection
+  OCR workaround (experimental, will auto enable Skip scanned detection in backend): OCR
+    workaround (experimental, will auto enable Skip scanned detection in backend)
+  Auto enable OCR workaround (enable automatic OCR workaround for heavily scanned documents): Auto
+    enable OCR workaround (enable automatic OCR workaround for heavily scanned documents)
+  Maximum pages per part (for auto-split translation, 0 means no limit): Maximum pages
+    per part (for auto-split translation, 0 means no limit)
+  Font pattern to identify formula text (regex, not recommended to change): Font pattern
+    to identify formula text (regex, not recommended to change)
+  e.g., CMMI|CMR: e.g., CMMI|CMR
+  Character pattern to identify formula text (regex, not recommended to change): Character
+    pattern to identify formula text (regex, not recommended to change)
+  e.g., [∫∬∭∮∯∰∇∆]: e.g., [∫∬∭∮∯∰∇∆]
+  Ignore cache: Ignore cache
+  Advanced Options: Advanced Options
+  '## Translated': '## Translated'
+  Download Translation (Mono): Download Translation (Mono)
+  Download Translation (Dual): Download Translation (Dual)
+  Download automatically extracted glossary: Download automatically extracted glossary
+  Translate: Translate
+  Cancel: Cancel
+  '## Preview': '## Preview'
+  Document Preview: Document Preview
+zh:
+  Language: 语言
+  '## File': '## File'
+  File: 文件
+  Link: 链接
+  Type: 类型
+  '## Translation Options': '## Translation Options'
+  Free translation service provided by [SiliconFlow](https://siliconflow.cn): 免费翻译服务由
+    [SiliconFlow](https://siliconflow.cn) 提供
+  Service: 服务
+  OpenAI model to use: OpenAI model to use
+  Base URL for OpenAI API: Base URL for OpenAI API
+  API key for OpenAI service: API key for OpenAI service
+  Temperature for OpenAI service: Temperature for OpenAI service
+  Reasoning effort for OpenAI service (minimal/low/medium/high): Reasoning effort
+    for OpenAI service (minimal/low/medium/high)
+  Send temprature to OpenAI service: Send temprature to OpenAI service
+  Send reasoning effort to OpenAI service: Send reasoning effort to OpenAI service
+  DeepL auth key: DeepL auth key
+  DeepSeek model to use: DeepSeek model to use
+  API key for DeepSeek service: API key for DeepSeek service
+  Ollama model to use: Ollama model to use
+  Ollama host: Ollama host
+  The max number of token to predict.: The max number of token to predict.
+  Xinference model to use: Xinference model to use
+  Xinference host: Xinference host
+  AzureOpenAI model to use: AzureOpenAI model to use
+  Base URL for AzureOpenAI API: Base URL for AzureOpenAI API
+  API key for AzureOpenAI service: API key for AzureOpenAI service
+  API version for AzureOpenAI service: API version for AzureOpenAI service
+  ModelScope model to use: ModelScope model to use
+  API key for ModelScope service: API key for ModelScope service
+  Zhipu model to use: Zhipu model to use
+  API key for Zhipu service: API key for Zhipu service
+  Base URL for SiliconFlow API: Base URL for SiliconFlow API
+  SiliconFlow model to use: SiliconFlow model to use
+  API key for SiliconFlow service: API key for SiliconFlow service
+  Enable thinking for SiliconFlow service: Enable thinking for SiliconFlow service
+  Send enable thinking param to SiliconFlow service: Send enable thinking param to
+    SiliconFlow service
+  Tencent Mechine Translation secret ID: Tencent Mechine Translation secret ID
+  Tencent Mechine Translation secret Key: Tencent Mechine Translation secret Key
+  Gemini model to use: Gemini model to use
+  API key for Gemini service: API key for Gemini service
+  Azure endpoint: Azure endpoint
+  Azure API Key: Azure API Key
+  AnythingLLM url: AnythingLLM url
+  AnythingLLM API Key: AnythingLLM API Key
+  Dify url: Dify url
+  Dify API Key: Dify API Key
+  Grok model to use: Grok model to use
+  API key for Grok service: API key for Grok service
+  Groq model to use: Groq model to use
+  API key for Groq service: API key for Groq service
+  QwenMt model to use: QwenMt model to use
+  Base URL for QwenMt API: Base URL for QwenMt API
+  API key for QwenMt service: API key for QwenMt service
+  the target domain to guide translation style for QwenMt service: the target domain
+    to guide translation style for QwenMt service
+  OpenAI Compatible model to use: OpenAI Compatible model to use
+  Base URL for OpenAI Compatible service: Base URL for OpenAI Compatible service
+  API key for OpenAI Compatible service: API key for OpenAI Compatible service
+  Temperature for OpenAI Compatible service: Temperature for OpenAI Compatible service
+  Reasoning effort for OpenAI Compatible service (minimal/low/medium/high): Reasoning
+    effort for OpenAI Compatible service (minimal/low/medium/high)
+  Send temperature to OpenAI Compatible service: Send temperature to OpenAI Compatible
+    service
+  Send reasoning effort to OpenAI Compatible service: Send reasoning effort to OpenAI
+    Compatible service
+  Translate from: 源语言
+  Translate to: 目标语言
+  Pages: 页面
+  Page range (e.g., 1,3,5-10,-5): 页码范围（例如：1,3,5-10,-5）
+  e.g., 1,3,5-10: 例如：1,3,5-10
+  Effective only when a page range is specified.: 仅在指定页码范围时生效。
+  Only include translated pages in the output PDF.: 仅在输出 PDF 中包含已翻译的页面。
+  '## PDF Output Options': '## PDF Output Options'
+  Disable monolingual output: 禁用单语输出
+  Disable bilingual output: 禁用双语输出
+  Put translated pages first in dual mode: 双语模式下将译文页置前
+  Use alternating pages for dual PDF: 双语 PDF 使用交替页面
+  Watermarked: Watermarked
+  No Watermark: No Watermark
+  Watermark mode: 水印模式
+  Custom prompt for translation: 自定义翻译提示词
+  Custom prompt for the translator: 翻译器自定义提示词
+  RPS (Requests Per Second): RPS（每秒请求数）
+  Custom System Prompt: 自定义系统提示词
+  e.g. /no_think You are a professional, authentic machine translation engine.: e.g.
+    /no_think You are a professional, authentic machine translation engine.
+  Minimum text length to translate: 最小翻译文本长度
+  RPC service for document layout analysis (optional): 文档版面分析 RPC 服务（可选）
+  http://host:port: http://host:port
+  Pool maximum workers (if not set or set to 0, will use RPS as the number of workers): 线程池最大工作数（不设或为
+    0 时使用 RPS 值）
+  Disable auto extract glossary: 禁用术语表自动抽取
+  save automatically extracted glossary: 保存自动抽取的术语表
+  Auto: Auto
+  serif: serif
+  sans-serif: sans-serif
+  script: script
+  Primary font family for translated text: 译文主要字体族
+  Glossary File: 术语表文件
+  '### PDF Options': '### PDF Options'
+  Skip clean (maybe improve compatibility): 跳过清理（可能提升兼容性）
+  Disable rich text translation (maybe improve compatibility): 禁用富文本翻译（可能提升兼容性）
+  Enhance compatibility (auto-enables skip_clean and disable_rich_text): 增强兼容性（自动启用“跳过清理”和“禁用富文本”）
+  Force split short lines into different paragraphs: 强制将较短行拆分为不同段落
+  Split threshold factor for short lines: 短行拆分阈值系数
+  Translate table text (experimental): 翻译表格文本（实验性）
+  Skip scanned detection: 跳过扫描件检测
+  OCR workaround (experimental, will auto enable Skip scanned detection in backend): OCR
+    兼容方案（实验性，将自动启用跳过扫描件检测）
+  Auto enable OCR workaround (enable automatic OCR workaround for heavily scanned documents): 自动启用
+    OCR 兼容方案（适用于扫描严重的文档）
+  Maximum pages per part (for auto-split translation, 0 means no limit): 每部分最大页数（用于自动分段翻译，0
+    表示不限制）
+  Font pattern to identify formula text (regex, not recommended to change): 用于识别公式文本的字体模式（正则表达式，不建议修改）
+  e.g., CMMI|CMR: e.g., CMMI|CMR
+  Character pattern to identify formula text (regex, not recommended to change): 用于识别公式文本的字符模式（正则表达式，不建议修改）
+  e.g., [∫∬∭∮∯∰∇∆]: e.g., [∫∬∭∮∯∰∇∆]
+  Ignore cache: 忽略缓存
+  Advanced Options: 高级选项
+  '## Translated': '## Translated'
+  Download Translation (Mono): 下载译文（单语）
+  Download Translation (Dual): 下载译文（双语）
+  Download automatically extracted glossary: 下载自动抽取的术语表
+  Translate: 开始翻译
+  Cancel: 取消
+  '## Preview': '## Preview'
+  Document Preview: 文档预览
+zh-TW:
+  Language: Language
+  '## File': '## File'
+  File: File
+  Link: Link
+  Type: Type
+  '## Translation Options': '## Translation Options'
+  Free translation service provided by [SiliconFlow](https://siliconflow.cn): Free
+    translation service provided by [SiliconFlow](https://siliconflow.cn)
+  Service: Service
+  OpenAI model to use: OpenAI model to use
+  Base URL for OpenAI API: Base URL for OpenAI API
+  API key for OpenAI service: API key for OpenAI service
+  Temperature for OpenAI service: Temperature for OpenAI service
+  Reasoning effort for OpenAI service (minimal/low/medium/high): Reasoning effort
+    for OpenAI service (minimal/low/medium/high)
+  Send temprature to OpenAI service: Send temprature to OpenAI service
+  Send reasoning effort to OpenAI service: Send reasoning effort to OpenAI service
+  DeepL auth key: DeepL auth key
+  DeepSeek model to use: DeepSeek model to use
+  API key for DeepSeek service: API key for DeepSeek service
+  Ollama model to use: Ollama model to use
+  Ollama host: Ollama host
+  The max number of token to predict.: The max number of token to predict.
+  Xinference model to use: Xinference model to use
+  Xinference host: Xinference host
+  AzureOpenAI model to use: AzureOpenAI model to use
+  Base URL for AzureOpenAI API: Base URL for AzureOpenAI API
+  API key for AzureOpenAI service: API key for AzureOpenAI service
+  API version for AzureOpenAI service: API version for AzureOpenAI service
+  ModelScope model to use: ModelScope model to use
+  API key for ModelScope service: API key for ModelScope service
+  Zhipu model to use: Zhipu model to use
+  API key for Zhipu service: API key for Zhipu service
+  Base URL for SiliconFlow API: Base URL for SiliconFlow API
+  SiliconFlow model to use: SiliconFlow model to use
+  API key for SiliconFlow service: API key for SiliconFlow service
+  Enable thinking for SiliconFlow service: Enable thinking for SiliconFlow service
+  Send enable thinking param to SiliconFlow service: Send enable thinking param to
+    SiliconFlow service
+  Tencent Mechine Translation secret ID: Tencent Mechine Translation secret ID
+  Tencent Mechine Translation secret Key: Tencent Mechine Translation secret Key
+  Gemini model to use: Gemini model to use
+  API key for Gemini service: API key for Gemini service
+  Azure endpoint: Azure endpoint
+  Azure API Key: Azure API Key
+  AnythingLLM url: AnythingLLM url
+  AnythingLLM API Key: AnythingLLM API Key
+  Dify url: Dify url
+  Dify API Key: Dify API Key
+  Grok model to use: Grok model to use
+  API key for Grok service: API key for Grok service
+  Groq model to use: Groq model to use
+  API key for Groq service: API key for Groq service
+  QwenMt model to use: QwenMt model to use
+  Base URL for QwenMt API: Base URL for QwenMt API
+  API key for QwenMt service: API key for QwenMt service
+  the target domain to guide translation style for QwenMt service: the target domain
+    to guide translation style for QwenMt service
+  OpenAI Compatible model to use: OpenAI Compatible model to use
+  Base URL for OpenAI Compatible service: Base URL for OpenAI Compatible service
+  API key for OpenAI Compatible service: API key for OpenAI Compatible service
+  Temperature for OpenAI Compatible service: Temperature for OpenAI Compatible service
+  Reasoning effort for OpenAI Compatible service (minimal/low/medium/high): Reasoning
+    effort for OpenAI Compatible service (minimal/low/medium/high)
+  Send temperature to OpenAI Compatible service: Send temperature to OpenAI Compatible
+    service
+  Send reasoning effort to OpenAI Compatible service: Send reasoning effort to OpenAI
+    Compatible service
+  Translate from: Translate from
+  Translate to: Translate to
+  Pages: Pages
+  Page range (e.g., 1,3,5-10,-5): Page range (e.g., 1,3,5-10,-5)
+  e.g., 1,3,5-10: e.g., 1,3,5-10
+  Effective only when a page range is specified.: Effective only when a page range
+    is specified.
+  Only include translated pages in the output PDF.: Only include translated pages
+    in the output PDF.
+  '## PDF Output Options': '## PDF Output Options'
+  Disable monolingual output: Disable monolingual output
+  Disable bilingual output: Disable bilingual output
+  Put translated pages first in dual mode: Put translated pages first in dual mode
+  Use alternating pages for dual PDF: Use alternating pages for dual PDF
+  Watermarked: Watermarked
+  No Watermark: No Watermark
+  Watermark mode: Watermark mode
+  Custom prompt for translation: Custom prompt for translation
+  Custom prompt for the translator: Custom prompt for the translator
+  RPS (Requests Per Second): RPS (Requests Per Second)
+  Custom System Prompt: Custom System Prompt
+  e.g. /no_think You are a professional, authentic machine translation engine.: e.g.
+    /no_think You are a professional, authentic machine translation engine.
+  Minimum text length to translate: Minimum text length to translate
+  RPC service for document layout analysis (optional): RPC service for document layout
+    analysis (optional)
+  http://host:port: http://host:port
+  Pool maximum workers (if not set or set to 0, will use RPS as the number of workers): Pool
+    maximum workers (if not set or set to 0, will use RPS as the number of workers)
+  Disable auto extract glossary: Disable auto extract glossary
+  save automatically extracted glossary: save automatically extracted glossary
+  Auto: Auto
+  serif: serif
+  sans-serif: sans-serif
+  script: script
+  Primary font family for translated text: Primary font family for translated text
+  Glossary File: Glossary File
+  '### PDF Options': '### PDF Options'
+  Skip clean (maybe improve compatibility): Skip clean (maybe improve compatibility)
+  Disable rich text translation (maybe improve compatibility): Disable rich text translation
+    (maybe improve compatibility)
+  Enhance compatibility (auto-enables skip_clean and disable_rich_text): Enhance compatibility
+    (auto-enables skip_clean and disable_rich_text)
+  Force split short lines into different paragraphs: Force split short lines into
+    different paragraphs
+  Split threshold factor for short lines: Split threshold factor for short lines
+  Translate table text (experimental): Translate table text (experimental)
+  Skip scanned detection: Skip scanned detection
+  OCR workaround (experimental, will auto enable Skip scanned detection in backend): OCR
+    workaround (experimental, will auto enable Skip scanned detection in backend)
+  Auto enable OCR workaround (enable automatic OCR workaround for heavily scanned documents): Auto
+    enable OCR workaround (enable automatic OCR workaround for heavily scanned documents)
+  Maximum pages per part (for auto-split translation, 0 means no limit): Maximum pages
+    per part (for auto-split translation, 0 means no limit)
+  Font pattern to identify formula text (regex, not recommended to change): Font pattern
+    to identify formula text (regex, not recommended to change)
+  e.g., CMMI|CMR: e.g., CMMI|CMR
+  Character pattern to identify formula text (regex, not recommended to change): Character
+    pattern to identify formula text (regex, not recommended to change)
+  e.g., [∫∬∭∮∯∰∇∆]: e.g., [∫∬∭∮∯∰∇∆]
+  Ignore cache: Ignore cache
+  Advanced Options: Advanced Options
+  '## Translated': '## Translated'
+  Download Translation (Mono): Download Translation (Mono)
+  Download Translation (Dual): Download Translation (Dual)
+  Download automatically extracted glossary: Download automatically extracted glossary
+  Translate: Translate
+  Cancel: Cancel
+  '## Preview': '## Preview'
+  Document Preview: Document Preview
+ja:
+  Language: 言語
+  '## File': '## File'
+  File: ファイル
+  Link: リンク
+  Type: 種類
+  '## Translation Options': '## Translation Options'
+  Free translation service provided by [SiliconFlow](https://siliconflow.cn): 無料翻訳サービスは
+    [SiliconFlow](https://siliconflow.cn) により提供
+  Service: サービス
+  OpenAI model to use: OpenAI model to use
+  Base URL for OpenAI API: Base URL for OpenAI API
+  API key for OpenAI service: API key for OpenAI service
+  Temperature for OpenAI service: Temperature for OpenAI service
+  Reasoning effort for OpenAI service (minimal/low/medium/high): Reasoning effort
+    for OpenAI service (minimal/low/medium/high)
+  Send temprature to OpenAI service: Send temprature to OpenAI service
+  Send reasoning effort to OpenAI service: Send reasoning effort to OpenAI service
+  DeepL auth key: DeepL auth key
+  DeepSeek model to use: DeepSeek model to use
+  API key for DeepSeek service: API key for DeepSeek service
+  Ollama model to use: Ollama model to use
+  Ollama host: Ollama host
+  The max number of token to predict.: The max number of token to predict.
+  Xinference model to use: Xinference model to use
+  Xinference host: Xinference host
+  AzureOpenAI model to use: AzureOpenAI model to use
+  Base URL for AzureOpenAI API: Base URL for AzureOpenAI API
+  API key for AzureOpenAI service: API key for AzureOpenAI service
+  API version for AzureOpenAI service: API version for AzureOpenAI service
+  ModelScope model to use: ModelScope model to use
+  API key for ModelScope service: API key for ModelScope service
+  Zhipu model to use: Zhipu model to use
+  API key for Zhipu service: API key for Zhipu service
+  Base URL for SiliconFlow API: Base URL for SiliconFlow API
+  SiliconFlow model to use: SiliconFlow model to use
+  API key for SiliconFlow service: API key for SiliconFlow service
+  Enable thinking for SiliconFlow service: Enable thinking for SiliconFlow service
+  Send enable thinking param to SiliconFlow service: Send enable thinking param to
+    SiliconFlow service
+  Tencent Mechine Translation secret ID: Tencent Mechine Translation secret ID
+  Tencent Mechine Translation secret Key: Tencent Mechine Translation secret Key
+  Gemini model to use: Gemini model to use
+  API key for Gemini service: API key for Gemini service
+  Azure endpoint: Azure endpoint
+  Azure API Key: Azure API Key
+  AnythingLLM url: AnythingLLM url
+  AnythingLLM API Key: AnythingLLM API Key
+  Dify url: Dify url
+  Dify API Key: Dify API Key
+  Grok model to use: Grok model to use
+  API key for Grok service: API key for Grok service
+  Groq model to use: Groq model to use
+  API key for Groq service: API key for Groq service
+  QwenMt model to use: QwenMt model to use
+  Base URL for QwenMt API: Base URL for QwenMt API
+  API key for QwenMt service: API key for QwenMt service
+  the target domain to guide translation style for QwenMt service: the target domain
+    to guide translation style for QwenMt service
+  OpenAI Compatible model to use: OpenAI Compatible model to use
+  Base URL for OpenAI Compatible service: Base URL for OpenAI Compatible service
+  API key for OpenAI Compatible service: API key for OpenAI Compatible service
+  Temperature for OpenAI Compatible service: Temperature for OpenAI Compatible service
+  Reasoning effort for OpenAI Compatible service (minimal/low/medium/high): Reasoning
+    effort for OpenAI Compatible service (minimal/low/medium/high)
+  Send temperature to OpenAI Compatible service: Send temperature to OpenAI Compatible
+    service
+  Send reasoning effort to OpenAI Compatible service: Send reasoning effort to OpenAI
+    Compatible service
+  Translate from: 翻訳元
+  Translate to: 翻訳先
+  Pages: ページ
+  Page range (e.g., 1,3,5-10,-5): ページ範囲（例：1,3,5-10,-5）
+  e.g., 1,3,5-10: 例：1,3,5-10
+  Effective only when a page range is specified.: ページ範囲が指定された場合のみ有効。
+  Only include translated pages in the output PDF.: 出力 PDF には翻訳済みページのみを含める。
+  '## PDF Output Options': '## PDF Output Options'
+  Disable monolingual output: 単言語出力を無効化
+  Disable bilingual output: 二言語出力を無効化
+  Put translated pages first in dual mode: 二言語モードで翻訳ページを先頭に配置
+  Use alternating pages for dual PDF: 二言語 PDF でページを交互に配置
+  Watermarked: Watermarked
+  No Watermark: No Watermark
+  Watermark mode: 透かしモード
+  Custom prompt for translation: カスタム翻訳プロンプト
+  Custom prompt for the translator: 翻訳用カスタムプロンプト
+  RPS (Requests Per Second): RPS（毎秒リクエスト数）
+  Custom System Prompt: カスタムシステムプロンプト
+  e.g. /no_think You are a professional, authentic machine translation engine.: e.g.
+    /no_think You are a professional, authentic machine translation engine.
+  Minimum text length to translate: 最小翻訳文字数
+  RPC service for document layout analysis (optional): 文書レイアウト解析 RPC サービス（任意）
+  http://host:port: http://host:port
+  Pool maximum workers (if not set or set to 0, will use RPS as the number of workers): 最大ワーカー数（未設定または
+    0 の場合は RPS を使用）
+  Disable auto extract glossary: 用語集の自動抽出を無効化
+  save automatically extracted glossary: 自動抽出された用語集を保存
+  Auto: Auto
+  serif: serif
+  sans-serif: sans-serif
+  script: script
+  Primary font family for translated text: 翻訳テキストの主要フォント
+  Glossary File: 用語集ファイル
+  '### PDF Options': '### PDF Options'
+  Skip clean (maybe improve compatibility): クリーンをスキップ（互換性向上の可能性）
+  Disable rich text translation (maybe improve compatibility): リッチテキスト翻訳を無効化（互換性向上の可能性）
+  Enhance compatibility (auto-enables skip_clean and disable_rich_text): 互換性を強化（自動でスキップ/無効化を有効に）
+  Force split short lines into different paragraphs: 短い行を別段落に強制分割
+  Split threshold factor for short lines: 短行の分割しきい値係数
+  Translate table text (experimental): 表のテキストを翻訳（実験的）
+  Skip scanned detection: スキャン検出をスキップ
+  OCR workaround (experimental, will auto enable Skip scanned detection in backend): OCR
+    回避策（実験的、バックエンドでスキャン検出を自動スキップ）
+  Auto enable OCR workaround (enable automatic OCR workaround for heavily scanned documents): OCR
+    回避策を自動有効化（スキャンの多い文書向け）
+  Maximum pages per part (for auto-split translation, 0 means no limit): 分割ごとの最大ページ数（自動分割翻訳、0
+    は無制限）
+  Font pattern to identify formula text (regex, not recommended to change): 数式テキスト識別用フォントパターン（正規表現、変更非推奨）
+  e.g., CMMI|CMR: e.g., CMMI|CMR
+  Character pattern to identify formula text (regex, not recommended to change): 数式テキスト識別用文字パターン（正規表現、変更非推奨）
+  e.g., [∫∬∭∮∯∰∇∆]: e.g., [∫∬∭∮∯∰∇∆]
+  Ignore cache: キャッシュを無視
+  Advanced Options: 詳細オプション
+  '## Translated': '## Translated'
+  Download Translation (Mono): 翻訳をダウンロード（単言語）
+  Download Translation (Dual): 翻訳をダウンロード（二言語）
+  Download automatically extracted glossary: 自動抽出された用語集をダウンロード
+  Translate: 翻訳開始
+  Cancel: キャンセル
+  '## Preview': '## Preview'
+  Document Preview: 文書プレビュー
+ko:
+  Language: 언어
+  '## File': '## File'
+  File: 파일
+  Link: 링크
+  Type: 유형
+  '## Translation Options': '## Translation Options'
+  Free translation service provided by [SiliconFlow](https://siliconflow.cn): 무료 번역
+    서비스는 [SiliconFlow](https://siliconflow.cn) 에서 제공합니다
+  Service: 서비스
+  OpenAI model to use: OpenAI model to use
+  Base URL for OpenAI API: Base URL for OpenAI API
+  API key for OpenAI service: API key for OpenAI service
+  Temperature for OpenAI service: Temperature for OpenAI service
+  Reasoning effort for OpenAI service (minimal/low/medium/high): Reasoning effort
+    for OpenAI service (minimal/low/medium/high)
+  Send temprature to OpenAI service: Send temprature to OpenAI service
+  Send reasoning effort to OpenAI service: Send reasoning effort to OpenAI service
+  DeepL auth key: DeepL auth key
+  DeepSeek model to use: DeepSeek model to use
+  API key for DeepSeek service: API key for DeepSeek service
+  Ollama model to use: Ollama model to use
+  Ollama host: Ollama host
+  The max number of token to predict.: The max number of token to predict.
+  Xinference model to use: Xinference model to use
+  Xinference host: Xinference host
+  AzureOpenAI model to use: AzureOpenAI model to use
+  Base URL for AzureOpenAI API: Base URL for AzureOpenAI API
+  API key for AzureOpenAI service: API key for AzureOpenAI service
+  API version for AzureOpenAI service: API version for AzureOpenAI service
+  ModelScope model to use: ModelScope model to use
+  API key for ModelScope service: API key for ModelScope service
+  Zhipu model to use: Zhipu model to use
+  API key for Zhipu service: API key for Zhipu service
+  Base URL for SiliconFlow API: Base URL for SiliconFlow API
+  SiliconFlow model to use: SiliconFlow model to use
+  API key for SiliconFlow service: API key for SiliconFlow service
+  Enable thinking for SiliconFlow service: Enable thinking for SiliconFlow service
+  Send enable thinking param to SiliconFlow service: Send enable thinking param to
+    SiliconFlow service
+  Tencent Mechine Translation secret ID: Tencent Mechine Translation secret ID
+  Tencent Mechine Translation secret Key: Tencent Mechine Translation secret Key
+  Gemini model to use: Gemini model to use
+  API key for Gemini service: API key for Gemini service
+  Azure endpoint: Azure endpoint
+  Azure API Key: Azure API Key
+  AnythingLLM url: AnythingLLM url
+  AnythingLLM API Key: AnythingLLM API Key
+  Dify url: Dify url
+  Dify API Key: Dify API Key
+  Grok model to use: Grok model to use
+  API key for Grok service: API key for Grok service
+  Groq model to use: Groq model to use
+  API key for Groq service: API key for Groq service
+  QwenMt model to use: QwenMt model to use
+  Base URL for QwenMt API: Base URL for QwenMt API
+  API key for QwenMt service: API key for QwenMt service
+  the target domain to guide translation style for QwenMt service: the target domain
+    to guide translation style for QwenMt service
+  OpenAI Compatible model to use: OpenAI Compatible model to use
+  Base URL for OpenAI Compatible service: Base URL for OpenAI Compatible service
+  API key for OpenAI Compatible service: API key for OpenAI Compatible service
+  Temperature for OpenAI Compatible service: Temperature for OpenAI Compatible service
+  Reasoning effort for OpenAI Compatible service (minimal/low/medium/high): Reasoning
+    effort for OpenAI Compatible service (minimal/low/medium/high)
+  Send temperature to OpenAI Compatible service: Send temperature to OpenAI Compatible
+    service
+  Send reasoning effort to OpenAI Compatible service: Send reasoning effort to OpenAI
+    Compatible service
+  Translate from: 원본 언어
+  Translate to: 대상 언어
+  Pages: 페이지
+  Page range (e.g., 1,3,5-10,-5): 페이지 범위 (예:1,3,5-10,-5)
+  e.g., 1,3,5-10: 예:1,3,5-10
+  Effective only when a page range is specified.: 페이지 범위를 지정한 경우에만 유효합니다.
+  Only include translated pages in the output PDF.: 출력 PDF 에 번역된 페이지만 포함합니다.
+  '## PDF Output Options': '## PDF Output Options'
+  Disable monolingual output: 단일 언어 출력 비활성화
+  Disable bilingual output: 이중 언어 출력 비활성화
+  Put translated pages first in dual mode: 이중 모드에서 번역 페이지를 먼저 배치
+  Use alternating pages for dual PDF: 이중 PDF 에서 페이지를 번갈아 사용
+  Watermarked: Watermarked
+  No Watermark: No Watermark
+  Watermark mode: 워터마크 모드
+  Custom prompt for translation: 사용자 지정 번역 프롬프트
+  Custom prompt for the translator: 번역기용 사용자 지정 프롬프트
+  RPS (Requests Per Second): RPS(초당 요청 수)
+  Custom System Prompt: 사용자 지정 시스템 프롬프트
+  e.g. /no_think You are a professional, authentic machine translation engine.: e.g.
+    /no_think You are a professional, authentic machine translation engine.
+  Minimum text length to translate: 번역 최소 텍스트 길이
+  RPC service for document layout analysis (optional): 문서 레이아웃 분석 RPC 서비스 (선택 사항)
+  http://host:port: http://host:port
+  Pool maximum workers (if not set or set to 0, will use RPS as the number of workers): 최대
+    작업자 수(미설정 또는 0일 경우 RPS 사용)
+  Disable auto extract glossary: 용어집 자동 추출 비활성화
+  save automatically extracted glossary: 자동 추출된 용어집 저장
+  Auto: Auto
+  serif: serif
+  sans-serif: sans-serif
+  script: script
+  Primary font family for translated text: 번역 텍스트 기본 글꼴 패밀리
+  Glossary File: 용어집 파일
+  '### PDF Options': '### PDF Options'
+  Skip clean (maybe improve compatibility): 정리 건너뛰기 (호환성 향상 가능)
+  Disable rich text translation (maybe improve compatibility): 리치 텍스트 번역 비활성화 (호환성
+    향상 가능)
+  Enhance compatibility (auto-enables skip_clean and disable_rich_text): 호환성 강화 (자동으로
+    정리 건너뛰기/리치 텍스트 비활성화)
+  Force split short lines into different paragraphs: 짧은 줄을 다른 단락으로 강제 분할
+  Split threshold factor for short lines: 짧은 줄 분할 임계 계수
+  Translate table text (experimental): 표 텍스트 번역 (실험적)
+  Skip scanned detection: 스캔 감지 건너뛰기
+  OCR workaround (experimental, will auto enable Skip scanned detection in backend): OCR
+    우회 방법(실험적, 백엔드에서 스캔 감지 자동 건너뜀)
+  Auto enable OCR workaround (enable automatic OCR workaround for heavily scanned documents): OCR
+    우회 방법 자동 활성화(스캔이 많은 문서에 적합)
+  Maximum pages per part (for auto-split translation, 0 means no limit): 파트당 최대 페이지 (자동
+    분할 번역, 0은 제한 없음)
+  Font pattern to identify formula text (regex, not recommended to change): 수식 텍스트
+    식별용 글꼴 패턴(정규식, 변경 비권장)
+  e.g., CMMI|CMR: e.g., CMMI|CMR
+  Character pattern to identify formula text (regex, not recommended to change): 수식
+    텍스트 식별용 문자 패턴(정규식, 변경 비권장)
+  e.g., [∫∬∭∮∯∰∇∆]: e.g., [∫∬∭∮∯∰∇∆]
+  Ignore cache: 캐시 무시
+  Advanced Options: 고급 옵션
+  '## Translated': '## Translated'
+  Download Translation (Mono): 번역 다운로드 (단일 언어)
+  Download Translation (Dual): 번역 다운로드 (이중 언어)
+  Download automatically extracted glossary: 자동 추출 용어집 다운로드
+  Translate: 번역 시작
+  Cancel: 취소
+  '## Preview': '## Preview'
+  Document Preview: 문서 미리보기
+fr:
+  Language: Langue
+  '## File': '## File'
+  File: Fichier
+  Link: Lien
+  Type: Type
+  '## Translation Options': '## Translation Options'
+  Free translation service provided by [SiliconFlow](https://siliconflow.cn): Service
+    de traduction gratuit fourni par [SiliconFlow](https://siliconflow.cn)
+  Service: Service
+  OpenAI model to use: OpenAI model to use
+  Base URL for OpenAI API: Base URL for OpenAI API
+  API key for OpenAI service: API key for OpenAI service
+  Temperature for OpenAI service: Temperature for OpenAI service
+  Reasoning effort for OpenAI service (minimal/low/medium/high): Reasoning effort
+    for OpenAI service (minimal/low/medium/high)
+  Send temprature to OpenAI service: Send temprature to OpenAI service
+  Send reasoning effort to OpenAI service: Send reasoning effort to OpenAI service
+  DeepL auth key: DeepL auth key
+  DeepSeek model to use: DeepSeek model to use
+  API key for DeepSeek service: API key for DeepSeek service
+  Ollama model to use: Ollama model to use
+  Ollama host: Ollama host
+  The max number of token to predict.: The max number of token to predict.
+  Xinference model to use: Xinference model to use
+  Xinference host: Xinference host
+  AzureOpenAI model to use: AzureOpenAI model to use
+  Base URL for AzureOpenAI API: Base URL for AzureOpenAI API
+  API key for AzureOpenAI service: API key for AzureOpenAI service
+  API version for AzureOpenAI service: API version for AzureOpenAI service
+  ModelScope model to use: ModelScope model to use
+  API key for ModelScope service: API key for ModelScope service
+  Zhipu model to use: Zhipu model to use
+  API key for Zhipu service: API key for Zhipu service
+  Base URL for SiliconFlow API: Base URL for SiliconFlow API
+  SiliconFlow model to use: SiliconFlow model to use
+  API key for SiliconFlow service: API key for SiliconFlow service
+  Enable thinking for SiliconFlow service: Enable thinking for SiliconFlow service
+  Send enable thinking param to SiliconFlow service: Send enable thinking param to
+    SiliconFlow service
+  Tencent Mechine Translation secret ID: Tencent Mechine Translation secret ID
+  Tencent Mechine Translation secret Key: Tencent Mechine Translation secret Key
+  Gemini model to use: Gemini model to use
+  API key for Gemini service: API key for Gemini service
+  Azure endpoint: Azure endpoint
+  Azure API Key: Azure API Key
+  AnythingLLM url: AnythingLLM url
+  AnythingLLM API Key: AnythingLLM API Key
+  Dify url: Dify url
+  Dify API Key: Dify API Key
+  Grok model to use: Grok model to use
+  API key for Grok service: API key for Grok service
+  Groq model to use: Groq model to use
+  API key for Groq service: API key for Groq service
+  QwenMt model to use: QwenMt model to use
+  Base URL for QwenMt API: Base URL for QwenMt API
+  API key for QwenMt service: API key for QwenMt service
+  the target domain to guide translation style for QwenMt service: the target domain
+    to guide translation style for QwenMt service
+  OpenAI Compatible model to use: OpenAI Compatible model to use
+  Base URL for OpenAI Compatible service: Base URL for OpenAI Compatible service
+  API key for OpenAI Compatible service: API key for OpenAI Compatible service
+  Temperature for OpenAI Compatible service: Temperature for OpenAI Compatible service
+  Reasoning effort for OpenAI Compatible service (minimal/low/medium/high): Reasoning
+    effort for OpenAI Compatible service (minimal/low/medium/high)
+  Send temperature to OpenAI Compatible service: Send temperature to OpenAI Compatible
+    service
+  Send reasoning effort to OpenAI Compatible service: Send reasoning effort to OpenAI
+    Compatible service
+  Translate from: Traduire de
+  Translate to: Traduire vers
+  Pages: Pages
+  Page range (e.g., 1,3,5-10,-5): Plage de pages (ex. :1,3,5-10,-5)
+  e.g., 1,3,5-10: ex. :1,3,5-10
+  Effective only when a page range is specified.: Valide uniquement lorsqu'une plage
+    de pages est spécifiée.
+  Only include translated pages in the output PDF.: Inclure uniquement les pages traduites
+    dans le PDF de sortie.
+  '## PDF Output Options': '## PDF Output Options'
+  Disable monolingual output: Désactiver la sortie monolingue
+  Disable bilingual output: Désactiver la sortie bilingue
+  Put translated pages first in dual mode: Mettre les pages traduites en premier en
+    mode bilingue
+  Use alternating pages for dual PDF: Utiliser des pages alternées pour le PDF bilingue
+  Watermarked: Watermarked
+  No Watermark: No Watermark
+  Watermark mode: Mode filigrane
+  Custom prompt for translation: Invite personnalisée pour la traduction
+  Custom prompt for the translator: Invite personnalisée du traducteur
+  RPS (Requests Per Second): RPS (requêtes par seconde)
+  Custom System Prompt: Invite système personnalisée
+  e.g. /no_think You are a professional, authentic machine translation engine.: e.g.
+    /no_think You are a professional, authentic machine translation engine.
+  Minimum text length to translate: Longueur minimale du texte à traduire
+  RPC service for document layout analysis (optional): Service RPC d'analyse de mise
+    en page (facultatif)
+  http://host:port: http://host:port
+  Pool maximum workers (if not set or set to 0, will use RPS as the number of workers): Nombre
+    maximal de travailleurs (si non défini ou 0, utilise la valeur RPS)
+  Disable auto extract glossary: Désactiver l'extraction automatique du glossaire
+  save automatically extracted glossary: Enregistrer le glossaire extrait automatiquement
+  Auto: Auto
+  serif: serif
+  sans-serif: sans-serif
+  script: script
+  Primary font family for translated text: Police principale du texte traduit
+  Glossary File: Fichier glossaire
+  '### PDF Options': '### PDF Options'
+  Skip clean (maybe improve compatibility): Ignorer le nettoyage (peut améliorer la
+    compatibilité)
+  Disable rich text translation (maybe improve compatibility): Désactiver la traduction
+    de texte enrichi (peut améliorer la compatibilité)
+  Enhance compatibility (auto-enables skip_clean and disable_rich_text): Améliorer
+    la compatibilité (active automatiquement ignorer_nettoyage et désactiver_texte_enrichi)
+  Force split short lines into different paragraphs: Forcer la séparation des lignes
+    courtes en différents paragraphes
+  Split threshold factor for short lines: Facteur de seuil de fractionnement des lignes
+    courtes
+  Translate table text (experimental): Traduire le texte du tableau (expérimental)
+  Skip scanned detection: Ignorer la détection de scan
+  OCR workaround (experimental, will auto enable Skip scanned detection in backend): Solution
+    de contournement OCR (expérimental, active automatiquement l'ignorance de la détection
+    de scan)
+  Auto enable OCR workaround (enable automatic OCR workaround for heavily scanned documents): Activer
+    automatiquement la solution de contournement OCR (pour les documents fortement
+    scannés)
+  Maximum pages per part (for auto-split translation, 0 means no limit): Pages maximales
+    par partie (pour la traduction auto-séparée, 0 signifie illimité)
+  Font pattern to identify formula text (regex, not recommended to change): Motif
+    de police pour identifier le texte de formule (regex, non recommandé de modifier)
+  e.g., CMMI|CMR: e.g., CMMI|CMR
+  Character pattern to identify formula text (regex, not recommended to change): Motif
+    de caractères pour identifier le texte de formule (regex, non recommandé de modifier)
+  e.g., [∫∬∭∮∯∰∇∆]: e.g., [∫∬∭∮∯∰∇∆]
+  Ignore cache: Ignorer le cache
+  Advanced Options: Options avancées
+  '## Translated': '## Translated'
+  Download Translation (Mono): Télécharger la traduction (mono)
+  Download Translation (Dual): Télécharger la traduction (bilingue)
+  Download automatically extracted glossary: Télécharger le glossaire extrait automatiquement
+  Translate: Traduire
+  Cancel: Annuler
+  '## Preview': '## Preview'
+  Document Preview: Aperçu du document
+de:
+  Language: Sprache
+  '## File': '## File'
+  File: Datei
+  Link: Link
+  Type: Typ
+  '## Translation Options': '## Translation Options'
+  Free translation service provided by [SiliconFlow](https://siliconflow.cn): Kostenloser
+    Übersetzungsdienst von [SiliconFlow](https://siliconflow.cn)
+  Service: Dienst
+  OpenAI model to use: OpenAI model to use
+  Base URL for OpenAI API: Base URL for OpenAI API
+  API key for OpenAI service: API key for OpenAI service
+  Temperature for OpenAI service: Temperature for OpenAI service
+  Reasoning effort for OpenAI service (minimal/low/medium/high): Reasoning effort
+    for OpenAI service (minimal/low/medium/high)
+  Send temprature to OpenAI service: Send temprature to OpenAI service
+  Send reasoning effort to OpenAI service: Send reasoning effort to OpenAI service
+  DeepL auth key: DeepL auth key
+  DeepSeek model to use: DeepSeek model to use
+  API key for DeepSeek service: API key for DeepSeek service
+  Ollama model to use: Ollama model to use
+  Ollama host: Ollama host
+  The max number of token to predict.: The max number of token to predict.
+  Xinference model to use: Xinference model to use
+  Xinference host: Xinference host
+  AzureOpenAI model to use: AzureOpenAI model to use
+  Base URL for AzureOpenAI API: Base URL for AzureOpenAI API
+  API key for AzureOpenAI service: API key for AzureOpenAI service
+  API version for AzureOpenAI service: API version for AzureOpenAI service
+  ModelScope model to use: ModelScope model to use
+  API key for ModelScope service: API key for ModelScope service
+  Zhipu model to use: Zhipu model to use
+  API key for Zhipu service: API key for Zhipu service
+  Base URL for SiliconFlow API: Base URL for SiliconFlow API
+  SiliconFlow model to use: SiliconFlow model to use
+  API key for SiliconFlow service: API key for SiliconFlow service
+  Enable thinking for SiliconFlow service: Enable thinking for SiliconFlow service
+  Send enable thinking param to SiliconFlow service: Send enable thinking param to
+    SiliconFlow service
+  Tencent Mechine Translation secret ID: Tencent Mechine Translation secret ID
+  Tencent Mechine Translation secret Key: Tencent Mechine Translation secret Key
+  Gemini model to use: Gemini model to use
+  API key for Gemini service: API key for Gemini service
+  Azure endpoint: Azure endpoint
+  Azure API Key: Azure API Key
+  AnythingLLM url: AnythingLLM url
+  AnythingLLM API Key: AnythingLLM API Key
+  Dify url: Dify url
+  Dify API Key: Dify API Key
+  Grok model to use: Grok model to use
+  API key for Grok service: API key for Grok service
+  Groq model to use: Groq model to use
+  API key for Groq service: API key for Groq service
+  QwenMt model to use: QwenMt model to use
+  Base URL for QwenMt API: Base URL for QwenMt API
+  API key for QwenMt service: API key for QwenMt service
+  the target domain to guide translation style for QwenMt service: the target domain
+    to guide translation style for QwenMt service
+  OpenAI Compatible model to use: OpenAI Compatible model to use
+  Base URL for OpenAI Compatible service: Base URL for OpenAI Compatible service
+  API key for OpenAI Compatible service: API key for OpenAI Compatible service
+  Temperature for OpenAI Compatible service: Temperature for OpenAI Compatible service
+  Reasoning effort for OpenAI Compatible service (minimal/low/medium/high): Reasoning
+    effort for OpenAI Compatible service (minimal/low/medium/high)
+  Send temperature to OpenAI Compatible service: Send temperature to OpenAI Compatible
+    service
+  Send reasoning effort to OpenAI Compatible service: Send reasoning effort to OpenAI
+    Compatible service
+  Translate from: Ausgangssprache
+  Translate to: Zielsprache
+  Pages: Seiten
+  Page range (e.g., 1,3,5-10,-5): Seitenbereich (z. B.:1,3,5-10,-5)
+  e.g., 1,3,5-10: z. B.:1,3,5-10
+  Effective only when a page range is specified.: Gilt nur, wenn ein Seitenbereich
+    angegeben ist.
+  Only include translated pages in the output PDF.: Nur übersetzte Seiten in die Ausgabedatei
+    einbeziehen.
+  '## PDF Output Options': '## PDF Output Options'
+  Disable monolingual output: Einsprachige Ausgabe deaktivieren
+  Disable bilingual output: Zweisprachige Ausgabe deaktivieren
+  Put translated pages first in dual mode: Übersetzte Seiten im Zweisprachmodus zuerst
+    platzieren
+  Use alternating pages for dual PDF: Abwechselnde Seiten für zweisprachiges PDF verwenden
+  Watermarked: Watermarked
+  No Watermark: No Watermark
+  Watermark mode: Wasserzeichen-Modus
+  Custom prompt for translation: Benutzerdefinierte Übersetzungsaufforderung
+  Custom prompt for the translator: Benutzerdefinierte Aufforderung für Übersetzer
+  RPS (Requests Per Second): RPS (Anfragen pro Sekunde)
+  Custom System Prompt: Benutzerdefinierte Systemaufforderung
+  e.g. /no_think You are a professional, authentic machine translation engine.: e.g.
+    /no_think You are a professional, authentic machine translation engine.
+  Minimum text length to translate: Minimale Textlänge für die Übersetzung
+  RPC service for document layout analysis (optional): RPC-Dienst für Dokumentlayoutanalyse
+    (optional)
+  http://host:port: http://host:port
+  Pool maximum workers (if not set or set to 0, will use RPS as the number of workers): Maximale
+    Anzahl an Arbeitsprozessen (wenn nicht gesetzt oder 0, wird RPS verwendet)
+  Disable auto extract glossary: Automatische Glossarauszug deaktivieren
+  save automatically extracted glossary: Automatisch extrahierten Glossar speichern
+  Auto: Auto
+  serif: serif
+  sans-serif: sans-serif
+  script: script
+  Primary font family for translated text: Primäre Schriftfamilie für übersetzten
+    Text
+  Glossary File: Glossardatei
+  '### PDF Options': '### PDF Options'
+  Skip clean (maybe improve compatibility): Säuberung überspringen (evtl. bessere
+    Kompatibilität)
+  Disable rich text translation (maybe improve compatibility): Übersetzung von Rich-Text
+    deaktivieren (evtl. bessere Kompatibilität)
+  Enhance compatibility (auto-enables skip_clean and disable_rich_text): Kompatibilität
+    verbessern (aktiviert automatisch Überspringen/Sperren)
+  Force split short lines into different paragraphs: Kurze Zeilen in verschiedene
+    Absätze aufteilen
+  Split threshold factor for short lines: Schwellenfaktor für kurze Zeilen
+  Translate table text (experimental): Tabellentext übersetzen (experimentell)
+  Skip scanned detection: Scann-Erkennung überspringen
+  OCR workaround (experimental, will auto enable Skip scanned detection in backend): OCR-Workaround
+    (experimentell, überspringt automatisch Scann-Erkennung)
+  Auto enable OCR workaround (enable automatic OCR workaround for heavily scanned documents): OCR-Workaround
+    automatisch aktivieren (für stark gescannte Dokumente)
+  Maximum pages per part (for auto-split translation, 0 means no limit): Maximale
+    Seiten pro Teil (bei Auto-Split, 0 bedeutet unbegrenzt)
+  Font pattern to identify formula text (regex, not recommended to change): Schriftmuster
+    zur Identifikation von Formeltext (Regex, Änderung nicht empfohlen)
+  e.g., CMMI|CMR: e.g., CMMI|CMR
+  Character pattern to identify formula text (regex, not recommended to change): Zeichensatzmuster
+    zur Identifikation von Formeltext (Regex, Änderung nicht empfohlen)
+  e.g., [∫∬∭∮∯∰∇∆]: e.g., [∫∬∭∮∯∰∇∆]
+  Ignore cache: Cache ignorieren
+  Advanced Options: Erweiterte Optionen
+  '## Translated': '## Translated'
+  Download Translation (Mono): Übersetzung herunterladen (mono)
+  Download Translation (Dual): Übersetzung herunterladen (zweisprachig)
+  Download automatically extracted glossary: Automatisch extrahiertes Glossar herunterladen
+  Translate: Übersetzen
+  Cancel: Abbrechen
+  '## Preview': '## Preview'
+  Document Preview: Dokumentvorschau
+es:
+  Language: Idioma
+  '## File': '## File'
+  File: Archivo
+  Link: Enlace
+  Type: Tipo
+  '## Translation Options': '## Translation Options'
+  Free translation service provided by [SiliconFlow](https://siliconflow.cn): Servicio
+    de traducción gratuito proporcionado por [SiliconFlow](https://siliconflow.cn)
+  Service: Servicio
+  OpenAI model to use: OpenAI model to use
+  Base URL for OpenAI API: Base URL for OpenAI API
+  API key for OpenAI service: API key for OpenAI service
+  Temperature for OpenAI service: Temperature for OpenAI service
+  Reasoning effort for OpenAI service (minimal/low/medium/high): Reasoning effort
+    for OpenAI service (minimal/low/medium/high)
+  Send temprature to OpenAI service: Send temprature to OpenAI service
+  Send reasoning effort to OpenAI service: Send reasoning effort to OpenAI service
+  DeepL auth key: DeepL auth key
+  DeepSeek model to use: DeepSeek model to use
+  API key for DeepSeek service: API key for DeepSeek service
+  Ollama model to use: Ollama model to use
+  Ollama host: Ollama host
+  The max number of token to predict.: The max number of token to predict.
+  Xinference model to use: Xinference model to use
+  Xinference host: Xinference host
+  AzureOpenAI model to use: AzureOpenAI model to use
+  Base URL for AzureOpenAI API: Base URL for AzureOpenAI API
+  API key for AzureOpenAI service: API key for AzureOpenAI service
+  API version for AzureOpenAI service: API version for AzureOpenAI service
+  ModelScope model to use: ModelScope model to use
+  API key for ModelScope service: API key for ModelScope service
+  Zhipu model to use: Zhipu model to use
+  API key for Zhipu service: API key for Zhipu service
+  Base URL for SiliconFlow API: Base URL for SiliconFlow API
+  SiliconFlow model to use: SiliconFlow model to use
+  API key for SiliconFlow service: API key for SiliconFlow service
+  Enable thinking for SiliconFlow service: Enable thinking for SiliconFlow service
+  Send enable thinking param to SiliconFlow service: Send enable thinking param to
+    SiliconFlow service
+  Tencent Mechine Translation secret ID: Tencent Mechine Translation secret ID
+  Tencent Mechine Translation secret Key: Tencent Mechine Translation secret Key
+  Gemini model to use: Gemini model to use
+  API key for Gemini service: API key for Gemini service
+  Azure endpoint: Azure endpoint
+  Azure API Key: Azure API Key
+  AnythingLLM url: AnythingLLM url
+  AnythingLLM API Key: AnythingLLM API Key
+  Dify url: Dify url
+  Dify API Key: Dify API Key
+  Grok model to use: Grok model to use
+  API key for Grok service: API key for Grok service
+  Groq model to use: Groq model to use
+  API key for Groq service: API key for Groq service
+  QwenMt model to use: QwenMt model to use
+  Base URL for QwenMt API: Base URL for QwenMt API
+  API key for QwenMt service: API key for QwenMt service
+  the target domain to guide translation style for QwenMt service: the target domain
+    to guide translation style for QwenMt service
+  OpenAI Compatible model to use: OpenAI Compatible model to use
+  Base URL for OpenAI Compatible service: Base URL for OpenAI Compatible service
+  API key for OpenAI Compatible service: API key for OpenAI Compatible service
+  Temperature for OpenAI Compatible service: Temperature for OpenAI Compatible service
+  Reasoning effort for OpenAI Compatible service (minimal/low/medium/high): Reasoning
+    effort for OpenAI Compatible service (minimal/low/medium/high)
+  Send temperature to OpenAI Compatible service: Send temperature to OpenAI Compatible
+    service
+  Send reasoning effort to OpenAI Compatible service: Send reasoning effort to OpenAI
+    Compatible service
+  Translate from: Traducir de
+  Translate to: Traducir a
+  Pages: Páginas
+  Page range (e.g., 1,3,5-10,-5): Rango de páginas (p. ej., 1,3,5-10,-5)
+  e.g., 1,3,5-10: p. ej., 1,3,5-10
+  Effective only when a page range is specified.: Válido solo cuando se especifica
+    un rango de páginas.
+  Only include translated pages in the output PDF.: Incluir solo las páginas traducidas
+    en el PDF de salida.
+  '## PDF Output Options': '## PDF Output Options'
+  Disable monolingual output: Desactivar salida monolingüe
+  Disable bilingual output: Desactivar salida bilingüe
+  Put translated pages first in dual mode: Colocar primero las páginas traducidas
+    en modo dual
+  Use alternating pages for dual PDF: Usar páginas alternas para PDF dual
+  Watermarked: Watermarked
+  No Watermark: No Watermark
+  Watermark mode: Modo marca de agua
+  Custom prompt for translation: Prompt personalizado para traducción
+  Custom prompt for the translator: Prompt personalizado del traductor
+  RPS (Requests Per Second): RPS (solicitudes por segundo)
+  Custom System Prompt: Prompt de sistema personalizado
+  e.g. /no_think You are a professional, authentic machine translation engine.: e.g.
+    /no_think You are a professional, authentic machine translation engine.
+  Minimum text length to translate: Longitud mínima de texto a traducir
+  RPC service for document layout analysis (optional): Servicio RPC para análisis
+    de diseño de documentos (opcional)
+  http://host:port: http://host:port
+  Pool maximum workers (if not set or set to 0, will use RPS as the number of workers): Máximo
+    de trabajadores (si no se establece o es 0, usa RPS)
+  Disable auto extract glossary: Desactivar la extracción automática del glosario
+  save automatically extracted glossary: Guardar glosario extraído automáticamente
+  Auto: Auto
+  serif: serif
+  sans-serif: sans-serif
+  script: script
+  Primary font family for translated text: Familia tipográfica principal para el texto
+    traducido
+  Glossary File: Archivo de glosario
+  '### PDF Options': '### PDF Options'
+  Skip clean (maybe improve compatibility): Omitir limpieza (puede mejorar la compatibilidad)
+  Disable rich text translation (maybe improve compatibility): Desactivar traducción
+    de texto enriquecido (puede mejorar la compatibilidad)
+  Enhance compatibility (auto-enables skip_clean and disable_rich_text): Mejorar compatibilidad
+    (activa automáticamente omitir_limpieza y desactivar_texto_enriquecido)
+  Force split short lines into different paragraphs: Forzar dividir líneas cortas
+    en distintos párrafos
+  Split threshold factor for short lines: Factor de umbral de división para líneas
+    cortas
+  Translate table text (experimental): Traducir texto de tablas (experimental)
+  Skip scanned detection: Omitir detección de escaneo
+  OCR workaround (experimental, will auto enable Skip scanned detection in backend): Solución
+    alternativa OCR (experimental; omite automáticamente la detección de escaneo)
+  Auto enable OCR workaround (enable automatic OCR workaround for heavily scanned documents): Activar
+    automáticamente la solución OCR (para documentos muy escaneados)
+  Maximum pages per part (for auto-split translation, 0 means no limit): Páginas máximas
+    por parte (para traducción con división automática; 0 = sin límite)
+  Font pattern to identify formula text (regex, not recommended to change): Patrón
+    de fuente para identificar texto de fórmulas (regex, no recomendado cambiar)
+  e.g., CMMI|CMR: e.g., CMMI|CMR
+  Character pattern to identify formula text (regex, not recommended to change): Patrón
+    de caracteres para identificar texto de fórmulas (regex, no recomendado cambiar)
+  e.g., [∫∬∭∮∯∰∇∆]: e.g., [∫∬∭∮∯∰∇∆]
+  Ignore cache: Ignorar caché
+  Advanced Options: Opciones avanzadas
+  '## Translated': '## Translated'
+  Download Translation (Mono): Descargar traducción (mono)
+  Download Translation (Dual): Descargar traducción (dual)
+  Download automatically extracted glossary: Descargar glosario extraído automáticamente
+  Translate: Traducir
+  Cancel: Cancelar
+  '## Preview': '## Preview'
+  Document Preview: Vista previa del documento
+ru:
+  Language: Язык
+  '## File': '## File'
+  File: Файл
+  Link: Ссылка
+  Type: Тип
+  '## Translation Options': '## Translation Options'
+  Free translation service provided by [SiliconFlow](https://siliconflow.cn): Бесплатный
+    перевод предоставлен [SiliconFlow](https://siliconflow.cn)
+  Service: Сервис
+  OpenAI model to use: OpenAI model to use
+  Base URL for OpenAI API: Base URL for OpenAI API
+  API key for OpenAI service: API key for OpenAI service
+  Temperature for OpenAI service: Temperature for OpenAI service
+  Reasoning effort for OpenAI service (minimal/low/medium/high): Reasoning effort
+    for OpenAI service (minimal/low/medium/high)
+  Send temprature to OpenAI service: Send temprature to OpenAI service
+  Send reasoning effort to OpenAI service: Send reasoning effort to OpenAI service
+  DeepL auth key: DeepL auth key
+  DeepSeek model to use: DeepSeek model to use
+  API key for DeepSeek service: API key for DeepSeek service
+  Ollama model to use: Ollama model to use
+  Ollama host: Ollama host
+  The max number of token to predict.: The max number of token to predict.
+  Xinference model to use: Xinference model to use
+  Xinference host: Xinference host
+  AzureOpenAI model to use: AzureOpenAI model to use
+  Base URL for AzureOpenAI API: Base URL for AzureOpenAI API
+  API key for AzureOpenAI service: API key for AzureOpenAI service
+  API version for AzureOpenAI service: API version for AzureOpenAI service
+  ModelScope model to use: ModelScope model to use
+  API key for ModelScope service: API key for ModelScope service
+  Zhipu model to use: Zhipu model to use
+  API key for Zhipu service: API key for Zhipu service
+  Base URL for SiliconFlow API: Base URL for SiliconFlow API
+  SiliconFlow model to use: SiliconFlow model to use
+  API key for SiliconFlow service: API key for SiliconFlow service
+  Enable thinking for SiliconFlow service: Enable thinking for SiliconFlow service
+  Send enable thinking param to SiliconFlow service: Send enable thinking param to
+    SiliconFlow service
+  Tencent Mechine Translation secret ID: Tencent Mechine Translation secret ID
+  Tencent Mechine Translation secret Key: Tencent Mechine Translation secret Key
+  Gemini model to use: Gemini model to use
+  API key for Gemini service: API key for Gemini service
+  Azure endpoint: Azure endpoint
+  Azure API Key: Azure API Key
+  AnythingLLM url: AnythingLLM url
+  AnythingLLM API Key: AnythingLLM API Key
+  Dify url: Dify url
+  Dify API Key: Dify API Key
+  Grok model to use: Grok model to use
+  API key for Grok service: API key for Grok service
+  Groq model to use: Groq model to use
+  API key for Groq service: API key for Groq service
+  QwenMt model to use: QwenMt model to use
+  Base URL for QwenMt API: Base URL for QwenMt API
+  API key for QwenMt service: API key for QwenMt service
+  the target domain to guide translation style for QwenMt service: the target domain
+    to guide translation style for QwenMt service
+  OpenAI Compatible model to use: OpenAI Compatible model to use
+  Base URL for OpenAI Compatible service: Base URL for OpenAI Compatible service
+  API key for OpenAI Compatible service: API key for OpenAI Compatible service
+  Temperature for OpenAI Compatible service: Temperature for OpenAI Compatible service
+  Reasoning effort for OpenAI Compatible service (minimal/low/medium/high): Reasoning
+    effort for OpenAI Compatible service (minimal/low/medium/high)
+  Send temperature to OpenAI Compatible service: Send temperature to OpenAI Compatible
+    service
+  Send reasoning effort to OpenAI Compatible service: Send reasoning effort to OpenAI
+    Compatible service
+  Translate from: С языка
+  Translate to: На язык
+  Pages: Страницы
+  Page range (e.g., 1,3,5-10,-5): Диапазон страниц (например:1,3,5-10,-5)
+  e.g., 1,3,5-10: например:1,3,5-10
+  Effective only when a page range is specified.: Действует только при указании диапазона
+    страниц.
+  Only include translated pages in the output PDF.: В выходной PDF включать только
+    переведенные страницы.
+  '## PDF Output Options': '## PDF Output Options'
+  Disable monolingual output: Отключить моноязычный вывод
+  Disable bilingual output: Отключить двуязычный вывод
+  Put translated pages first in dual mode: В двуязычном режиме переведенные страницы
+    ставить первыми
+  Use alternating pages for dual PDF: Для двуязычного PDF использовать чередующиеся
+    страницы
+  Watermarked: Watermarked
+  No Watermark: No Watermark
+  Watermark mode: Режим водяного знака
+  Custom prompt for translation: Пользовательская подсказка для перевода
+  Custom prompt for the translator: Пользовательская подсказка переводчику
+  RPS (Requests Per Second): RPS (запросов в секунду)
+  Custom System Prompt: Пользовательская системная подсказка
+  e.g. /no_think You are a professional, authentic machine translation engine.: e.g.
+    /no_think You are a professional, authentic machine translation engine.
+  Minimum text length to translate: Минимальная длина текста для перевода
+  RPC service for document layout analysis (optional): RPC-сервис анализа макета документа
+    (необязательно)
+  http://host:port: http://host:port
+  Pool maximum workers (if not set or set to 0, will use RPS as the number of workers): Максимум
+    рабочих потоков (если не задано или 0, используется значение RPS)
+  Disable auto extract glossary: Отключить автоизвлечение глоссария
+  save automatically extracted glossary: Сохранять автоматически извлеченный глоссарий
+  Auto: Auto
+  serif: serif
+  sans-serif: sans-serif
+  script: script
+  Primary font family for translated text: Основное семейство шрифтов перевода
+  Glossary File: Файл глоссария
+  '### PDF Options': '### PDF Options'
+  Skip clean (maybe improve compatibility): Пропустить очистку (возможна лучшая совместимость)
+  Disable rich text translation (maybe improve compatibility): Отключить перевод форматированного
+    текста (возможна лучшая совместимость)
+  Enhance compatibility (auto-enables skip_clean and disable_rich_text): Повысить
+    совместимость (автоматически включает параметры)
+  Force split short lines into different paragraphs: Форсировать разделение коротких
+    строк на абзацы
+  Split threshold factor for short lines: Пороговый коэффициент разделения коротких
+    строк
+  Translate table text (experimental): Переводить текст таблиц (экспериментально)
+  Skip scanned detection: Пропускать обнаружение сканов
+  OCR workaround (experimental, will auto enable Skip scanned detection in backend): Обходной
+    путь OCR (эксп., автоматически пропускает обнаружение сканов)
+  Auto enable OCR workaround (enable automatic OCR workaround for heavily scanned documents): Автоматически
+    включать обходной путь OCR (для сильно сканированных документов)
+  Maximum pages per part (for auto-split translation, 0 means no limit): Максимум
+    страниц на часть (для автоделения, 0 — без ограничений)
+  Font pattern to identify formula text (regex, not recommended to change): Шаблон
+    шрифта для распознавания формульного текста (regex, менять не рекомендуется)
+  e.g., CMMI|CMR: e.g., CMMI|CMR
+  Character pattern to identify formula text (regex, not recommended to change): Шаблон
+    символов для распознавания формульного текста (regex, менять не рекомендуется)
+  e.g., [∫∬∭∮∯∰∇∆]: e.g., [∫∬∭∮∯∰∇∆]
+  Ignore cache: Игнорировать кэш
+  Advanced Options: Дополнительные параметры
+  '## Translated': '## Translated'
+  Download Translation (Mono): Скачать перевод (моно)
+  Download Translation (Dual): Скачать перевод (двуязычный)
+  Download automatically extracted glossary: Скачать автоматически извлеченный глоссарий
+  Translate: Перевести
+  Cancel: Отмена
+  '## Preview': '## Preview'
+  Document Preview: Предпросмотр документа
+it:
+  Language: Lingua
+  '## File': '## File'
+  File: File
+  Link: Link
+  Type: Tipo
+  '## Translation Options': '## Translation Options'
+  Free translation service provided by [SiliconFlow](https://siliconflow.cn): Servizio
+    di traduzione gratuito fornito da [SiliconFlow](https://siliconflow.cn)
+  Service: Servizio
+  OpenAI model to use: OpenAI model to use
+  Base URL for OpenAI API: Base URL for OpenAI API
+  API key for OpenAI service: API key for OpenAI service
+  Temperature for OpenAI service: Temperature for OpenAI service
+  Reasoning effort for OpenAI service (minimal/low/medium/high): Reasoning effort
+    for OpenAI service (minimal/low/medium/high)
+  Send temprature to OpenAI service: Send temprature to OpenAI service
+  Send reasoning effort to OpenAI service: Send reasoning effort to OpenAI service
+  DeepL auth key: DeepL auth key
+  DeepSeek model to use: DeepSeek model to use
+  API key for DeepSeek service: API key for DeepSeek service
+  Ollama model to use: Ollama model to use
+  Ollama host: Ollama host
+  The max number of token to predict.: The max number of token to predict.
+  Xinference model to use: Xinference model to use
+  Xinference host: Xinference host
+  AzureOpenAI model to use: AzureOpenAI model to use
+  Base URL for AzureOpenAI API: Base URL for AzureOpenAI API
+  API key for AzureOpenAI service: API key for AzureOpenAI service
+  API version for AzureOpenAI service: API version for AzureOpenAI service
+  ModelScope model to use: ModelScope model to use
+  API key for ModelScope service: API key for ModelScope service
+  Zhipu model to use: Zhipu model to use
+  API key for Zhipu service: API key for Zhipu service
+  Base URL for SiliconFlow API: Base URL for SiliconFlow API
+  SiliconFlow model to use: SiliconFlow model to use
+  API key for SiliconFlow service: API key for SiliconFlow service
+  Enable thinking for SiliconFlow service: Enable thinking for SiliconFlow service
+  Send enable thinking param to SiliconFlow service: Send enable thinking param to
+    SiliconFlow service
+  Tencent Mechine Translation secret ID: Tencent Mechine Translation secret ID
+  Tencent Mechine Translation secret Key: Tencent Mechine Translation secret Key
+  Gemini model to use: Gemini model to use
+  API key for Gemini service: API key for Gemini service
+  Azure endpoint: Azure endpoint
+  Azure API Key: Azure API Key
+  AnythingLLM url: AnythingLLM url
+  AnythingLLM API Key: AnythingLLM API Key
+  Dify url: Dify url
+  Dify API Key: Dify API Key
+  Grok model to use: Grok model to use
+  API key for Grok service: API key for Grok service
+  Groq model to use: Groq model to use
+  API key for Groq service: API key for Groq service
+  QwenMt model to use: QwenMt model to use
+  Base URL for QwenMt API: Base URL for QwenMt API
+  API key for QwenMt service: API key for QwenMt service
+  the target domain to guide translation style for QwenMt service: the target domain
+    to guide translation style for QwenMt service
+  OpenAI Compatible model to use: OpenAI Compatible model to use
+  Base URL for OpenAI Compatible service: Base URL for OpenAI Compatible service
+  API key for OpenAI Compatible service: API key for OpenAI Compatible service
+  Temperature for OpenAI Compatible service: Temperature for OpenAI Compatible service
+  Reasoning effort for OpenAI Compatible service (minimal/low/medium/high): Reasoning
+    effort for OpenAI Compatible service (minimal/low/medium/high)
+  Send temperature to OpenAI Compatible service: Send temperature to OpenAI Compatible
+    service
+  Send reasoning effort to OpenAI Compatible service: Send reasoning effort to OpenAI
+    Compatible service
+  Translate from: Tradurre da
+  Translate to: Tradurre in
+  Pages: Pagine
+  Page range (e.g., 1,3,5-10,-5): Intervallo di pagine (es.:1,3,5-10,-5)
+  e.g., 1,3,5-10: es.:1,3,5-10
+  Effective only when a page range is specified.: Valido solo quando è specificato
+    un intervallo di pagine.
+  Only include translated pages in the output PDF.: Includi solo le pagine tradotte
+    nel PDF di output.
+  '## PDF Output Options': '## PDF Output Options'
+  Disable monolingual output: Disattiva output monolingue
+  Disable bilingual output: Disattiva output bilingue
+  Put translated pages first in dual mode: Metti prima le pagine tradotte in modalità
+    bilingue
+  Use alternating pages for dual PDF: Usa pagine alternate per PDF bilingue
+  Watermarked: Watermarked
+  No Watermark: No Watermark
+  Watermark mode: Modalità filigrana
+  Custom prompt for translation: Prompt personalizzato per la traduzione
+  Custom prompt for the translator: Prompt personalizzato del traduttore
+  RPS (Requests Per Second): RPS (richieste al secondo)
+  Custom System Prompt: Prompt di sistema personalizzato
+  e.g. /no_think You are a professional, authentic machine translation engine.: e.g.
+    /no_think You are a professional, authentic machine translation engine.
+  Minimum text length to translate: Lunghezza minima del testo da tradurre
+  RPC service for document layout analysis (optional): Servizio RPC per l'analisi
+    del layout del documento (opzionale)
+  http://host:port: http://host:port
+  Pool maximum workers (if not set or set to 0, will use RPS as the number of workers): Lavoratori
+    massimi del pool (se non impostato o 0, usa RPS)
+  Disable auto extract glossary: Disattiva estrazione automatica del glossario
+  save automatically extracted glossary: Salva glossario estratto automaticamente
+  Auto: Auto
+  serif: serif
+  sans-serif: sans-serif
+  script: script
+  Primary font family for translated text: Famiglia di font principale per il testo
+    tradotto
+  Glossary File: File glossario
+  '### PDF Options': '### PDF Options'
+  Skip clean (maybe improve compatibility): Salta pulizia (potrebbe migliorare la
+    compatibilità)
+  Disable rich text translation (maybe improve compatibility): Disattiva traduzione
+    rich text (potrebbe migliorare la compatibilità)
+  Enhance compatibility (auto-enables skip_clean and disable_rich_text): Migliora
+    compatibilità (attiva automaticamente le opzioni)
+  Force split short lines into different paragraphs: Forza la divisione delle righe
+    corte in paragrafi diversi
+  Split threshold factor for short lines: Fattore soglia per le righe corte
+  Translate table text (experimental): Traduci testo nelle tabelle (sperimentale)
+  Skip scanned detection: Salta rilevamento scansioni
+  OCR workaround (experimental, will auto enable Skip scanned detection in backend): Soluzione
+    alternativa OCR (sperimentale; salta automaticamente rilevamento)
+  Auto enable OCR workaround (enable automatic OCR workaround for heavily scanned documents): Attiva
+    automaticamente la soluzione OCR (per documenti molto scansionati)
+  Maximum pages per part (for auto-split translation, 0 means no limit): Pagine massime
+    per parte (per traduzione con divisione automatica; 0 = nessun limite)
+  Font pattern to identify formula text (regex, not recommended to change): Modello
+    di font per identificare testo di formule (regex, sconsigliato modificare)
+  e.g., CMMI|CMR: e.g., CMMI|CMR
+  Character pattern to identify formula text (regex, not recommended to change): Modello
+    di caratteri per identificare testo di formule (regex, sconsigliato modificare)
+  e.g., [∫∬∭∮∯∰∇∆]: e.g., [∫∬∭∮∯∰∇∆]
+  Ignore cache: Ignora cache
+  Advanced Options: Opzioni avanzate
+  '## Translated': '## Translated'
+  Download Translation (Mono): Scarica traduzione (mono)
+  Download Translation (Dual): Scarica traduzione (bilingue)
+  Download automatically extracted glossary: Scarica glossario estratto automaticamente
+  Translate: Traduci
+  Cancel: Annulla
+  '## Preview': '## Preview'
+  Document Preview: Anteprima documento
+pt:
+  Language: Idioma
+  '## File': '## File'
+  File: Arquivo
+  Link: Link
+  Type: Tipo
+  '## Translation Options': '## Translation Options'
+  Free translation service provided by [SiliconFlow](https://siliconflow.cn): Serviço
+    de tradução gratuito fornecido por [SiliconFlow](https://siliconflow.cn)
+  Service: Serviço
+  OpenAI model to use: OpenAI model to use
+  Base URL for OpenAI API: Base URL for OpenAI API
+  API key for OpenAI service: API key for OpenAI service
+  Temperature for OpenAI service: Temperature for OpenAI service
+  Reasoning effort for OpenAI service (minimal/low/medium/high): Reasoning effort
+    for OpenAI service (minimal/low/medium/high)
+  Send temprature to OpenAI service: Send temprature to OpenAI service
+  Send reasoning effort to OpenAI service: Send reasoning effort to OpenAI service
+  DeepL auth key: DeepL auth key
+  DeepSeek model to use: DeepSeek model to use
+  API key for DeepSeek service: API key for DeepSeek service
+  Ollama model to use: Ollama model to use
+  Ollama host: Ollama host
+  The max number of token to predict.: The max number of token to predict.
+  Xinference model to use: Xinference model to use
+  Xinference host: Xinference host
+  AzureOpenAI model to use: AzureOpenAI model to use
+  Base URL for AzureOpenAI API: Base URL for AzureOpenAI API
+  API key for AzureOpenAI service: API key for AzureOpenAI service
+  API version for AzureOpenAI service: API version for AzureOpenAI service
+  ModelScope model to use: ModelScope model to use
+  API key for ModelScope service: API key for ModelScope service
+  Zhipu model to use: Zhipu model to use
+  API key for Zhipu service: API key for Zhipu service
+  Base URL for SiliconFlow API: Base URL for SiliconFlow API
+  SiliconFlow model to use: SiliconFlow model to use
+  API key for SiliconFlow service: API key for SiliconFlow service
+  Enable thinking for SiliconFlow service: Enable thinking for SiliconFlow service
+  Send enable thinking param to SiliconFlow service: Send enable thinking param to
+    SiliconFlow service
+  Tencent Mechine Translation secret ID: Tencent Mechine Translation secret ID
+  Tencent Mechine Translation secret Key: Tencent Mechine Translation secret Key
+  Gemini model to use: Gemini model to use
+  API key for Gemini service: API key for Gemini service
+  Azure endpoint: Azure endpoint
+  Azure API Key: Azure API Key
+  AnythingLLM url: AnythingLLM url
+  AnythingLLM API Key: AnythingLLM API Key
+  Dify url: Dify url
+  Dify API Key: Dify API Key
+  Grok model to use: Grok model to use
+  API key for Grok service: API key for Grok service
+  Groq model to use: Groq model to use
+  API key for Groq service: API key for Groq service
+  QwenMt model to use: QwenMt model to use
+  Base URL for QwenMt API: Base URL for QwenMt API
+  API key for QwenMt service: API key for QwenMt service
+  the target domain to guide translation style for QwenMt service: the target domain
+    to guide translation style for QwenMt service
+  OpenAI Compatible model to use: OpenAI Compatible model to use
+  Base URL for OpenAI Compatible service: Base URL for OpenAI Compatible service
+  API key for OpenAI Compatible service: API key for OpenAI Compatible service
+  Temperature for OpenAI Compatible service: Temperature for OpenAI Compatible service
+  Reasoning effort for OpenAI Compatible service (minimal/low/medium/high): Reasoning
+    effort for OpenAI Compatible service (minimal/low/medium/high)
+  Send temperature to OpenAI Compatible service: Send temperature to OpenAI Compatible
+    service
+  Send reasoning effort to OpenAI Compatible service: Send reasoning effort to OpenAI
+    Compatible service
+  Translate from: Traduzir de
+  Translate to: Traduzir para
+  Pages: Páginas
+  Page range (e.g., 1,3,5-10,-5): Intervalo de páginas (ex.:1,3,5-10,-5)
+  e.g., 1,3,5-10: ex.:1,3,5-10
+  Effective only when a page range is specified.: Válido apenas quando um intervalo
+    de páginas é especificado.
+  Only include translated pages in the output PDF.: Incluir apenas as páginas traduzidas
+    no PDF de saída.
+  '## PDF Output Options': '## PDF Output Options'
+  Disable monolingual output: Desativar saída monolíngue
+  Disable bilingual output: Desativar saída bilíngue
+  Put translated pages first in dual mode: Colocar as páginas traduzidas primeiro
+    no modo bilíngue
+  Use alternating pages for dual PDF: Usar páginas alternadas para PDF bilíngue
+  Watermarked: Watermarked
+  No Watermark: No Watermark
+  Watermark mode: Modo marca d'água
+  Custom prompt for translation: Prompt personalizado para tradução
+  Custom prompt for the translator: Prompt personalizado do tradutor
+  RPS (Requests Per Second): RPS (solicitações por segundo)
+  Custom System Prompt: Prompt de sistema personalizado
+  e.g. /no_think You are a professional, authentic machine translation engine.: e.g.
+    /no_think You are a professional, authentic machine translation engine.
+  Minimum text length to translate: Comprimento mínimo do texto para traduzir
+  RPC service for document layout analysis (optional): Serviço RPC para análise de
+    layout do documento (opcional)
+  http://host:port: http://host:port
+  Pool maximum workers (if not set or set to 0, will use RPS as the number of workers): Máximo
+    de trabalhadores (se não definido ou 0, usa RPS)
+  Disable auto extract glossary: Desativar extração automática de glossário
+  save automatically extracted glossary: Salvar glossário extraído automaticamente
+  Auto: Auto
+  serif: serif
+  sans-serif: sans-serif
+  script: script
+  Primary font family for translated text: Família de fontes principal para o texto
+    traduzido
+  Glossary File: Arquivo de glossário
+  '### PDF Options': '### PDF Options'
+  Skip clean (maybe improve compatibility): Pular limpeza (pode melhorar a compatibilidade)
+  Disable rich text translation (maybe improve compatibility): Desativar tradução
+    de rich text (pode melhorar a compatibilidade)
+  Enhance compatibility (auto-enables skip_clean and disable_rich_text): Melhorar
+    compatibilidade (ativa automaticamente as opções)
+  Force split short lines into different paragraphs: Forçar a divisão de linhas curtas
+    em parágrafos diferentes
+  Split threshold factor for short lines: Fator de limite para linhas curtas
+  Translate table text (experimental): Traduzir texto da tabela (experimental)
+  Skip scanned detection: Pular detecção de digitalização
+  OCR workaround (experimental, will auto enable Skip scanned detection in backend): Solução
+    alternativa de OCR (experimental; pula automaticamente a detecção)
+  Auto enable OCR workaround (enable automatic OCR workaround for heavily scanned documents): Ativar
+    automaticamente a solução de OCR (para documentos muito digitalizados)
+  Maximum pages per part (for auto-split translation, 0 means no limit): Máximo de
+    páginas por parte (para tradução com divisão automática; 0 = sem limite)
+  Font pattern to identify formula text (regex, not recommended to change): Padrão
+    de fonte para identificar texto de fórmulas (regex, não recomendado alterar)
+  e.g., CMMI|CMR: e.g., CMMI|CMR
+  Character pattern to identify formula text (regex, not recommended to change): Padrão
+    de caracteres para identificar texto de fórmulas (regex, não recomendado alterar)
+  e.g., [∫∬∭∮∯∰∇∆]: e.g., [∫∬∭∮∯∰∇∆]
+  Ignore cache: Ignorar cache
+  Advanced Options: Opções avançadas
+  '## Translated': '## Translated'
+  Download Translation (Mono): Baixar tradução (mono)
+  Download Translation (Dual): Baixar tradução (bilíngue)
+  Download automatically extracted glossary: Baixar glossário extraído automaticamente
+  Translate: Traduzir
+  Cancel: Cancelar
+  '## Preview': '## Preview'
+  Document Preview: Pré-visualização do documento

@@ -44,6 +44,7 @@ dependencies = [
     "uvicorn>=0.34.2",
     "legacy-cgi; python_version >= '3.13'",
     "chardet>=5.2.0",
+    "gradio-i18n>=0.3.1",
 ]
 
 [dependency-groups]

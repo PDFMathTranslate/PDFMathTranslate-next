@@ -4,17 +4,23 @@
 
 <h3 id="toc">Indice</h3>
 
-- [#### Argomenti della riga di comando](#####-argomenti-della-riga-di-comando)
-- [#### Traduzione parziale](#####-traduzione-parziale)
-- [#### Specificare le lingue di origine e di destinazione](#####-specificare-le-lingue-di-origine-e-di-destinazione)
-- [#### Tradurre con eccezioni](#####-tradurre-con-eccezioni)
-- [#### Prompt personalizzato](#####-prompt-personalizzato)
-- [#### Configurazione personalizzata](#####-configurazione-personalizzata)
-- [#### Salta pulizia](#####-salta-pulizia)
-- [#### Cache delle traduzioni](#####-cache-delle-traduzioni)
-- [#### Distribuzione come servizi pubblici](#####-distribuzione-come-servizi-pubblici)
-- [#### Autenticazione e pagina di benvenuto](#####-autenticazione-e-pagina-di-benvenuto)
-- [#### Supporto del glossario](#####-supporto-del-glossario)
+- [Argomenti della riga di comando](#argomenti-della-riga-di-comando)
+  - [Argomenti](#argomenti)
+  - [Argomenti GUI](#argomenti-gui)
+- [#### Guida alla configurazione del limite di velocità](#guida-alla-configurazione-del-limite-di-velocità)
+  - [#### Limitazione della velocità RPM (Richieste al minuto)](#limitazione-della-velocità-rpm-richieste-al-minuto)
+  - [#### Limitazione delle connessioni simultanee](#limitazione-delle-connessioni-simultanee)
+  - [#### Best Practices](#best-practices)
+- [Traduzione parziale](#traduzione-parziale)
+- [Specificare le lingue di origine e di destinazione](#specificare-le-lingue-di-origine-e-di-destinazione)
+- [Traduzione con eccezioni](#traduzione-con-eccezioni)
+- [Prompt personalizzato](#prompt-personalizzato)
+- [Configurazione personalizzata](#configurazione-personalizzata)
+- [Salta pulizia](#salta-pulizia)
+- [Cache di traduzione](#cache-di-traduzione)
+- [Distribuzione come servizi pubblici](#distribuzione-come-servizi-pubblici)
+- [Autenticazione e pagina di benvenuto](#autenticazione-e-pagina-di-benvenuto)
+- [Supporto glossario](#supporto-glossario)
 
 ---
 
@@ -87,6 +93,64 @@ Nella tabella seguente, elenchiamo tutte le opzioni avanzate per riferimento:
 | `--disable-gui-sensitive-input` | Disabilita l'input sensibile della GUI            | `pdf2zh --gui --disable-gui-sensitive-input`    |
 | `--disable-config-auto-save`    | Disabilita il salvataggio automatico della configurazione | `pdf2zh --gui --disable-config-auto-save`       |
 | `--server-port`                 | Porta WebUI                             | `pdf2zh --gui --server-port 7860`               |
+
+[⬆️ Torna all'inizio](#toc)
+
+---
+
+#### Guida alla configurazione del limite di velocità
+
+Quando si utilizzano i servizi di traduzione, una corretta configurazione del limite di velocità è fondamentale per evitare errori API e ottimizzare le prestazioni. Questa guida spiega come configurare i parametri `--qps` e `--pool-max-worker` in base alle diverse limitazioni del servizio upstream.
+
+> [!TIP]
+>
+> Si consiglia che il pool_size non superi 1000. Se il pool_size calcolato con il seguente metodo supera 1000, si prega di utilizzare 1000.
+
+##### Limitazione della velocità RPM (Richieste al minuto)
+
+Quando il servizio upstream ha limitazioni RPM, utilizza il seguente calcolo:
+
+**Formula di calcolo:**
+- `qps = floor(rpm / 60)`
+- `pool_size = qps * 10`
+
+> [!NOTE]
+> Il fattore 10 è un coefficiente empirico che generalmente funziona bene per la maggior parte degli scenari.
+
+**Esempio:**
+Se il tuo servizio di traduzione ha un limite di 600 RPM:
+- `qps = floor(600 / 60) = 10`
+- `pool_size = 10 * 10 = 100`
+
+```bash
+pdf2zh example.pdf --qps 10 --pool-max-worker 100
+```
+
+##### Limitazione delle connessioni simultanee
+
+Quando il servizio upstream ha limitazioni di connessione simultanea (come il servizio ufficiale GLM), utilizza questo approccio:
+
+**Formula di calcolo:**
+- `pool_size = max(floor(0.9 * official_concurrent_limit), official_concurrent_limit - 20)`
+- `qps = pool_size`
+
+**Esempio:**
+Se il tuo servizio di traduzione consente 50 connessioni simultanee:
+- `pool_size = max(floor(0.9 * 50), 50 - 20) = max(45, 30) = 45`
+- `qps = 45`
+
+```bash
+pdf2zh example.pdf --qps 45 --pool-max-worker 45
+```
+
+##### Best Practices
+
+> [!TIP]
+> - Inizia sempre con valori conservativi e aumenta gradualmente se necessario
+> - Monitora i tempi di risposta del tuo servizio e i tassi di errore
+> - Servizi diversi possono richiedere strategie di ottimizzazione diverse
+> - Considera il tuo caso d'uso specifico e la dimensione del documento quando imposti questi parametri
+
 
 [⬆️ Torna all'inizio](#toc)
 

@@ -5,16 +5,22 @@
 <h3 id="toc">Índice</h3>
 
 - [Argumentos da Linha de Comando](#argumentos-da-linha-de-comando)
+  - [Argumentos](#argumentos)
+  - [Argumentos da GUI](#argumentos-da-gui)
+- [#### Guia de Configuração de Limitação de Taxa](#guia-de-configuração-de-limitação-de-taxa)
+  - [##### Limitação de Taxa RPM (Solicitações Por Minuto)](#limitação-de-taxa-rpm-solicitações-por-minuto)
+  - [##### Limitação de Conexões Simultâneas](#limitação-de-conexões-simultâneas)
+  - [##### Melhores práticas](#melhores-práticas)
 - [Tradução parcial](#tradução-parcial)
 - [Especificar idiomas de origem e destino](#especificar-idiomas-de-origem-e-destino)
-- [Traduzir com exceções](#traduzir-com-exceções)
+- [Tradução com exceções](#tradução-com-exceções)
 - [Prompt personalizado](#prompt-personalizado)
 - [Configuração personalizada](#configuração-personalizada)
 - [Pular limpeza](#pular-limpeza)
 - [Cache de tradução](#cache-de-tradução)
-- [Implantação como serviços públicos](#implantação-como-serviços-públicos)
+- [Implantaçãocomo serviço público](#implantação-como-serviço-público)
 - [Autenticação e página de boas-vindas](#autenticação-e-página-de-boas-vindas)
-- [Suporte ao Glossário](#suporte-ao-glossário)
+- [Suporte a glossário](#suporte-a-glossário)
 
 ---
 
@@ -87,6 +93,64 @@ Na tabela a seguir, listamos todas as opções avançadas para referência:
 | `--disable-gui-sensitive-input` | Desativar entrada sensível da GUI            | `pdf2zh --gui --disable-gui-sensitive-input`    |
 | `--disable-config-auto-save`    | Desativar o salvamento automático de configuração | `pdf2zh --gui --disable-config-auto-save`       |
 | `--server-port`                 | Porta do WebUI                             | `pdf2zh --gui --server-port 7860`               |
+
+[⬆️ Voltar ao topo](#toc)
+
+---
+
+#### Guia de Configuração de Limitação de Taxa
+
+Ao utilizar serviços de tradução, a configuração adequada da limitação de taxa é crucial para evitar erros de API e otimizar o desempenho. Este guia explica como configurar os parâmetros `--qps` e `--pool-max-worker` com base nas diferentes limitações do serviço upstream.
+
+> [!TIP]
+>
+> É recomendado que o `pool_size` não exceda 1000. Se o `pool_size` calculado pelo método a seguir exceder 1000, por favor, use 1000.
+
+##### Limitação de Taxa RPM (Solicitações Por Minuto)
+
+Quando o serviço upstream tem limitações de RPM, use o seguinte cálculo:
+
+**Fórmula de Cálculo:**
+- `qps = floor(rpm / 60)`
+- `pool_size = qps * 10`
+
+> [!NOTE]
+> O fator de 10 é um coeficiente empírico que geralmente funciona bem para a maioria dos cenários.
+
+**Exemplo:**
+Se o seu serviço de tradução tiver um limite de 600 RPM:
+- `qps = floor(600 / 60) = 10`
+- `pool_size = 10 * 10 = 100`
+
+```bash
+pdf2zh example.pdf --qps 10 --pool-max-worker 100
+```
+
+##### Limitação de Conexões Simultâneas
+
+Quando o serviço upstream tem limitações de conexões simultâneas (como o serviço oficial GLM), use esta abordagem:
+
+**Fórmula de Cálculo:**
+- `pool_size = max(floor(0.9 * official_concurrent_limit), official_concurrent_limit - 20)`
+- `qps = pool_size`
+
+**Exemplo:**
+Se o seu serviço de tradução permitir 50 conexões simultâneas:
+- `pool_size = max(floor(0.9 * 50), 50 - 20) = max(45, 30) = 45`
+- `qps = 45`
+
+```bash
+pdf2zh example.pdf --qps 45 --pool-max-worker 45
+```
+
+##### Melhores práticas
+
+> [!TIP]
+> - Sempre comece com valores conservadores e aumente gradualmente, se necessário
+> - Monitore os tempos de resposta e as taxas de erro do seu serviço
+> - Diferentes serviços podem exigir diferentes estratégias de otimização
+> - Considere seu caso de uso específico e o tamanho do documento ao definir esses parâmetros
+
 
 [⬆️ Voltar ao topo](#toc)
 

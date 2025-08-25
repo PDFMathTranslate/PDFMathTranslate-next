@@ -5,14 +5,20 @@
 <h3 id="목차">목차</h3>
 
 - [명령줄 인수](#명령줄 - 인수)
+  - [인수](#인수)
+  - [GUI 인수](#gui-인수)
+- [속도 제한 구성 가이드](#속도 - 제한 - 구성 - 가이드)
+  - [RPM (Requests Per Minute) 요청 속도 제한](#rpm-requests-per-minute-요청 - 속도 - 제한)
+  - [동시 연결 제한](#동시 - 연결 - 제한)
+  - [모범 사례](#모범 - 사례)
 - [부분 번역](#부분 - 번역)
 - [소스 및 대상 언어 지정](#소스 - 및 - 대상 - 언어 - 지정)
-- [예외와 함께 번역하기](#예외와 - 함께 - 번역하기)
+- [예외와 함께 번역](#예외와 - 함께 - 번역)
 - [사용자 정의 프롬프트](#사용자 - 정의 - 프롬프트)
-- [사용자 지정 구성](#사용자 - 지정 - 구성)
-- [클린 건너뛰기](#클린 - 건너뛰기)
+- [사용자 정의 구성](#사용자 - 정의 - 구성)
+- [정리 건너뛰기](#정리 - 건너뛰기)
 - [번역 캐시](#번역 - 캐시)
-- [공개 서비스로 배포하기](#공개 - 서비스로 - 배포하기)
+- [공개 서비스로 배포](#공개 - 서비스로 - 배포)
 - [인증 및 환영 페이지](#인증 - 및 - 환영 - 페이지)
 - [용어집 지원](#용어집 - 지원)
 
@@ -87,6 +93,107 @@
 | `--disable-gui-sensitive-input` | GUI 민감한 입력 비활성화            | `pdf2zh --gui --disable-gui-sensitive-input`    |
 | `--disable-config-auto-save`    | 자동 구성 저장 비활성화 | `pdf2zh --gui --disable-config-auto-save`       |
 | `--server-port`                 | WebUI 포트                             | `pdf2zh --gui --server-port 7860`               |
+
+[⬆️ 맨 위로](#toc)
+
+---
+
+#### 속도 제한 구성 가이드
+
+번역 서비스를 사용할 때 적절한 속도 제한 구성은 API 오류를 방지하고 성능을 최적화하는 데 중요합니다. 이 가이드는 다양한 업스트림 서비스 제한에 따라 `--qps` 및 `--pool-max-worker` 매개변수를 구성하는 방법을 설명합니다.
+
+> [!TIP]
+>
+> `pool_size` 는 1000 을 초과하지 않는 것이 권장됩니다. 아래 방법으로 계산된 `pool_size` 가 1000 을 초과하는 경우 1000 을 사용하세요.
+
+##### RPM (Requests Per Minute) 요청 속도 제한
+
+업스트림 서비스에 RPM 제한이 있을 때 다음 계산을 사용하세요:
+
+**계산 공식:**
+- `qps = floor(rpm / 60)`
+- `pool_size = qps * 10`
+
+> [!NOTE]
+> 10 이라는 계수는 대부분의 시나리오에서 잘 작동하는 경험적 계수입니다.
+
+**예시:**
+번역 서비스의 제한이 600 RPM 인 경우:
+- `qps = floor(600 / 60) = 10`
+- `pool_size = 10 * 10 = 100`
+
+```bash
+pdf2zh example.pdf --qps 10 --pool-max-worker 100
+```
+
+##### 동시 연결 제한
+
+`Concurrent Connection Limit = (Number of Workers) × (Number of GPUs per Worker) × (Number of Concurrent Requests per GPU)`
+
+**Example:**
+
+- If you have 2 workers (`--workers 2`), each with 1 GPU (`CUDA_VISIBLE_DEVICES=0`), and each GPU handles 2 concurrent requests (`--concurrency 2`), then:
+  
+  ```bash
+  Concurrent Connection Limit = 2 × 1 × 2 = 4
+  ```
+
+- If you have 1 worker (`--workers 1`) with 2 GPUs (`CUDA_VISIBLE_DEVICES=0,1`), and each GPU handles 3 concurrent requests (`--concurrency 3`), then:
+  
+  ```bash
+  Concurrent Connection Limit = 1 × 2 × 3 = 6
+  ```
+
+**Note:** This calculation assumes each GPU processes requests independently. If your model implementation shares resources across GPUs (e.g., tensor parallelism), adjust accordingly.
+
+---
+
+### TRANSLATED TEXT
+
+업스트림 서비스에 동시 연결 제한이 있는 경우 (예: GLM 공식 서비스), 이 방법을 사용하세요:
+
+**계산 공식:**
+`동시 연결 제한 = (작업자 수) × (작업자당 GPU 수) × (GPU 당 동시 요청 수)`
+
+**예시:**
+
+- 작업자가 2 개 (`--workers 2`), 각 작업자에 GPU 가 1 개 (`CUDA_VISIBLE_DEVICES=0`), GPU 당 동시 요청이 2 개 (`--concurrency 2`) 인 경우:
+  
+  ```bash
+  동시 연결 제한 = 2 × 1 × 2 = 4
+  ```
+
+- 작업자가 1 개 (`--workers 1`), GPU 가 2 개 (`CUDA_VISIBLE_DEVICES=0,1`), GPU 당 동시 요청이 3 개 (`--concurrency 3`) 인 경우:
+  
+  ```bash
+  동시 연결 제한 = 1 × 2 × 3 = 6
+  ```
+
+**참고:** 이 계산은 각 GPU 가 요청을 독립적으로 처리한다고 가정합니다. 모델 구현이 GPU 간 리소스를 공유하는 경우 (예: 텐서 병렬화), 이에 따라 조정하세요.
+- `pool_size = max(floor(0.9 * official_concurrent_limit), official_concurrent_limit - 20)`
+- `qps = pool_size`
+
+---
+
+### 번역 결과
+
+**예시:**
+번역 서비스가 50 개의 동시 연결을 허용하는 경우:
+- `pool_size = max(floor(0.9 * 50), 50 - 20) = max(45, 30) = 45`
+- `qps = 45`
+
+```bash
+pdf2zh example.pdf --qps 45 --pool-max-worker 45
+```
+
+##### 모범 사례
+
+> [!TIP]
+> - 항상 보수적인 값으로 시작하고 필요에 따라 점진적으로 증가시키세요
+> - 서비스의 응답 시간과 오류율을 모니터링하세요
+> - 서비스마다 다른 최적화 전략이 필요할 수 있습니다
+> - 이러한 매개변수를 설정할 때 특정 사용 사례와 문서 크기를 고려하세요
+
 
 [⬆️ 맨 위로](#toc)
 

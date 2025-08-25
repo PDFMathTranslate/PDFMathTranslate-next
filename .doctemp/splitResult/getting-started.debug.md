@@ -4,7 +4,7 @@
 <!-- CHUNK ID: chunk_5534569E  CHUNK TYPE: paragraph START_LINE:3 -->
 PDFMathTranslate is a powerful PDF translation tool. You can install and start using this tool in various ways.
 
-<!-- CHUNK ID: h_rule_54291037  CHUNK TYPE: h_rule START_LINE:5 -->
+<!-- CHUNK ID: h_rule_7f33d63d  CHUNK TYPE: h_rule START_LINE:5 -->
 ---
 
 <!-- CHUNK ID: chunk_36D1B1ED  CHUNK TYPE: header START_LINE:7 -->
@@ -15,7 +15,7 @@ PDFMathTranslate is a powerful PDF translation tool. You can install and start u
 2. [**Docker**](./INSTALLATION_docker.md) <small>Recommand for Linux</small>
 3. [**uv** (a Python package manager)](./INSTALLATION_uv.md) <small>Recommand for macOS</small>
 
-<!-- CHUNK ID: h_rule_7f64f32d  CHUNK TYPE: h_rule START_LINE:13 -->
+<!-- CHUNK ID: h_rule_eec0e79f  CHUNK TYPE: h_rule START_LINE:13 -->
 ---
 
 <!-- CHUNK ID: chunk_047D6F23  CHUNK TYPE: header START_LINE:15 -->
