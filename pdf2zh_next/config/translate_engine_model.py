@@ -31,6 +31,22 @@ def _clean_url(value: str | None) -> str | None:
     return cleaned.rstrip("/")
 
 
+def _check_if_positive_float(value: str | None) -> str | None:
+    """Check if a string can be parsed as a positive float"""
+    if value is None:
+        return None
+
+    try:
+        f = float(value)
+    except ValueError as e:
+        raise ValueError("Timeout must be a float") from e
+
+    if f <= 0:
+        raise ValueError("Timeout must be greater than 0")
+
+    return value
+
+
 class TranslateEngineSettingError(Exception):
     """Translate engine setting error"""
 
@@ -89,7 +105,9 @@ class OpenAISettings(BaseModel):
         self.openai_api_key = _clean_string(self.openai_api_key)
         self.openai_base_url = _clean_url(self.openai_base_url)
         self.openai_model = _clean_string(self.openai_model)
-        self.openai_timeout = _clean_string(self.openai_timeout)
+        self.openai_timeout = _check_if_positive_float(
+            _clean_string(self.openai_timeout)
+        )
         self.openai_temperature = _clean_string(self.openai_temperature)
         self.openai_reasoning_effort = _clean_string(self.openai_reasoning_effort)
         if self.openai_send_temprature:
@@ -634,7 +652,9 @@ class OpenAICompatibleSettings(BaseModel):
         self.openai_compatible_api_key = _clean_string(self.openai_compatible_api_key)
         self.openai_compatible_base_url = _clean_url(self.openai_compatible_base_url)
         self.openai_compatible_model = _clean_string(self.openai_compatible_model)
-        self.openai_compatible_timeout = _clean_string(self.openai_compatible_timeout)
+        self.openai_compatible_timeout = _check_if_positive_float(
+            _clean_string(self.openai_compatible_timeout)
+        )
         self.openai_compatible_temperature = _clean_string(
             self.openai_compatible_temperature
         )
@@ -663,6 +683,7 @@ class OpenAICompatibleSettings(BaseModel):
             openai_model=self.openai_compatible_model,
             openai_api_key=self.openai_compatible_api_key,
             openai_base_url=self.openai_compatible_base_url,
+            openai_timeout=self.openai_compatible_timeout,
             openai_temperature=self.openai_compatible_temperature,
             openai_reasoning_effort=self.openai_compatible_reasoning_effort,
             openai_send_temprature=self.openai_compatible_send_temperature,
