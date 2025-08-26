@@ -25,9 +25,11 @@ class OpenAITranslator(BaseTranslator):
         rate_limiter: BaseRateLimiter,
     ):
         super().__init__(settings, rate_limiter)
+        self.timeout = settings.translate_engine_settings.openai_timeout
         self.client = openai.OpenAI(
             base_url=settings.translate_engine_settings.openai_base_url,
             api_key=settings.translate_engine_settings.openai_api_key,
+            timeout=float(self.timeout) if self.timeout else openai.NOT_GIVEN,
             http_client=httpx.Client(
                 limits=httpx.Limits(
                     max_connections=None, max_keepalive_connections=None

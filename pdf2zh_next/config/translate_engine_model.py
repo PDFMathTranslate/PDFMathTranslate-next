@@ -63,6 +63,9 @@ class OpenAISettings(BaseModel):
     openai_api_key: str | None = Field(
         default=None, description="API key for OpenAI service"
     )
+    openai_timeout: str | None = Field(
+        default=None, description="Timeout (seconds) for OpenAI service"
+    )
     openai_temperature: str | None = Field(
         default=None, description="Temperature for OpenAI service"
     )
@@ -86,6 +89,7 @@ class OpenAISettings(BaseModel):
         self.openai_api_key = _clean_string(self.openai_api_key)
         self.openai_base_url = _clean_url(self.openai_base_url)
         self.openai_model = _clean_string(self.openai_model)
+        self.openai_timeout = _clean_string(self.openai_timeout)
         self.openai_temperature = _clean_string(self.openai_temperature)
         self.openai_reasoning_effort = _clean_string(self.openai_reasoning_effort)
         if self.openai_send_temprature:
@@ -603,6 +607,9 @@ class OpenAICompatibleSettings(BaseModel):
     openai_compatible_api_key: str | None = Field(
         default=None, description="API key for OpenAI Compatible service"
     )
+    openai_compatible_timeout: str | None = Field(
+        default=None, description="Timeout (seconds) for OpenAI Compatible service"
+    )
     openai_compatible_temperature: str | None = Field(
         default=None, description="Temperature for OpenAI Compatible service"
     )
@@ -627,6 +634,7 @@ class OpenAICompatibleSettings(BaseModel):
         self.openai_compatible_api_key = _clean_string(self.openai_compatible_api_key)
         self.openai_compatible_base_url = _clean_url(self.openai_compatible_base_url)
         self.openai_compatible_model = _clean_string(self.openai_compatible_model)
+        self.openai_compatible_timeout = _clean_string(self.openai_compatible_timeout)
         self.openai_compatible_temperature = _clean_string(
             self.openai_compatible_temperature
         )
