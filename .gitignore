@@ -1,6 +1,7 @@
 pdf2zh_files
 gui/pdf2zh_files
 gradio_files
+.gradio/
 tmp
 gui/gradio_files
 gui/tmp

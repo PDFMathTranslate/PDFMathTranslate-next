@@ -31,7 +31,7 @@ def _clean_url(value: str | None) -> str | None:
     return cleaned.rstrip("/")
 
 
-def _check_if_positive_float(value: str | None) -> str | None:
+def _check_if_positive_float(value: str | None, field: str = "Value") -> str | None:
     """Check if a string can be parsed as a positive float"""
     if value is None:
         return None
@@ -39,10 +39,10 @@ def _check_if_positive_float(value: str | None) -> str | None:
     try:
         f = float(value)
     except ValueError as e:
-        raise ValueError("Timeout must be a float") from e
+        raise ValueError(f"{field} must be a float") from e
 
     if f <= 0:
-        raise ValueError("Timeout must be greater than 0")
+        raise ValueError(f"{field} must be greater than 0")
 
     return value
 
@@ -106,7 +106,8 @@ class OpenAISettings(BaseModel):
         self.openai_base_url = _clean_url(self.openai_base_url)
         self.openai_model = _clean_string(self.openai_model)
         self.openai_timeout = _check_if_positive_float(
-            _clean_string(self.openai_timeout)
+            _clean_string(self.openai_timeout),
+            field="Timeout",
         )
         self.openai_temperature = _clean_string(self.openai_temperature)
         self.openai_reasoning_effort = _clean_string(self.openai_reasoning_effort)
@@ -653,7 +654,7 @@ class OpenAICompatibleSettings(BaseModel):
         self.openai_compatible_base_url = _clean_url(self.openai_compatible_base_url)
         self.openai_compatible_model = _clean_string(self.openai_compatible_model)
         self.openai_compatible_timeout = _check_if_positive_float(
-            _clean_string(self.openai_compatible_timeout)
+            _clean_string(self.openai_compatible_timeout), field="Timeout"
         )
         self.openai_compatible_temperature = _clean_string(
             self.openai_compatible_temperature
