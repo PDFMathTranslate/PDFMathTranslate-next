@@ -72,6 +72,7 @@ class GUISettings(BaseModel):
         default=False, description="Disable automatic saving of configuration"
     )
     server_port: int = Field(default=7860, description="WebUI port")
+    ui_lang: str | None = Field(default="en", description="UI language")
 
 
 class TranslationSettings(BaseModel):

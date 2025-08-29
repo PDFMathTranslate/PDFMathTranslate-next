@@ -1,891 +1,1181 @@
 de:
-  '## File': "## Datei"
-  '## PDF Output Options': '## PDF-Ausgabeoptionen'
-  '## Preview': '## Vorschau'
-  '## Translated': "## Übersetzt"
-  '## Translation Options': "## Übersetzungsoptionen"
-  '### PDF Options': '### PDF-Optionen'
-  '#### BabelDOC Advanced Options': '#### BabelDOC Erweiterte Optionen'
-  Advanced Options: "Erweiterte Optionen"
-  Auto enable OCR workaround (enable automatic OCR workaround for heavily scanned documents): "Automatische OCR-Umgehung aktivieren (automatische OCR-Umgehung für stark gescannte Dokumente aktivieren)"
-  Cancel: "Abbrechen"
-  Character pattern to identify formula text (regex, not recommended to change): "Zeichenmuster zur Identifizierung von Formeltext (Regex, Änderung nicht empfohlen)"
-  Concurrent Requests: "Gleichzeitige Anfragen"
-  Concurrent Threads: "Gleichzeitige Threads"
-  Custom: "Benutzerdefiniert"
-  Custom System Prompt: "Benutzerdefinierte Systemaufforderung"
-  Custom prompt for the translator: "Benutzerdefinierte Eingabeaufforderung für den Übersetzer"
-  Custom prompt for translation: "Benutzerdefinierte Eingabeaufforderung für Übersetzung"
-  Disable auto extract glossary: "Automatische Glossarextraktion deaktivieren"
-  Disable bilingual output: "Bilinguale Ausgabe deaktivieren"
-  Disable monolingual output: "Monolinguale Ausgabe deaktivieren"
-  Disable rich text translation (maybe improve compatibility): "Deaktiviere Rich-Text-Übersetzung (könnte die Kompatibilität verbessern)"
-  Document Preview: "Dokumentvorschau"
-  Download Translation (Dual): "Übersetzung herunterladen (Dual)"
-  Download Translation (Mono): "Übersetzung herunterladen (Mono)"
-  Download automatically extracted glossary: "Automatisch extrahiertes Glossar herunterladen"
-  Effective only when a page range is specified.: "Nur wirksam, wenn ein Seitenbereich angegeben ist."
-  Enhance compatibility (auto-enables skip_clean and disable_rich_text): "Kompatibilität verbessern (aktiviert automatisch skip_clean und disable_rich_text)"
-  Figure/table protection threshold: "Schwellenwert für Abbildungs-/Tabellenschutz"
-  File: "Datei"
-  Font pattern to identify formula text (regex, not recommended to change): "Schriftmuster zur Erkennung von Formeltext (Regex, Änderung nicht empfohlen)"
-  Force split short lines into different paragraphs: "Kurze Zeilen zwangsweise in verschiedene Absätze aufteilen"
-  Free translation service provided by [SiliconFlow](https://siliconflow.cn): "Kostenloser Übersetzungsservice bereitgestellt von [SiliconFlow](https://siliconflow.cn)"
-  Glossary File: "Glossardatei"
-  Handle alternating line numbers and text paragraphs in documents with line numbers: "Umgang mit wechselnden Zeilennummern und Textabsätzen in Dokumenten mit Zeilennummern"
-  If not set or set to 0, QPS will be used as the number of workers: "Wenn nicht gesetzt oder auf 0 gesetzt, wird QPS als Anzahl der Worker verwendet."
-  Ignore cache: "Cache ignorieren"
-  IoU threshold for identifying non-formula lines: "IoU-Schwellenwert für die Identifizierung von Nicht-Formel-Zeilen"
-  Language: "Sprache"
-  Link: "Link"
-  Maximum number of requests processed simultaneously: "Maximale Anzahl gleichzeitig verarbeiteter Anfragen"
-  Maximum pages per part (for auto-split translation, 0 means no limit): "Maximale Seiten pro Teil (für automatische Teilung der Übersetzung, 0 bedeutet keine Begrenzung)"
-  Merge alternating line numbers: "Wechselnde Zeilennummern zusammenführen"
-  Minimum text length to translate: "Mindesttextlänge für die Übersetzung"
-  'Most API providers provide this parameter, such as OpenAI GPT-4: 500 RPM': "Die meisten API-Anbieter bieten diesen Parameter an, z. B. OpenAI GPT-4: 500 RPM"
-  No Watermark: "Ohne Wasserzeichen"
-  Non-formula line IoU threshold: "IoU-Schwellenwert für Nicht-Formelzeilen"
-  Number of requests sent per second: "Anzahl der Anfragen pro Sekunde"
-  OCR workaround (experimental, will auto enable Skip scanned detection in backend): "OCR-Workaround (experimentell, aktiviert automatisch ''Gescannte Dokumente überspringen'' im Backend)"
-  Only include translated pages in the output PDF.: "Nur übersetzte Seiten in die PDF-Ausgabe aufnehmen."
-  Page range (e.g., 1,3,5-10,-5): "Seitenbereich (z.B. 1,3,5-10,-5)"
-  Pages: "Seiten"
-  Pool Max Workers: "Maximale Anzahl der Pool-Worker"
-  Primary font family for translated text: Hauptschriftart für übersetzten Text
-  Protection threshold for figures and tables (lines within figures/tables will not be processed): "Schwellenwert für den Schutz von Abbildungen und Tabellen (Zeilen innerhalb von Abbildungen/Tabellen werden nicht verarbeitet)"
-  Put translated pages first in dual mode: "Übersetzte Seiten im Dual-Modus zuerst anzeigen"
-  QPS (Queries Per Second): "QPS (Abfragen pro Sekunde)"
-  RPC service for document layout analysis (optional): "RPC-Dienst für Dokumentenlayoutanalyse (optional)"
-  RPM (Requests Per Minute): "RPM (Anfragen pro Minute)"
-  Rate Limit Mode: "Ratenbegrenzungsmodus"
-  Remove non-formula lines: "Nicht-Formelzeilen entfernen"
-  Remove non-formula lines within paragraph areas: "Nicht-Formelzeilen innerhalb von Absatzbereichen entfernen"
-  ? Select the rate limit mode that best suits your API provider, system will automatically convert the rate limiting values of RPM or Concurrent Requests to QPS and Pool Max Workers when you click the Translate button
-  : "Wählen Sie den Ratenbegrenzungsmodus, der am besten zu Ihrem API-Anbieter passt. Das System konvertiert automatisch die Ratenbegrenzungswerte von RPM oder gleichzeitigen Anfragen in QPS und Pool Max Workers, wenn Sie auf die Schaltfläche ''Übersetzen'' klicken."
-  Service: "Dienst"
-  Skip clean (maybe improve compatibility): "Bereinigung überspringen (könnte die Kompatibilität verbessern)"
-  Skip formula offset calculation: "Formel-Offset-Berechnung überspringen"
-  Skip formula offset calculation during processing: "Formel-Offset-Berechnung während der Verarbeitung überspringen"
-  Skip scanned detection: "Übersprungene Erkennung überspringen"
-  Split threshold factor for short lines: "Trennschwellenfaktor für kurze Zeilen"
-  Translate: "Übersetzen"
-  Translate from: "Übersetzen aus"
-  Translate table text (experimental): "Tabellentext übersetzen (experimentell)"
-  Translate to: "Übersetzen in"
-  Type: "Typ"
-  Use alternating pages for dual PDF: "Verwenden Sie abwechselnde Seiten für doppelseitiges PDF"
-  Watermark mode: "Wasserzeichenmodus"
-  Watermarked: "Wassergekennzeichnet"
-  e.g. /no_think You are a professional, authentic machine translation engine.: e.g. /no_think You are a professional, authentic machine translation engine.
-  e.g., 1,3,5-10: "z.B. 1,3,5-10"
-  save automatically extracted glossary: "automatisch extrahiertes Glossar speichern"
-en:
-  '## File': '## File'
-  '## PDF Output Options': '## PDF Output Options'
-  '## Preview': '## Preview'
-  '## Translated': '## Translated'
-  '## Translation Options': '## Translation Options'
-  '### PDF Options': '### PDF Options'
-  '#### BabelDOC Advanced Options': '#### BabelDOC Advanced Options'
-  Advanced Options: Advanced Options
-  Auto enable OCR workaround (enable automatic OCR workaround for heavily scanned documents): Auto enable OCR workaround (enable automatic OCR workaround for heavily scanned documents)
-  Cancel: Cancel
-  Character pattern to identify formula text (regex, not recommended to change): Character pattern to identify formula text (regex, not recommended to change)
-  Concurrent Requests: Concurrent Requests
-  Concurrent Threads: Concurrent Threads
-  Custom: Custom
-  Custom System Prompt: Custom System Prompt
-  Custom prompt for the translator: Custom prompt for the translator
-  Custom prompt for translation: Custom prompt for translation
-  Disable auto extract glossary: Disable auto extract glossary
-  Disable bilingual output: Disable bilingual output
-  Disable monolingual output: Disable monolingual output
-  Disable rich text translation (maybe improve compatibility): Disable rich text translation (maybe improve compatibility)
-  Document Preview: Document Preview
-  Download Translation (Dual): Download Translation (Dual)
-  Download Translation (Mono): Download Translation (Mono)
-  Download automatically extracted glossary: Download automatically extracted glossary
-  Effective only when a page range is specified.: Effective only when a page range is specified.
-  Enhance compatibility (auto-enables skip_clean and disable_rich_text): Enhance compatibility (auto-enables skip_clean and disable_rich_text)
-  Figure/table protection threshold: Figure/table protection threshold
-  File: File
-  Font pattern to identify formula text (regex, not recommended to change): Font pattern to identify formula text (regex, not recommended to change)
-  Force split short lines into different paragraphs: Force split short lines into different paragraphs
-  Free translation service provided by [SiliconFlow](https://siliconflow.cn): Free translation service provided by [SiliconFlow](https://siliconflow.cn)
-  Glossary File: Glossary File
-  Handle alternating line numbers and text paragraphs in documents with line numbers: Handle alternating line numbers and text paragraphs in documents with line numbers
-  If not set or set to 0, QPS will be used as the number of workers: If not set or set to 0, QPS will be used as the number of workers
-  Ignore cache: Ignore cache
-  IoU threshold for identifying non-formula lines: IoU threshold for identifying non-formula lines
-  Language: Language
+  UI Language: UI Language
+  '## File': '## Datei'
+  File: Datei
   Link: Link
-  Maximum number of requests processed simultaneously: Maximum number of requests processed simultaneously
-  Maximum pages per part (for auto-split translation, 0 means no limit): Maximum pages per part (for auto-split translation, 0 means no limit)
-  Merge alternating line numbers: Merge alternating line numbers
-  Minimum text length to translate: Minimum text length to translate
-  'Most API providers provide this parameter, such as OpenAI GPT-4: 500 RPM': 'Most API providers provide this parameter, such as OpenAI GPT-4: 500 RPM'
-  No Watermark: No Watermark
-  Non-formula line IoU threshold: Non-formula line IoU threshold
-  Number of requests sent per second: Number of requests sent per second
-  OCR workaround (experimental, will auto enable Skip scanned detection in backend): OCR workaround (experimental, will auto enable Skip scanned detection in backend)
-  Only include translated pages in the output PDF.: Only include translated pages in the output PDF.
-  Page range (e.g., 1,3,5-10,-5): Page range (e.g., 1,3,5-10,-5)
-  Pages: Pages
-  Pool Max Workers: Pool Max Workers
-  Primary font family for translated text: Primary font family for translated text
-  Protection threshold for figures and tables (lines within figures/tables will not be processed): Protection threshold for figures and tables (lines within figures/tables will not be processed)
-  Put translated pages first in dual mode: Put translated pages first in dual mode
-  QPS (Queries Per Second): QPS (Queries Per Second)
-  RPC service for document layout analysis (optional): RPC service for document layout analysis (optional)
-  RPM (Requests Per Minute): RPM (Requests Per Minute)
-  Rate Limit Mode: Rate Limit Mode
-  Remove non-formula lines: Remove non-formula lines
-  Remove non-formula lines within paragraph areas: Remove non-formula lines within paragraph areas
-  ? Select the rate limit mode that best suits your API provider, system will automatically convert the rate limiting values of RPM or Concurrent Requests to QPS and Pool Max Workers when you click the Translate button
-  : Select the rate limit mode that best suits your API provider, system will automatically convert the rate limiting values of RPM or Concurrent Requests to QPS and Pool Max Workers when you click the Translate button
-  Service: Service
-  Skip clean (maybe improve compatibility): Skip clean (maybe improve compatibility)
-  Skip formula offset calculation: Skip formula offset calculation
-  Skip formula offset calculation during processing: Skip formula offset calculation during processing
-  Skip scanned detection: Skip scanned detection
-  Split threshold factor for short lines: Split threshold factor for short lines
-  Translate: Translate
-  Translate from: Translate from
-  Translate table text (experimental): Translate table text (experimental)
-  Translate to: Translate to
-  Type: Type
-  Use alternating pages for dual PDF: Use alternating pages for dual PDF
-  Watermark mode: Watermark mode
-  Watermarked: Watermarked
-  e.g. /no_think You are a professional, authentic machine translation engine.: e.g. /no_think You are a professional, authentic machine translation engine.
-  e.g., 1,3,5-10: e.g., 1,3,5-10
-  save automatically extracted glossary: save automatically extracted glossary
-es:
-  '## File': "## Archivo"
-  '## PDF Output Options': "## Opciones de Salida en PDF"
-  '## Preview': '## Vista previa'
-  '## Translated': '## Traducido'
-  '## Translation Options': '## Opciones de traducción'
-  '### PDF Options': '### Opciones de PDF'
-  '#### BabelDOC Advanced Options': "#### Opciones avanzadas de BabelDOC"
-  Advanced Options: "Opciones Avanzadas"
-  Auto enable OCR workaround (enable automatic OCR workaround for heavily scanned documents): "Activar automáticamente solución alternativa de OCR (habilitar solución automática de OCR para documentos muy escaneados)"
-  Cancel: "Cancelar"
-  Character pattern to identify formula text (regex, not recommended to change): "Patrón de caracteres para identificar texto de fórmulas (regex, no se recomienda cambiar)"
-  Concurrent Requests: "Solicitudes simultáneas"
-  Concurrent Threads: "Hilos Concurrentes"
-  Custom: "Personalizado"
-  Custom System Prompt: "Prompt del sistema personalizado"
-  Custom prompt for the translator: "Prompt personalizado para el traductor"
-  Custom prompt for translation: "Prompt personalizado para traducción"
-  Disable auto extract glossary: "Desactivar extracción automática de glosario"
-  Disable bilingual output: "Desactivar salida bilingüe"
-  Disable monolingual output: "Desactivar salida monolingüe"
-  Disable rich text translation (maybe improve compatibility): "Desactivar la traducción de texto enriquecido (puede mejorar la compatibilidad)"
-  Document Preview: "Vista previa del documento"
-  Download Translation (Dual): "Descargar traducción (Dual)"
-  Download Translation (Mono): "Descargar traducción (Mono)"
-  Download automatically extracted glossary: "Descargar glosario extraído automáticamente"
-  Effective only when a page range is specified.: "Efectivo solo cuando se especifica un rango de páginas."
-  Enhance compatibility (auto-enables skip_clean and disable_rich_text): "Mejorar compatibilidad (habilita automáticamente skip_clean y disable_rich_text)"
-  Figure/table protection threshold: "Umbral de protección de figuras/tablas"
-  File: "Archivo"
-  Font pattern to identify formula text (regex, not recommended to change): "Patrón de fuente para identificar texto de fórmulas (expresión regular, no se recomienda cambiar)"
-  Force split short lines into different paragraphs: "Forzar la división de líneas cortas en párrafos diferentes"
-  Free translation service provided by [SiliconFlow](https://siliconflow.cn): "Servicio de traducción gratuito proporcionado por [SiliconFlow](https://siliconflow.cn)"
-  Glossary File: "Archivo de Glosario"
-  Handle alternating line numbers and text paragraphs in documents with line numbers: "Manejar números de línea alternos y párrafos de texto en documentos con numeración de líneas"
-  If not set or set to 0, QPS will be used as the number of workers: "Si no se establece o se establece en 0, se utilizará QPS como el número de trabajadores."
-  Ignore cache: "Ignorar caché"
-  IoU threshold for identifying non-formula lines: "Umbral de IoU para identificar líneas que no son fórmulas"
-  Language: "Idioma"
-  Link: "Enlace"
-  Maximum number of requests processed simultaneously: "Número máximo de solicitudes procesadas simultáneamente"
-  Maximum pages per part (for auto-split translation, 0 means no limit): "Máximo de páginas por parte (para traducción automática dividida, 0 significa sin límite)"
-  Merge alternating line numbers: "Combinar números de línea alternos"
-  Minimum text length to translate: "Longitud mínima del texto para traducir"
-  'Most API providers provide this parameter, such as OpenAI GPT-4: 500 RPM': "La mayoría de los proveedores de API proporcionan este parámetro, como OpenAI GPT-4: 500 RPM"
-  No Watermark: "Sin marca de agua"
-  Non-formula line IoU threshold: "Umbral IoU para líneas no formuladas"
-  Number of requests sent per second: "Número de solicitudes enviadas por segundo"
-  OCR workaround (experimental, will auto enable Skip scanned detection in backend): "Solución alternativa de OCR (experimental, activará automáticamente Omitir detección de escaneados en el backend)"
-  Only include translated pages in the output PDF.: "Incluir solo las páginas traducidas en el PDF de salida."
-  Page range (e.g., 1,3,5-10,-5): "Rango de páginas (ej., 1,3,5-10,-5)"
-  Pages: "Páginas"
-  Pool Max Workers: "Máximo de trabajadores en grupo"
-  Primary font family for translated text: "Familia de fuente principal para el texto traducido"
-  Protection threshold for figures and tables (lines within figures/tables will not be processed): "Umbral de protección para figuras y tablas (las líneas dentro de figuras/tablas no serán procesadas)"
-  Put translated pages first in dual mode: "Mostrar las páginas traducidas primero en modo dual"
-  QPS (Queries Per Second): "QPS (Consultas Por Segundo)"
-  RPC service for document layout analysis (optional): "Servicio RPC para análisis de diseño de documentos (opcional)"
-  RPM (Requests Per Minute): "RPM (Solicitudes Por Minuto)"
-  Rate Limit Mode: "Modo de límite de tasa"
-  Remove non-formula lines: "Eliminar líneas que no son fórmulas"
-  Remove non-formula lines within paragraph areas: "Eliminar líneas que no son fórmulas dentro de áreas de párrafo"
-  ? Select the rate limit mode that best suits your API provider, system will automatically convert the rate limiting values of RPM or Concurrent Requests to QPS and Pool Max Workers when you click the Translate button
-  : "Selecciona el modo de límite de tasa que mejor se adapte a tu proveedor de API. El sistema convertirá automáticamente los valores de limitación de tasa de RPM o Solicitudes Simultáneas a QPS y Máximo de Trabajadores en Grupo cuando hagas clic en el botón Traducir"
-  Service: "Servicio"
-  Skip clean (maybe improve compatibility): "Omitir limpieza (puede mejorar compatibilidad)"
-  Skip formula offset calculation: "Omitir cálculo de desplazamiento de fórmula"
-  Skip formula offset calculation during processing: "Omitir el cálculo de desplazamiento de fórmulas durante el procesamiento"
-  Skip scanned detection: "Omitir detección escaneada"
-  Split threshold factor for short lines: "Factor de umbral de división para líneas cortas"
-  Translate: "Traducir"
-  Translate from: "Traducir desde"
-  Translate table text (experimental): "Traducir texto de tabla (experimental)"
-  Translate to: "Traducir a"
-  Type: "Tipo"
-  Use alternating pages for dual PDF: "Usar páginas alternas para PDF dual"
-  Watermark mode: "Modo de marca de agua"
-  Watermarked: "Marcado con marca de agua"
-  e.g. /no_think You are a professional, authentic machine translation engine.: e.g. /no_think You are a professional, authentic machine translation engine.
-  e.g., 1,3,5-10: "p. ej., 1,3,5-10"
-  save automatically extracted glossary: "guardar glosario extraído automáticamente"
-fr:
-  '## File': '## Fichier'
-  '## PDF Output Options': '## Options de sortie PDF'
-  '## Preview': '## Aperçu'
-  '## Translated': '## Traduit'
-  '## Translation Options': '## Options de traduction'
-  '### PDF Options': '### Options PDF'
-  '#### BabelDOC Advanced Options': '#### Options avancées de BabelDOC'
-  Advanced Options: "Options avancées"
-  Auto enable OCR workaround (enable automatic OCR workaround for heavily scanned documents): "Activer automatiquement le contournement OCR (active le contournement automatique de l''OCR pour les documents fortement numérisés)"
-  Cancel: "Annuler"
-  Character pattern to identify formula text (regex, not recommended to change): "Motif de caractères pour identifier le texte de formule (regex, déconseillé de modifier)"
-  Concurrent Requests: "Requêtes simultanées"
-  Concurrent Threads: "Threads simultanés"
-  Custom: "Personnalisé"
-  Custom System Prompt: "Invite système personnalisée"
-  Custom prompt for the translator: "Invite personnalisée pour le traducteur"
-  Custom prompt for translation: "Invite personnalisée pour la traduction"
-  Disable auto extract glossary: "Désactiver l''extraction automatique du glossaire"
-  Disable bilingual output: "Désactiver la sortie bilingue"
-  Disable monolingual output: "Désactiver la sortie monolingue"
-  Disable rich text translation (maybe improve compatibility): "Désactiver la traduction en texte enrichi (peut améliorer la compatibilité)"
-  Document Preview: "Aperçu du document"
-  Download Translation (Dual): "Télécharger la traduction (Bilingue)"
-  Download Translation (Mono): "Télécharger la traduction (Mono)"
-  Download automatically extracted glossary: "Télécharger le glossaire extrait automatiquement"
-  Effective only when a page range is specified.: "Efficace uniquement lorsqu''une plage de pages est spécifiée."
-  Enhance compatibility (auto-enables skip_clean and disable_rich_text): "Améliorer la compatibilité (active automatiquement skip_clean et disable_rich_text)"
-  Figure/table protection threshold: "Seuil de protection des figures/tableaux"
-  File: "Fichier"
-  Font pattern to identify formula text (regex, not recommended to change): "Motif de police pour identifier le texte des formules (regex, déconseillé de modifier)"
-  Force split short lines into different paragraphs: "Forcer la séparation des lignes courtes en paragraphes distincts"
-  Free translation service provided by [SiliconFlow](https://siliconflow.cn): "Service de traduction gratuit proposé par [SiliconFlow](https://siliconflow.cn)"
-  Glossary File: "Fichier de glossaire"
-  Handle alternating line numbers and text paragraphs in documents with line numbers: "Gérer les numéros de ligne alternés et les paragraphes de texte dans les documents avec numéros de ligne"
-  If not set or set to 0, QPS will be used as the number of workers: "Si non défini ou défini sur 0, le QPS sera utilisé comme nombre de workers."
-  Ignore cache: "Ignorer le cache"
-  IoU threshold for identifying non-formula lines: "Seuil d''IoU pour identifier les lignes non-formules"
-  Language: "Langue"
-  Link: "Lien"
-  Maximum number of requests processed simultaneously: "Nombre maximum de requêtes traitées simultanément"
-  Maximum pages per part (for auto-split translation, 0 means no limit): "Nombre maximum de pages par partie (pour la tradivision automatique, 0 signifie sans limite)"
-  Merge alternating line numbers: "Fusionner les numéros de ligne alternés"
-  Minimum text length to translate: "Longueur minimale du texte à traduire"
-  'Most API providers provide this parameter, such as OpenAI GPT-4: 500 RPM': "La plupart des fournisseurs d''API fournissent ce paramètre, comme OpenAI GPT-4 : 500 RPM"
-  No Watermark: "Sans filigrane"
-  Non-formula line IoU threshold: "Seuil d''IoU pour les lignes non formulées"
-  Number of requests sent per second: "Nombre de requêtes envoyées par seconde"
-  OCR workaround (experimental, will auto enable Skip scanned detection in backend): "Solution de contournement OCR (expérimental, activera automatiquement Ignorer la détection des documents scannés en arrière-plan)"
-  Only include translated pages in the output PDF.: "Inclure uniquement les pages traduites dans le PDF de sortie."
-  Page range (e.g., 1,3,5-10,-5): "Plage de pages (ex. : 1,3,5-10,-5)"
-  Pages: "Pages"
-  Pool Max Workers: "Nombre maximal de workers du pool"
-  Primary font family for translated text: "Famille de polices principale pour le texte traduit"
-  Protection threshold for figures and tables (lines within figures/tables will not be processed): "Seuil de protection pour les figures et tableaux (les lignes à l''intérieur des figures/tableaux ne seront pas traitées)"
-  Put translated pages first in dual mode: "Placer les pages traduites en premier en mode double"
-  QPS (Queries Per Second): "QPS (Requêtes Par Seconde)"
-  RPC service for document layout analysis (optional): "Service RPC pour l''analyse de la mise en page des documents (optionnel)"
-  RPM (Requests Per Minute): "RPM (Requêtes Par Minute)"
-  Rate Limit Mode: "Mode de limitation de débit"
-  Remove non-formula lines: "Supprimer les lignes non-formule"
-  Remove non-formula lines within paragraph areas: "Supprimer les lignes non-formules dans les zones de paragraphe"
-  ? Select the rate limit mode that best suits your API provider, system will automatically convert the rate limiting values of RPM or Concurrent Requests to QPS and Pool Max Workers when you click the Translate button
-  : "Sélectionnez le mode de limitation de débit qui convient le mieux à votre fournisseur d''API. Le système convertira automatiquement les valeurs de limitation de débit (RPM ou requêtes simultanées) en QPS et Pool Max Workers lorsque vous cliquerez sur le bouton Traduire."
-  Service: "Service"
-  Skip clean (maybe improve compatibility): "Passer le nettoyage (peut améliorer la compatibilité)"
-  Skip formula offset calculation: "Passer le calcul du décalage de formule"
-  Skip formula offset calculation during processing: "Passer le calcul du décalage de formule pendant le traitement"
-  Skip scanned detection: Ignorer la détection des scans
-  Split threshold factor for short lines: "Facteur de seuil de division pour les lignes courtes"
-  Translate: "Traduire"
-  Translate from: "Traduire depuis"
-  Translate table text (experimental): "Traduire le texte du tableau (expérimental)"
-  Translate to: "Traduire en"
-  Type: "Type"
-  Use alternating pages for dual PDF: "Utiliser des pages alternées pour un PDF double"
-  Watermark mode: "Mode filigrane"
-  Watermarked: "Filigrané"
-  e.g. /no_think You are a professional, authentic machine translation engine.: e.g. /no_think You are a professional, authentic machine translation engine.
-  e.g., 1,3,5-10: "p. ex., 1,3,5-10"
-  save automatically extracted glossary: "enregistrer le glossaire extrait automatiquement"
-it:
+  Type: Typ
+  '## Translation Options': '## Übersetzungsoptionen'
+  Free translation service provided by [SiliconFlow](https://siliconflow.cn): Kostenloser
+    Übersetzungsservice bereitgestellt von [SiliconFlow](https://siliconflow.cn)
+  Service: Dienst
+  Translate from: Übersetzen aus
+  Translate to: Übersetzen in
+  Pages: Seiten
+  Page range (e.g., 1,3,5-10,-5): Seitenbereich (z.B. 1,3,5-10,-5)
+  e.g., 1,3,5-10: z.B. 1,3,5-10
+  Effective only when a page range is specified.: Nur wirksam, wenn ein Seitenbereich
+    angegeben ist.
+  Only include translated pages in the output PDF.: Nur übersetzte Seiten in die PDF-Ausgabe
+    aufnehmen.
+  RPM (Requests Per Minute): RPM (Anfragen pro Minute)
+  Concurrent Requests: Gleichzeitige Anfragen
+  Custom: Benutzerdefiniert
+  ? Select the rate limit mode that best suits your API provider, system will automatically
+    convert the rate limiting values of RPM or Concurrent Requests to QPS and Pool
+    Max Workers when you click the Translate button
+  : Wählen Sie den Ratenbegrenzungsmodus, der am besten zu Ihrem API-Anbieter passt.
+    Das System konvertiert automatisch die Ratenbegrenzungswerte von RPM oder gleichzeitigen
+    Anfragen in QPS und Pool Max Workers, wenn Sie auf die Schaltfläche ''Übersetzen''
+    klicken.
+  Rate Limit Mode: Ratenbegrenzungsmodus
+  'Most API providers provide this parameter, such as OpenAI GPT-4: 500 RPM': 'Die
+    meisten API-Anbieter bieten diesen Parameter an, z. B. OpenAI GPT-4: 500 RPM'
+  Maximum number of requests processed simultaneously: Maximale Anzahl gleichzeitig
+    verarbeiteter Anfragen
+  Concurrent Threads: Gleichzeitige Threads
+  Number of requests sent per second: Anzahl der Anfragen pro Sekunde
+  QPS (Queries Per Second): QPS (Abfragen pro Sekunde)
+  If not set or set to 0, QPS will be used as the number of workers: Wenn nicht gesetzt
+    oder auf 0 gesetzt, wird QPS als Anzahl der Worker verwendet.
+  Pool Max Workers: Maximale Anzahl der Pool-Worker
+  '## PDF Output Options': '## PDF-Ausgabeoptionen'
+  Disable monolingual output: Monolinguale Ausgabe deaktivieren
+  Disable bilingual output: Bilinguale Ausgabe deaktivieren
+  Put translated pages first in dual mode: Übersetzte Seiten im Dual-Modus zuerst
+    anzeigen
+  Use alternating pages for dual PDF: Verwenden Sie abwechselnde Seiten für doppelseitiges
+    PDF
+  Watermarked: Wassergekennzeichnet
+  No Watermark: Ohne Wasserzeichen
+  Watermark mode: Wasserzeichenmodus
+  Custom prompt for translation: Benutzerdefinierte Eingabeaufforderung für Übersetzung
+  Custom prompt for the translator: Benutzerdefinierte Eingabeaufforderung für den
+    Übersetzer
+  Custom System Prompt: Benutzerdefinierte Systemaufforderung
+  e.g. /no_think You are a professional, authentic machine translation engine.: e.g.
+    /no_think You are a professional, authentic machine translation engine.
+  Minimum text length to translate: Mindesttextlänge für die Übersetzung
+  RPC service for document layout analysis (optional): RPC-Dienst für Dokumentenlayoutanalyse
+    (optional)
+  Disable auto extract glossary: Automatische Glossarextraktion deaktivieren
+  save automatically extracted glossary: automatisch extrahiertes Glossar speichern
+  Primary font family for translated text: Hauptschriftart für übersetzten Text
+  Glossary File: Glossardatei
+  '### PDF Options': '### PDF-Optionen'
+  Skip clean (maybe improve compatibility): Bereinigung überspringen (könnte die Kompatibilität
+    verbessern)
+  Disable rich text translation (maybe improve compatibility): Deaktiviere Rich-Text-Übersetzung
+    (könnte die Kompatibilität verbessern)
+  Enhance compatibility (auto-enables skip_clean and disable_rich_text): Kompatibilität
+    verbessern (aktiviert automatisch skip_clean und disable_rich_text)
+  Force split short lines into different paragraphs: Kurze Zeilen zwangsweise in verschiedene
+    Absätze aufteilen
+  Split threshold factor for short lines: Trennschwellenfaktor für kurze Zeilen
+  Translate table text (experimental): Tabellentext übersetzen (experimentell)
+  Skip scanned detection: Übersprungene Erkennung überspringen
+  OCR workaround (experimental, will auto enable Skip scanned detection in backend): OCR-Workaround
+    (experimentell, aktiviert automatisch ''Gescannte Dokumente überspringen'' im
+    Backend)
+  Auto enable OCR workaround (enable automatic OCR workaround for heavily scanned documents): Automatische
+    OCR-Umgehung aktivieren (automatische OCR-Umgehung für stark gescannte Dokumente
+    aktivieren)
+  Maximum pages per part (for auto-split translation, 0 means no limit): Maximale
+    Seiten pro Teil (für automatische Teilung der Übersetzung, 0 bedeutet keine Begrenzung)
+  Font pattern to identify formula text (regex, not recommended to change): Schriftmuster
+    zur Erkennung von Formeltext (Regex, Änderung nicht empfohlen)
+  Character pattern to identify formula text (regex, not recommended to change): Zeichenmuster
+    zur Identifizierung von Formeltext (Regex, Änderung nicht empfohlen)
+  Ignore cache: Cache ignorieren
+  '#### BabelDOC Advanced Options': '#### BabelDOC Erweiterte Optionen'
+  Handle alternating line numbers and text paragraphs in documents with line numbers: Umgang
+    mit wechselnden Zeilennummern und Textabsätzen in Dokumenten mit Zeilennummern
+  Merge alternating line numbers: Wechselnde Zeilennummern zusammenführen
+  Remove non-formula lines within paragraph areas: Nicht-Formelzeilen innerhalb von
+    Absatzbereichen entfernen
+  Remove non-formula lines: Nicht-Formelzeilen entfernen
+  IoU threshold for identifying non-formula lines: IoU-Schwellenwert für die Identifizierung
+    von Nicht-Formel-Zeilen
+  Non-formula line IoU threshold: IoU-Schwellenwert für Nicht-Formelzeilen
+  Protection threshold for figures and tables (lines within figures/tables will not be processed): Schwellenwert
+    für den Schutz von Abbildungen und Tabellen (Zeilen innerhalb von Abbildungen/Tabellen
+    werden nicht verarbeitet)
+  Figure/table protection threshold: Schwellenwert für Abbildungs-/Tabellenschutz
+  Skip formula offset calculation during processing: Formel-Offset-Berechnung während
+    der Verarbeitung überspringen
+  Skip formula offset calculation: Formel-Offset-Berechnung überspringen
+  Advanced Options: Erweiterte Optionen
+  '## Translated': '## Übersetzt'
+  Download Translation (Mono): Übersetzung herunterladen (Mono)
+  Download Translation (Dual): Übersetzung herunterladen (Dual)
+  Download automatically extracted glossary: Automatisch extrahiertes Glossar herunterladen
+  Translate: Übersetzen
+  Cancel: Abbrechen
+  Save Config: Save Config
+  '## Preview': '## Vorschau'
+  Document Preview: Dokumentvorschau
+en:
+  UI Language: UI Language
   '## File': '## File'
-  '## PDF Output Options': "## Opzioni di Output PDF"
-  '## Preview': '## Anteprima'
-  '## Translated': '## Tradotto'
-  '## Translation Options': "## Opzioni di traduzione"
+  File: File
+  Link: Link
+  Type: Type
+  '## Translation Options': '## Translation Options'
+  Free translation service provided by [SiliconFlow](https://siliconflow.cn): Free
+    translation service provided by [SiliconFlow](https://siliconflow.cn)
+  Service: Service
+  Translate from: Translate from
+  Translate to: Translate to
+  Pages: Pages
+  Page range (e.g., 1,3,5-10,-5): Page range (e.g., 1,3,5-10,-5)
+  e.g., 1,3,5-10: e.g., 1,3,5-10
+  Effective only when a page range is specified.: Effective only when a page range
+    is specified.
+  Only include translated pages in the output PDF.: Only include translated pages
+    in the output PDF.
+  RPM (Requests Per Minute): RPM (Requests Per Minute)
+  Concurrent Requests: Concurrent Requests
+  Custom: Custom
+  ? Select the rate limit mode that best suits your API provider, system will automatically
+    convert the rate limiting values of RPM or Concurrent Requests to QPS and Pool
+    Max Workers when you click the Translate button
+  : Select the rate limit mode that best suits your API provider, system will automatically
+    convert the rate limiting values of RPM or Concurrent Requests to QPS and Pool
+    Max Workers when you click the Translate button
+  Rate Limit Mode: Rate Limit Mode
+  'Most API providers provide this parameter, such as OpenAI GPT-4: 500 RPM': 'Most
+    API providers provide this parameter, such as OpenAI GPT-4: 500 RPM'
+  Maximum number of requests processed simultaneously: Maximum number of requests
+    processed simultaneously
+  Concurrent Threads: Concurrent Threads
+  Number of requests sent per second: Number of requests sent per second
+  QPS (Queries Per Second): QPS (Queries Per Second)
+  If not set or set to 0, QPS will be used as the number of workers: If not set or
+    set to 0, QPS will be used as the number of workers
+  Pool Max Workers: Pool Max Workers
+  '## PDF Output Options': '## PDF Output Options'
+  Disable monolingual output: Disable monolingual output
+  Disable bilingual output: Disable bilingual output
+  Put translated pages first in dual mode: Put translated pages first in dual mode
+  Use alternating pages for dual PDF: Use alternating pages for dual PDF
+  Watermarked: Watermarked
+  No Watermark: No Watermark
+  Watermark mode: Watermark mode
+  Custom prompt for translation: Custom prompt for translation
+  Custom prompt for the translator: Custom prompt for the translator
+  Custom System Prompt: Custom System Prompt
+  e.g. /no_think You are a professional, authentic machine translation engine.: e.g.
+    /no_think You are a professional, authentic machine translation engine.
+  Minimum text length to translate: Minimum text length to translate
+  RPC service for document layout analysis (optional): RPC service for document layout
+    analysis (optional)
+  Disable auto extract glossary: Disable auto extract glossary
+  save automatically extracted glossary: save automatically extracted glossary
+  Primary font family for translated text: Primary font family for translated text
+  Glossary File: Glossary File
+  '### PDF Options': '### PDF Options'
+  Skip clean (maybe improve compatibility): Skip clean (maybe improve compatibility)
+  Disable rich text translation (maybe improve compatibility): Disable rich text translation
+    (maybe improve compatibility)
+  Enhance compatibility (auto-enables skip_clean and disable_rich_text): Enhance compatibility
+    (auto-enables skip_clean and disable_rich_text)
+  Force split short lines into different paragraphs: Force split short lines into
+    different paragraphs
+  Split threshold factor for short lines: Split threshold factor for short lines
+  Translate table text (experimental): Translate table text (experimental)
+  Skip scanned detection: Skip scanned detection
+  OCR workaround (experimental, will auto enable Skip scanned detection in backend): OCR
+    workaround (experimental, will auto enable Skip scanned detection in backend)
+  Auto enable OCR workaround (enable automatic OCR workaround for heavily scanned documents): Auto
+    enable OCR workaround (enable automatic OCR workaround for heavily scanned documents)
+  Maximum pages per part (for auto-split translation, 0 means no limit): Maximum pages
+    per part (for auto-split translation, 0 means no limit)
+  Font pattern to identify formula text (regex, not recommended to change): Font pattern
+    to identify formula text (regex, not recommended to change)
+  Character pattern to identify formula text (regex, not recommended to change): Character
+    pattern to identify formula text (regex, not recommended to change)
+  Ignore cache: Ignore cache
+  '#### BabelDOC Advanced Options': '#### BabelDOC Advanced Options'
+  Handle alternating line numbers and text paragraphs in documents with line numbers: Handle
+    alternating line numbers and text paragraphs in documents with line numbers
+  Merge alternating line numbers: Merge alternating line numbers
+  Remove non-formula lines within paragraph areas: Remove non-formula lines within
+    paragraph areas
+  Remove non-formula lines: Remove non-formula lines
+  IoU threshold for identifying non-formula lines: IoU threshold for identifying non-formula
+    lines
+  Non-formula line IoU threshold: Non-formula line IoU threshold
+  Protection threshold for figures and tables (lines within figures/tables will not be processed): Protection
+    threshold for figures and tables (lines within figures/tables will not be processed)
+  Figure/table protection threshold: Figure/table protection threshold
+  Skip formula offset calculation during processing: Skip formula offset calculation
+    during processing
+  Skip formula offset calculation: Skip formula offset calculation
+  Advanced Options: Advanced Options
+  '## Translated': '## Translated'
+  Download Translation (Mono): Download Translation (Mono)
+  Download Translation (Dual): Download Translation (Dual)
+  Download automatically extracted glossary: Download automatically extracted glossary
+  Translate: Translate
+  Cancel: Cancel
+  Save Config: Save Config
+  '## Preview': '## Preview'
+  Document Preview: Document Preview
+es:
+  UI Language: UI Language
+  '## File': '## Archivo'
+  File: Archivo
+  Link: Enlace
+  Type: Tipo
+  '## Translation Options': '## Opciones de traducción'
+  Free translation service provided by [SiliconFlow](https://siliconflow.cn): Servicio
+    de traducción gratuito proporcionado por [SiliconFlow](https://siliconflow.cn)
+  Service: Servicio
+  Translate from: Traducir desde
+  Translate to: Traducir a
+  Pages: Páginas
+  Page range (e.g., 1,3,5-10,-5): Rango de páginas (ej., 1,3,5-10,-5)
+  e.g., 1,3,5-10: p. ej., 1,3,5-10
+  Effective only when a page range is specified.: Efectivo solo cuando se especifica
+    un rango de páginas.
+  Only include translated pages in the output PDF.: Incluir solo las páginas traducidas
+    en el PDF de salida.
+  RPM (Requests Per Minute): RPM (Solicitudes Por Minuto)
+  Concurrent Requests: Solicitudes simultáneas
+  Custom: Personalizado
+  ? Select the rate limit mode that best suits your API provider, system will automatically
+    convert the rate limiting values of RPM or Concurrent Requests to QPS and Pool
+    Max Workers when you click the Translate button
+  : Selecciona el modo de límite de tasa que mejor se adapte a tu proveedor de API.
+    El sistema convertirá automáticamente los valores de limitación de tasa de RPM
+    o Solicitudes Simultáneas a QPS y Máximo de Trabajadores en Grupo cuando hagas
+    clic en el botón Traducir
+  Rate Limit Mode: Modo de límite de tasa
+  'Most API providers provide this parameter, such as OpenAI GPT-4: 500 RPM': 'La
+    mayoría de los proveedores de API proporcionan este parámetro, como OpenAI GPT-4:
+    500 RPM'
+  Maximum number of requests processed simultaneously: Número máximo de solicitudes
+    procesadas simultáneamente
+  Concurrent Threads: Hilos Concurrentes
+  Number of requests sent per second: Número de solicitudes enviadas por segundo
+  QPS (Queries Per Second): QPS (Consultas Por Segundo)
+  If not set or set to 0, QPS will be used as the number of workers: Si no se establece
+    o se establece en 0, se utilizará QPS como el número de trabajadores.
+  Pool Max Workers: Máximo de trabajadores en grupo
+  '## PDF Output Options': '## Opciones de Salida en PDF'
+  Disable monolingual output: Desactivar salida monolingüe
+  Disable bilingual output: Desactivar salida bilingüe
+  Put translated pages first in dual mode: Mostrar las páginas traducidas primero
+    en modo dual
+  Use alternating pages for dual PDF: Usar páginas alternas para PDF dual
+  Watermarked: Marcado con marca de agua
+  No Watermark: Sin marca de agua
+  Watermark mode: Modo de marca de agua
+  Custom prompt for translation: Prompt personalizado para traducción
+  Custom prompt for the translator: Prompt personalizado para el traductor
+  Custom System Prompt: Prompt del sistema personalizado
+  e.g. /no_think You are a professional, authentic machine translation engine.: e.g.
+    /no_think You are a professional, authentic machine translation engine.
+  Minimum text length to translate: Longitud mínima del texto para traducir
+  RPC service for document layout analysis (optional): Servicio RPC para análisis
+    de diseño de documentos (opcional)
+  Disable auto extract glossary: Desactivar extracción automática de glosario
+  save automatically extracted glossary: guardar glosario extraído automáticamente
+  Primary font family for translated text: Familia de fuente principal para el texto
+    traducido
+  Glossary File: Archivo de Glosario
+  '### PDF Options': '### Opciones de PDF'
+  Skip clean (maybe improve compatibility): Omitir limpieza (puede mejorar compatibilidad)
+  Disable rich text translation (maybe improve compatibility): Desactivar la traducción
+    de texto enriquecido (puede mejorar la compatibilidad)
+  Enhance compatibility (auto-enables skip_clean and disable_rich_text): Mejorar compatibilidad
+    (habilita automáticamente skip_clean y disable_rich_text)
+  Force split short lines into different paragraphs: Forzar la división de líneas
+    cortas en párrafos diferentes
+  Split threshold factor for short lines: Factor de umbral de división para líneas
+    cortas
+  Translate table text (experimental): Traducir texto de tabla (experimental)
+  Skip scanned detection: Omitir detección escaneada
+  OCR workaround (experimental, will auto enable Skip scanned detection in backend): Solución
+    alternativa de OCR (experimental, activará automáticamente Omitir detección de
+    escaneados en el backend)
+  Auto enable OCR workaround (enable automatic OCR workaround for heavily scanned documents): Activar
+    automáticamente solución alternativa de OCR (habilitar solución automática de
+    OCR para documentos muy escaneados)
+  Maximum pages per part (for auto-split translation, 0 means no limit): Máximo de
+    páginas por parte (para traducción automática dividida, 0 significa sin límite)
+  Font pattern to identify formula text (regex, not recommended to change): Patrón
+    de fuente para identificar texto de fórmulas (expresión regular, no se recomienda
+    cambiar)
+  Character pattern to identify formula text (regex, not recommended to change): Patrón
+    de caracteres para identificar texto de fórmulas (regex, no se recomienda cambiar)
+  Ignore cache: Ignorar caché
+  '#### BabelDOC Advanced Options': '#### Opciones avanzadas de BabelDOC'
+  Handle alternating line numbers and text paragraphs in documents with line numbers: Manejar
+    números de línea alternos y párrafos de texto en documentos con numeración de
+    líneas
+  Merge alternating line numbers: Combinar números de línea alternos
+  Remove non-formula lines within paragraph areas: Eliminar líneas que no son fórmulas
+    dentro de áreas de párrafo
+  Remove non-formula lines: Eliminar líneas que no son fórmulas
+  IoU threshold for identifying non-formula lines: Umbral de IoU para identificar
+    líneas que no son fórmulas
+  Non-formula line IoU threshold: Umbral IoU para líneas no formuladas
+  Protection threshold for figures and tables (lines within figures/tables will not be processed): Umbral
+    de protección para figuras y tablas (las líneas dentro de figuras/tablas no serán
+    procesadas)
+  Figure/table protection threshold: Umbral de protección de figuras/tablas
+  Skip formula offset calculation during processing: Omitir el cálculo de desplazamiento
+    de fórmulas durante el procesamiento
+  Skip formula offset calculation: Omitir cálculo de desplazamiento de fórmula
+  Advanced Options: Opciones Avanzadas
+  '## Translated': '## Traducido'
+  Download Translation (Mono): Descargar traducción (Mono)
+  Download Translation (Dual): Descargar traducción (Dual)
+  Download automatically extracted glossary: Descargar glosario extraído automáticamente
+  Translate: Traducir
+  Cancel: Cancelar
+  Save Config: Save Config
+  '## Preview': '## Vista previa'
+  Document Preview: Vista previa del documento
+fr:
+  UI Language: UI Language
+  '## File': '## Fichier'
+  File: Fichier
+  Link: Lien
+  Type: Type
+  '## Translation Options': '## Options de traduction'
+  Free translation service provided by [SiliconFlow](https://siliconflow.cn): Service
+    de traduction gratuit proposé par [SiliconFlow](https://siliconflow.cn)
+  Service: Service
+  Translate from: Traduire depuis
+  Translate to: Traduire en
+  Pages: Pages
+  Page range (e.g., 1,3,5-10,-5): 'Plage de pages (ex. : 1,3,5-10,-5)'
+  e.g., 1,3,5-10: p. ex., 1,3,5-10
+  Effective only when a page range is specified.: Efficace uniquement lorsqu''une
+    plage de pages est spécifiée.
+  Only include translated pages in the output PDF.: Inclure uniquement les pages traduites
+    dans le PDF de sortie.
+  RPM (Requests Per Minute): RPM (Requêtes Par Minute)
+  Concurrent Requests: Requêtes simultanées
+  Custom: Personnalisé
+  ? Select the rate limit mode that best suits your API provider, system will automatically
+    convert the rate limiting values of RPM or Concurrent Requests to QPS and Pool
+    Max Workers when you click the Translate button
+  : Sélectionnez le mode de limitation de débit qui convient le mieux à votre fournisseur
+    d''API. Le système convertira automatiquement les valeurs de limitation de débit
+    (RPM ou requêtes simultanées) en QPS et Pool Max Workers lorsque vous cliquerez
+    sur le bouton Traduire.
+  Rate Limit Mode: Mode de limitation de débit
+  'Most API providers provide this parameter, such as OpenAI GPT-4: 500 RPM': 'La
+    plupart des fournisseurs d''''API fournissent ce paramètre, comme OpenAI GPT-4
+    : 500 RPM'
+  Maximum number of requests processed simultaneously: Nombre maximum de requêtes
+    traitées simultanément
+  Concurrent Threads: Threads simultanés
+  Number of requests sent per second: Nombre de requêtes envoyées par seconde
+  QPS (Queries Per Second): QPS (Requêtes Par Seconde)
+  If not set or set to 0, QPS will be used as the number of workers: Si non défini
+    ou défini sur 0, le QPS sera utilisé comme nombre de workers.
+  Pool Max Workers: Nombre maximal de workers du pool
+  '## PDF Output Options': '## Options de sortie PDF'
+  Disable monolingual output: Désactiver la sortie monolingue
+  Disable bilingual output: Désactiver la sortie bilingue
+  Put translated pages first in dual mode: Placer les pages traduites en premier en
+    mode double
+  Use alternating pages for dual PDF: Utiliser des pages alternées pour un PDF double
+  Watermarked: Filigrané
+  No Watermark: Sans filigrane
+  Watermark mode: Mode filigrane
+  Custom prompt for translation: Invite personnalisée pour la traduction
+  Custom prompt for the translator: Invite personnalisée pour le traducteur
+  Custom System Prompt: Invite système personnalisée
+  e.g. /no_think You are a professional, authentic machine translation engine.: e.g.
+    /no_think You are a professional, authentic machine translation engine.
+  Minimum text length to translate: Longueur minimale du texte à traduire
+  RPC service for document layout analysis (optional): Service RPC pour l''analyse
+    de la mise en page des documents (optionnel)
+  Disable auto extract glossary: Désactiver l''extraction automatique du glossaire
+  save automatically extracted glossary: enregistrer le glossaire extrait automatiquement
+  Primary font family for translated text: Famille de polices principale pour le texte
+    traduit
+  Glossary File: Fichier de glossaire
+  '### PDF Options': '### Options PDF'
+  Skip clean (maybe improve compatibility): Passer le nettoyage (peut améliorer la
+    compatibilité)
+  Disable rich text translation (maybe improve compatibility): Désactiver la traduction
+    en texte enrichi (peut améliorer la compatibilité)
+  Enhance compatibility (auto-enables skip_clean and disable_rich_text): Améliorer
+    la compatibilité (active automatiquement skip_clean et disable_rich_text)
+  Force split short lines into different paragraphs: Forcer la séparation des lignes
+    courtes en paragraphes distincts
+  Split threshold factor for short lines: Facteur de seuil de division pour les lignes
+    courtes
+  Translate table text (experimental): Traduire le texte du tableau (expérimental)
+  Skip scanned detection: Ignorer la détection des scans
+  OCR workaround (experimental, will auto enable Skip scanned detection in backend): Solution
+    de contournement OCR (expérimental, activera automatiquement Ignorer la détection
+    des documents scannés en arrière-plan)
+  Auto enable OCR workaround (enable automatic OCR workaround for heavily scanned documents): Activer
+    automatiquement le contournement OCR (active le contournement automatique de l''OCR
+    pour les documents fortement numérisés)
+  Maximum pages per part (for auto-split translation, 0 means no limit): Nombre maximum
+    de pages par partie (pour la tradivision automatique, 0 signifie sans limite)
+  Font pattern to identify formula text (regex, not recommended to change): Motif
+    de police pour identifier le texte des formules (regex, déconseillé de modifier)
+  Character pattern to identify formula text (regex, not recommended to change): Motif
+    de caractères pour identifier le texte de formule (regex, déconseillé de modifier)
+  Ignore cache: Ignorer le cache
+  '#### BabelDOC Advanced Options': '#### Options avancées de BabelDOC'
+  Handle alternating line numbers and text paragraphs in documents with line numbers: Gérer
+    les numéros de ligne alternés et les paragraphes de texte dans les documents avec
+    numéros de ligne
+  Merge alternating line numbers: Fusionner les numéros de ligne alternés
+  Remove non-formula lines within paragraph areas: Supprimer les lignes non-formules
+    dans les zones de paragraphe
+  Remove non-formula lines: Supprimer les lignes non-formule
+  IoU threshold for identifying non-formula lines: Seuil d''IoU pour identifier les
+    lignes non-formules
+  Non-formula line IoU threshold: Seuil d''IoU pour les lignes non formulées
+  Protection threshold for figures and tables (lines within figures/tables will not be processed): Seuil
+    de protection pour les figures et tableaux (les lignes à l''intérieur des figures/tableaux
+    ne seront pas traitées)
+  Figure/table protection threshold: Seuil de protection des figures/tableaux
+  Skip formula offset calculation during processing: Passer le calcul du décalage
+    de formule pendant le traitement
+  Skip formula offset calculation: Passer le calcul du décalage de formule
+  Advanced Options: Options avancées
+  '## Translated': '## Traduit'
+  Download Translation (Mono): Télécharger la traduction (Mono)
+  Download Translation (Dual): Télécharger la traduction (Bilingue)
+  Download automatically extracted glossary: Télécharger le glossaire extrait automatiquement
+  Translate: Traduire
+  Cancel: Annuler
+  Save Config: Save Config
+  '## Preview': '## Aperçu'
+  Document Preview: Aperçu du document
+it:
+  UI Language: UI Language
+  '## File': '## File'
+  File: File
+  Link: Collegamento
+  Type: Tipo
+  '## Translation Options': '## Opzioni di traduzione'
+  Free translation service provided by [SiliconFlow](https://siliconflow.cn): Servizio
+    di traduzione gratuito offerto da [SiliconFlow](https://siliconflow.cn)
+  Service: Servizio
+  Translate from: Traduci da
+  Translate to: Traduci in
+  Pages: Pagine
+  Page range (e.g., 1,3,5-10,-5): Intervallo di pagine (es. 1,3,5-10,-5)
+  e.g., 1,3,5-10: es., 1,3,5-10
+  Effective only when a page range is specified.: Efficace solo quando è specificato
+    un intervallo di pagine.
+  Only include translated pages in the output PDF.: Includi solo le pagine tradotte
+    nel PDF di output.
+  RPM (Requests Per Minute): RPM (Richieste al Minuto)
+  Concurrent Requests: Richieste Concorrenti
+  Custom: Personalizzato
+  ? Select the rate limit mode that best suits your API provider, system will automatically
+    convert the rate limiting values of RPM or Concurrent Requests to QPS and Pool
+    Max Workers when you click the Translate button
+  : Seleziona la modalità di limitazione della frequenza più adatta al tuo provider
+    API, il sistema convertirà automaticamente i valori di limitazione RPM o Richieste
+    Concurrenti in QPS e Pool Max Workers quando clicchi il pulsante Traduci
+  Rate Limit Mode: Modalità Limite di Frequenza
+  'Most API providers provide this parameter, such as OpenAI GPT-4: 500 RPM': 'La
+    maggior parte dei fornitori di API forniscono questo parametro, come OpenAI GPT-4:
+    500 RPM'
+  Maximum number of requests processed simultaneously: Numero massimo di richieste
+    elaborate contemporaneamente
+  Concurrent Threads: Thread Concorrenti
+  Number of requests sent per second: Numero di richieste inviate al secondo
+  QPS (Queries Per Second): QPS (Query al secondo)
+  If not set or set to 0, QPS will be used as the number of workers: Se non impostato
+    o impostato a 0, verrà utilizzato il QPS come numero di worker
+  Pool Max Workers: Numero Massimo di Worker nel Pool
+  '## PDF Output Options': '## Opzioni di Output PDF'
+  Disable monolingual output: Disabilita output monolingue
+  Disable bilingual output: Disattiva output bilingue
+  Put translated pages first in dual mode: Metti le pagine tradotte in primo piano
+    in modalità duale
+  Use alternating pages for dual PDF: Usa pagine alternate per PDF dual
+  Watermarked: Filigranato
+  No Watermark: Nessun Watermark
+  Watermark mode: Modalità filigrana
+  Custom prompt for translation: Prompt personalizzato per la traduzione
+  Custom prompt for the translator: Prompt personalizzato per il traduttore
+  Custom System Prompt: Prompt di Sistema Personalizzato
+  e.g. /no_think You are a professional, authentic machine translation engine.: e.g.
+    /no_think You are a professional, authentic machine translation engine.
+  Minimum text length to translate: Lunghezza minima del testo da tradurre
+  RPC service for document layout analysis (optional): Servizio RPC per l''analisi
+    del layout dei documenti (opzionale)
+  Disable auto extract glossary: Disattiva estrazione automatica glossario
+  save automatically extracted glossary: salva glossario estratto automaticamente
+  Primary font family for translated text: Famiglia di font principale per il testo
+    tradotto
+  Glossary File: File Glossario
   '### PDF Options': '### Opzioni PDF'
-  '#### BabelDOC Advanced Options': "#### Opzioni Avanzate di BabelDOC"
-  Advanced Options: "Opzioni Avanzate"
-  Auto enable OCR workaround (enable automatic OCR workaround for heavily scanned documents): "Abilita automaticamente la soluzione alternativa OCR (attiva la soluzione automatica OCR per documenti fortemente scansionati)"
+  Skip clean (maybe improve compatibility): Salta pulizia (potrebbe migliorare la
+    compatibilità)
+  Disable rich text translation (maybe improve compatibility): Disabilita la traduzione
+    del testo formattato (potrebbe migliorare la compatibilità)
+  Enhance compatibility (auto-enables skip_clean and disable_rich_text): Migliora
+    la compatibilità (abilita automaticamente skip_clean e disable_rich_text)
+  Force split short lines into different paragraphs: Forza la divisione delle righe
+    brevi in paragrafi diversi
+  Split threshold factor for short lines: Fattore di soglia di divisione per linee
+    brevi
+  Translate table text (experimental): Traduci testo della tabella (sperimentale)
+  Skip scanned detection: Salta rilevamento scansione
+  OCR workaround (experimental, will auto enable Skip scanned detection in backend): Soluzione
+    alternativa OCR (sperimentale, abiliterà automaticamente Salta rilevamento scansioni
+    nel backend)
+  Auto enable OCR workaround (enable automatic OCR workaround for heavily scanned documents): Abilita
+    automaticamente la soluzione alternativa OCR (attiva la soluzione automatica OCR
+    per documenti fortemente scansionati)
+  Maximum pages per part (for auto-split translation, 0 means no limit): Numero massimo
+    di pagine per parte (per la traduzione con divisione automatica, 0 significa nessun
+    limite)
+  Font pattern to identify formula text (regex, not recommended to change): Modello
+    di carattere per identificare il testo della formula (regex, non è consigliato
+    modificarlo)
+  Character pattern to identify formula text (regex, not recommended to change): Schema
+    di caratteri per identificare il testo della formula (regex, non è consigliato
+    modificarlo)
+  Ignore cache: Ignora cache
+  '#### BabelDOC Advanced Options': '#### Opzioni Avanzate di BabelDOC'
+  Handle alternating line numbers and text paragraphs in documents with line numbers: Gestire
+    numeri di riga alternati e paragrafi di testo in documenti con numeri di riga
+  Merge alternating line numbers: Unisci numeri di riga alternati
+  Remove non-formula lines within paragraph areas: Rimuovi le righe non formule all''interno
+    delle aree di paragrafo
+  Remove non-formula lines: Rimuovi righe non formule
+  IoU threshold for identifying non-formula lines: Soglia IoU per identificare le
+    righe non formule
+  Non-formula line IoU threshold: Soglia IoU per linee non formule
+  Protection threshold for figures and tables (lines within figures/tables will not be processed): Soglia
+    di protezione per figure e tabelle (le righe all''interno di figure/tabelle non
+    verranno elaborate)
+  Figure/table protection threshold: Soglia di protezione figure/tabelle
+  Skip formula offset calculation during processing: Salta il calcolo dell''offset
+    della formula durante l''elaborazione
+  Skip formula offset calculation: Salta il calcolo dello scostamento della formula
+  Advanced Options: Opzioni Avanzate
+  '## Translated': '## Tradotto'
+  Download Translation (Mono): Scarica traduzione (Mono)
+  Download Translation (Dual): Scarica traduzione (Duale)
+  Download automatically extracted glossary: Scarica il glossario estratto automaticamente
+  Translate: Traduci
   Cancel: Annulla
-  Character pattern to identify formula text (regex, not recommended to change): "Schema di caratteri per identificare il testo della formula (regex, non è consigliato modificarlo)"
-  Concurrent Requests: "Richieste Concorrenti"
-  Concurrent Threads: "Thread Concorrenti"
-  Custom: "Personalizzato"
-  Custom System Prompt: "Prompt di Sistema Personalizzato"
-  Custom prompt for the translator: "Prompt personalizzato per il traduttore"
-  Custom prompt for translation: "Prompt personalizzato per la traduzione"
-  Disable auto extract glossary: "Disattiva estrazione automatica glossario"
-  Disable bilingual output: "Disattiva output bilingue"
-  Disable monolingual output: "Disabilita output monolingue"
-  Disable rich text translation (maybe improve compatibility): "Disabilita la traduzione del testo formattato (potrebbe migliorare la compatibilità)"
-  Document Preview: "Anteprima documento"
-  Download Translation (Dual): "Scarica traduzione (Duale)"
-  Download Translation (Mono): "Scarica traduzione (Mono)"
-  Download automatically extracted glossary: "Scarica il glossario estratto automaticamente"
-  Effective only when a page range is specified.: "Efficace solo quando è specificato un intervallo di pagine."
-  Enhance compatibility (auto-enables skip_clean and disable_rich_text): "Migliora la compatibilità (abilita automaticamente skip_clean e disable_rich_text)"
-  Figure/table protection threshold: "Soglia di protezione figure/tabelle"
-  File: "File"
-  Font pattern to identify formula text (regex, not recommended to change): "Modello di carattere per identificare il testo della formula (regex, non è consigliato modificarlo)"
-  Force split short lines into different paragraphs: "Forza la divisione delle righe brevi in paragrafi diversi"
-  Free translation service provided by [SiliconFlow](https://siliconflow.cn): "Servizio di traduzione gratuito offerto da [SiliconFlow](https://siliconflow.cn)"
-  Glossary File: "File Glossario"
-  Handle alternating line numbers and text paragraphs in documents with line numbers: "Gestire numeri di riga alternati e paragrafi di testo in documenti con numeri di riga"
-  If not set or set to 0, QPS will be used as the number of workers: "Se non impostato o impostato a 0, verrà utilizzato il QPS come numero di worker"
-  Ignore cache: "Ignora cache"
-  IoU threshold for identifying non-formula lines: "Soglia IoU per identificare le righe non formule"
-  Language: "Lingua"
-  Link: "Collegamento"
-  Maximum number of requests processed simultaneously: "Numero massimo di richieste elaborate contemporaneamente"
-  Maximum pages per part (for auto-split translation, 0 means no limit): "Numero massimo di pagine per parte (per la traduzione con divisione automatica, 0 significa nessun limite)"
-  Merge alternating line numbers: "Unisci numeri di riga alternati"
-  Minimum text length to translate: "Lunghezza minima del testo da tradurre"
-  'Most API providers provide this parameter, such as OpenAI GPT-4: 500 RPM': "La maggior parte dei fornitori di API forniscono questo parametro, come OpenAI GPT-4: 500 RPM"
-  No Watermark: "Nessun Watermark"
-  Non-formula line IoU threshold: "Soglia IoU per linee non formule"
-  Number of requests sent per second: "Numero di richieste inviate al secondo"
-  OCR workaround (experimental, will auto enable Skip scanned detection in backend): "Soluzione alternativa OCR (sperimentale, abiliterà automaticamente Salta rilevamento scansioni nel backend)"
-  Only include translated pages in the output PDF.: "Includi solo le pagine tradotte nel PDF di output."
-  Page range (e.g., 1,3,5-10,-5): "Intervallo di pagine (es. 1,3,5-10,-5)"
-  Pages: "Pagine"
-  Pool Max Workers: "Numero Massimo di Worker nel Pool"
-  Primary font family for translated text: "Famiglia di font principale per il testo tradotto"
-  Protection threshold for figures and tables (lines within figures/tables will not be processed): "Soglia di protezione per figure e tabelle (le righe all''interno di figure/tabelle non verranno elaborate)"
-  Put translated pages first in dual mode: "Metti le pagine tradotte in primo piano in modalità duale"
-  QPS (Queries Per Second): "QPS (Query al secondo)"
-  RPC service for document layout analysis (optional): "Servizio RPC per l''analisi del layout dei documenti (opzionale)"
-  RPM (Requests Per Minute): "RPM (Richieste al Minuto)"
-  Rate Limit Mode: "Modalità Limite di Frequenza"
-  Remove non-formula lines: "Rimuovi righe non formule"
-  Remove non-formula lines within paragraph areas: "Rimuovi le righe non formule all''interno delle aree di paragrafo"
-  ? Select the rate limit mode that best suits your API provider, system will automatically convert the rate limiting values of RPM or Concurrent Requests to QPS and Pool Max Workers when you click the Translate button
-  : "Seleziona la modalità di limitazione della frequenza più adatta al tuo provider API, il sistema convertirà automaticamente i valori di limitazione RPM o Richieste Concurrenti in QPS e Pool Max Workers quando clicchi il pulsante Traduci"
-  Service: "Servizio"
-  Skip clean (maybe improve compatibility): "Salta pulizia (potrebbe migliorare la compatibilità)"
-  Skip formula offset calculation: "Salta il calcolo dello scostamento della formula"
-  Skip formula offset calculation during processing: "Salta il calcolo dell''offset della formula durante l''elaborazione"
-  Skip scanned detection: "Salta rilevamento scansione"
-  Split threshold factor for short lines: "Fattore di soglia di divisione per linee brevi"
-  Translate: "Traduci"
-  Translate from: "Traduci da"
-  Translate table text (experimental): "Traduci testo della tabella (sperimentale)"
-  Translate to: "Traduci in"
-  Type: "Tipo"
-  Use alternating pages for dual PDF: "Usa pagine alternate per PDF dual"
-  Watermark mode: "Modalità filigrana"
-  Watermarked: "Filigranato"
-  e.g. /no_think You are a professional, authentic machine translation engine.: e.g. /no_think You are a professional, authentic machine translation engine.
-  e.g., 1,3,5-10: "es., 1,3,5-10"
-  save automatically extracted glossary: "salva glossario estratto automaticamente"
+  Save Config: Save Config
+  '## Preview': '## Anteprima'
+  Document Preview: Anteprima documento
 ja:
-  '## File': "## ファイル"
-  '## PDF Output Options': "## PDF 出力オプション"
-  '## Preview': "## プレビュー"
-  '## Translated': '## 翻訳済み'
-  '## Translation Options': '## 翻訳オプション'
-  '### PDF Options': '### PDF オプション'
-  '#### BabelDOC Advanced Options': '#### BabelDOC 詳細設定'
-  Advanced Options: "高度なオプション"
-  Auto enable OCR workaround (enable automatic OCR workaround for heavily scanned documents): OCR 自動回避策を有効にする（スキャン文書が多い場合に自動で OCR 回避策を適用）
-  Cancel: キャンセル
-  Character pattern to identify formula text (regex, not recommended to change): 「数式テキストを識別するための文字パターン（正規表現、変更は推奨されません）」
-  Concurrent Requests: 同時リクエスト
-  Concurrent Threads: "同時スレッド"
-  Custom: カスタム
-  Custom System Prompt: カスタムシステムプロンプト
-  Custom prompt for the translator: 翻訳者用のカスタムプロンプト
-  Custom prompt for translation: 翻訳用のカスタムプロンプト
-  Disable auto extract glossary: 自動用語集抽出を無効にする
-  Disable bilingual output: 「バイリンガル出力を無効にする」
-  Disable monolingual output: 単一言語出力を無効にする
-  Disable rich text translation (maybe improve compatibility): リッチテキスト翻訳を無効にする（互換性が向上する可能性あり）
-  Document Preview: ドキュメントプレビュー
-  Download Translation (Dual): 翻訳をダウンロード（デュアル）
-  Download Translation (Mono): 「翻訳をダウンロード（モノ）」
-  Download automatically extracted glossary: 自動抽出された用語集をダウンロード
-  Effective only when a page range is specified.: 「ページ範囲が指定されている場合にのみ有効です。」
-  Enhance compatibility (auto-enables skip_clean and disable_rich_text): 互換性を向上（skip_clean と disable_rich_text を自動で有効化）
-  Figure/table protection threshold: 図表保護閾値
+  UI Language: UI Language
+  '## File': '## ファイル'
   File: ファイル
-  Font pattern to identify formula text (regex, not recommended to change): 数式テキストを識別するためのフォントパターン（正規表現、変更は非推奨）
-  Force split short lines into different paragraphs: 短い行を強制的に別の段落に分割する
-  Free translation service provided by [SiliconFlow](https://siliconflow.cn): '[SiliconFlow](https://siliconflow.cn) が提供する無料翻訳サービス'
-  Glossary File: 用語集ファイル
-  Handle alternating line numbers and text paragraphs in documents with line numbers: 行番号付き文書における行番号とテキスト段落の交互処理
-  If not set or set to 0, QPS will be used as the number of workers: 設定されていない場合、または 0 に設定されている場合、QPS がワーカー数として使用されます
-  Ignore cache: キャッシュを無視する
-  IoU threshold for identifying non-formula lines: 非数式行を識別するための IoU 閾値
-  Language: 言語
   Link: リンク
-  Maximum number of requests processed simultaneously: 同時に処理する最大リクエスト数
-  Maximum pages per part (for auto-split translation, 0 means no limit): 「最大ページ数/パート（自動分割翻訳用、0 は無制限を意味します）」
-  Merge alternating line numbers: 交互行番号を統合
-  Minimum text length to translate: 翻訳する最小テキスト長
-  'Most API providers provide this parameter, such as OpenAI GPT-4: 500 RPM': ほとんどの API プロバイダーはこのパラメータを提供しています。例えば OpenAI GPT-4 の場合：500 RPM
-  No Watermark: 透かしなし
-  Non-formula line IoU threshold: 非公式ラインの IoU 閾値
-  Number of requests sent per second: 1 秒あたりのリクエスト送信数
-  OCR workaround (experimental, will auto enable Skip scanned detection in backend): OCR 回避策（実験的、バックエンドで「スキャンされた文書の検出をスキップ」を自動的に有効にします）
-  Only include translated pages in the output PDF.: 出力 PDF には翻訳済みのページのみを含めてください。
-  Page range (e.g., 1,3,5-10,-5): ページ範囲（例：1,3,5-10,-5）
-  Pages: ページ
-  Pool Max Workers: "プール最大ワーカー数"
-  Primary font family for translated text: 翻訳テキストの主要フォントファミリー
-  Protection threshold for figures and tables (lines within figures/tables will not be processed): 図表の保護閾値（図表内の行は処理されません）
-  Put translated pages first in dual mode: デュアルモードでは翻訳ページを優先表示
-  QPS (Queries Per Second): QPS (クエリ毎秒)
-  RPC service for document layout analysis (optional): 文書レイアウト分析用 RPC サービス（オプション）
-  RPM (Requests Per Minute): RPM (1 分あたりのリクエスト数)
-  Rate Limit Mode: "レート制限モード"
-  Remove non-formula lines: 非数式行を削除
-  Remove non-formula lines within paragraph areas: 段落エリア内の非数式行を削除
-  ? Select the rate limit mode that best suits your API provider, system will automatically convert the rate limiting values of RPM or Concurrent Requests to QPS and Pool Max Workers when you click the Translate button
-  : API プロバイダーに最適なレートリミットモードを選択してください。「没入型翻訳」ボタンをクリックすると、システムが RPM または同時リクエスト数のレート制限値を QPS およびプール最大ワーカー数に自動的に変換します。
-  Service: サービス
-  Skip clean (maybe improve compatibility): 「クリーンをスキップ（互換性が向上する可能性あり）」
-  Skip formula offset calculation: 「数式オフセット計算をスキップ」
-  Skip formula offset calculation during processing: 処理中に数式オフセット計算をスキップする
-  Skip scanned detection: "スキャン検出をスキップ"
-  Split threshold factor for short lines: 短い行の分割しきい値係数
-  Translate: 翻訳
-  Translate from: 翻訳元
-  Translate table text (experimental): 「表のテキストを翻訳（実験的機能）」
-  Translate to: 翻訳先
   Type: タイプ
-  Use alternating pages for dual PDF: 「デュアル PDF には交互ページを使用」
-  Watermark mode: 透かしモード
-  Watermarked: 透かし入り
-  e.g. /no_think You are a professional, authentic machine translation engine.: e.g. /no_think You are a professional, authentic machine translation engine.
+  '## Translation Options': '## 翻訳オプション'
+  Free translation service provided by [SiliconFlow](https://siliconflow.cn): '[SiliconFlow](https://siliconflow.cn)
+    が提供する無料翻訳サービス'
+  Service: サービス
+  Translate from: 翻訳元
+  Translate to: 翻訳先
+  Pages: ページ
+  Page range (e.g., 1,3,5-10,-5): ページ範囲（例：1,3,5-10,-5）
   e.g., 1,3,5-10: 例：1,3,5-10
+  Effective only when a page range is specified.: 「ページ範囲が指定されている場合にのみ有効です。」
+  Only include translated pages in the output PDF.: 出力 PDF には翻訳済みのページのみを含めてください。
+  RPM (Requests Per Minute): RPM (1 分あたりのリクエスト数)
+  Concurrent Requests: 同時リクエスト
+  Custom: カスタム
+  ? Select the rate limit mode that best suits your API provider, system will automatically
+    convert the rate limiting values of RPM or Concurrent Requests to QPS and Pool
+    Max Workers when you click the Translate button
+  : API プロバイダーに最適なレートリミットモードを選択してください。「没入型翻訳」ボタンをクリックすると、システムが RPM または同時リクエスト数のレート制限値を
+    QPS およびプール最大ワーカー数に自動的に変換します。
+  Rate Limit Mode: レート制限モード
+  'Most API providers provide this parameter, such as OpenAI GPT-4: 500 RPM': ほとんどの
+    API プロバイダーはこのパラメータを提供しています。例えば OpenAI GPT-4 の場合：500 RPM
+  Maximum number of requests processed simultaneously: 同時に処理する最大リクエスト数
+  Concurrent Threads: 同時スレッド
+  Number of requests sent per second: 1 秒あたりのリクエスト送信数
+  QPS (Queries Per Second): QPS (クエリ毎秒)
+  If not set or set to 0, QPS will be used as the number of workers: 設定されていない場合、または
+    0 に設定されている場合、QPS がワーカー数として使用されます
+  Pool Max Workers: プール最大ワーカー数
+  '## PDF Output Options': '## PDF 出力オプション'
+  Disable monolingual output: 単一言語出力を無効にする
+  Disable bilingual output: 「バイリンガル出力を無効にする」
+  Put translated pages first in dual mode: デュアルモードでは翻訳ページを優先表示
+  Use alternating pages for dual PDF: 「デュアル PDF には交互ページを使用」
+  Watermarked: 透かし入り
+  No Watermark: 透かしなし
+  Watermark mode: 透かしモード
+  Custom prompt for translation: 翻訳用のカスタムプロンプト
+  Custom prompt for the translator: 翻訳者用のカスタムプロンプト
+  Custom System Prompt: カスタムシステムプロンプト
+  e.g. /no_think You are a professional, authentic machine translation engine.: e.g.
+    /no_think You are a professional, authentic machine translation engine.
+  Minimum text length to translate: 翻訳する最小テキスト長
+  RPC service for document layout analysis (optional): 文書レイアウト分析用 RPC サービス（オプション）
+  Disable auto extract glossary: 自動用語集抽出を無効にする
   save automatically extracted glossary: 自動抽出された用語集を保存
+  Primary font family for translated text: 翻訳テキストの主要フォントファミリー
+  Glossary File: 用語集ファイル
+  '### PDF Options': '### PDF オプション'
+  Skip clean (maybe improve compatibility): 「クリーンをスキップ（互換性が向上する可能性あり）」
+  Disable rich text translation (maybe improve compatibility): リッチテキスト翻訳を無効にする（互換性が向上する可能性あり）
+  Enhance compatibility (auto-enables skip_clean and disable_rich_text): 互換性を向上（skip_clean
+    と disable_rich_text を自動で有効化）
+  Force split short lines into different paragraphs: 短い行を強制的に別の段落に分割する
+  Split threshold factor for short lines: 短い行の分割しきい値係数
+  Translate table text (experimental): 「表のテキストを翻訳（実験的機能）」
+  Skip scanned detection: スキャン検出をスキップ
+  OCR workaround (experimental, will auto enable Skip scanned detection in backend): OCR
+    回避策（実験的、バックエンドで「スキャンされた文書の検出をスキップ」を自動的に有効にします）
+  Auto enable OCR workaround (enable automatic OCR workaround for heavily scanned documents): OCR
+    自動回避策を有効にする（スキャン文書が多い場合に自動で OCR 回避策を適用）
+  Maximum pages per part (for auto-split translation, 0 means no limit): 「最大ページ数/パート（自動分割翻訳用、0
+    は無制限を意味します）」
+  Font pattern to identify formula text (regex, not recommended to change): 数式テキストを識別するためのフォントパターン（正規表現、変更は非推奨）
+  Character pattern to identify formula text (regex, not recommended to change): 「数式テキストを識別するための文字パターン（正規表現、変更は推奨されません）」
+  Ignore cache: キャッシュを無視する
+  '#### BabelDOC Advanced Options': '#### BabelDOC 詳細設定'
+  Handle alternating line numbers and text paragraphs in documents with line numbers: 行番号付き文書における行番号とテキスト段落の交互処理
+  Merge alternating line numbers: 交互行番号を統合
+  Remove non-formula lines within paragraph areas: 段落エリア内の非数式行を削除
+  Remove non-formula lines: 非数式行を削除
+  IoU threshold for identifying non-formula lines: 非数式行を識別するための IoU 閾値
+  Non-formula line IoU threshold: 非公式ラインの IoU 閾値
+  Protection threshold for figures and tables (lines within figures/tables will not be processed): 図表の保護閾値（図表内の行は処理されません）
+  Figure/table protection threshold: 図表保護閾値
+  Skip formula offset calculation during processing: 処理中に数式オフセット計算をスキップする
+  Skip formula offset calculation: 「数式オフセット計算をスキップ」
+  Advanced Options: 高度なオプション
+  '## Translated': '## 翻訳済み'
+  Download Translation (Mono): 「翻訳をダウンロード（モノ）」
+  Download Translation (Dual): 翻訳をダウンロード（デュアル）
+  Download automatically extracted glossary: 自動抽出された用語集をダウンロード
+  Translate: 翻訳
+  Cancel: キャンセル
+  Save Config: Save Config
+  '## Preview': '## プレビュー'
+  Document Preview: ドキュメントプレビュー
 ko:
+  UI Language: UI Language
   '## File': '## 파일'
-  '## PDF Output Options': '## PDF 출력 옵션'
-  '## Preview': '## 미리보기'
-  '## Translated': '## 번역됨'
-  '## Translation Options': "## 번역 옵션"
-  '### PDF Options': '### PDF 옵션'
-  '#### BabelDOC Advanced Options': '#### BabelDOC 고급 옵션'
-  Advanced Options: 고급 옵션
-  Auto enable OCR workaround (enable automatic OCR workaround for heavily scanned documents): 자동 OCR 해결 방법 활성화 (스캔이 많이 된 문서에 대해 자동 OCR 해결 방법을 활성화합니다)
-  Cancel: 취소
-  Character pattern to identify formula text (regex, not recommended to change): "수식 텍스트를 식별할 문자 패턴 (정규 표현식, 변경하지 않는 것이 좋음)"
-  Concurrent Requests: 동시 요청
-  Concurrent Threads: "동시 스레드"
-  Custom: "사용자 지정"
-  Custom System Prompt: "사용자 정의 시스템 프롬프트"
-  Custom prompt for the translator: 번역기를 위한 사용자 지정 프롬프트
-  Custom prompt for translation: 번역을 위한 사용자 지정 프롬프트
-  Disable auto extract glossary: "자동 용어집 추출 비활성화"
-  Disable bilingual output: "이중 언어 출력 비활성화"
-  Disable monolingual output: "단일 언어 출력 비활성화"
-  Disable rich text translation (maybe improve compatibility): "서식 있는 텍스트 번역 비활성화 (호환성 향상 가능)"
-  Document Preview: 문서 미리 보기
-  Download Translation (Dual): "번역본 다운로드 (이중 언어)"
-  Download Translation (Mono): "번역본 다운로드 (모노)"
-  Download automatically extracted glossary: "자동으로 추출된 용어집 다운로드"
-  Effective only when a page range is specified.: "페이지 범위가 지정된 경우에만 효과적입니다."
-  Enhance compatibility (auto-enables skip_clean and disable_rich_text): "호환성 향상 (skip_clean 및 disable_rich_text 자동 활성화)"
-  Figure/table protection threshold: "그림/표 보호 임계값"
-  File: "파일"
-  Font pattern to identify formula text (regex, not recommended to change): "수식 텍스트를 식별하기 위한 글꼴 패턴 (정규식, 변경 비권장)"
-  Force split short lines into different paragraphs: "짧은 줄을 강제로 다른 단락으로 분할"
-  Free translation service provided by [SiliconFlow](https://siliconflow.cn): "[SiliconFlow](https://siliconflow.cn) 에서 제공하는 무료 번역 서비스"
-  Glossary File: "용어집 파일"
-  Handle alternating line numbers and text paragraphs in documents with line numbers: "줄 번호가 있는 문서에서 번호와 텍스트 단락을 번갈아 처리하기"
-  If not set or set to 0, QPS will be used as the number of workers: "설정하지 않거나 0 으로 설정할 경우 QPS 가 작업자 수로 사용됩니다"
-  Ignore cache: 캐시 무시
-  IoU threshold for identifying non-formula lines: 수식이 아닌 줄을 식별하기 위한 IoU 임계값
-  Language: "언어"
-  Link: "링크"
-  Maximum number of requests processed simultaneously: 동시에 처리되는 최대 요청 수
-  Maximum pages per part (for auto-split translation, 0 means no limit): "파트당 최대 페이지 수 (자동 분할 번역용, 0 은 제한 없음)"
-  Merge alternating line numbers: "교대로 줄 번호 병합"
-  Minimum text length to translate: 번역할 최소 텍스트 길이
-  'Most API providers provide this parameter, such as OpenAI GPT-4: 500 RPM': 대부분의 API 제공업체는 이 매개변수를 제공합니다. 예를 들어 OpenAI GPT-4 의 경우 500 RPM 입니다.
-  No Watermark: "워터마크 없음"
-  Non-formula line IoU threshold: "비공식 라인 IoU 임계값"
-  Number of requests sent per second: 초당 전송된 요청 수
-  OCR workaround (experimental, will auto enable Skip scanned detection in backend): OCR 우회 방법 (실험적, 백엔드에서 '스캔된 문서 감지 건너뛰기' 자동 활성화됨)
-  Only include translated pages in the output PDF.: 출력 PDF 에 번역된 페이지만 포함하세요.
-  Page range (e.g., 1,3,5-10,-5): "페이지 범위 (예: 1,3,5-10,-5)"
-  Pages: 페이지
-  Pool Max Workers: "풀 최대 작업자 수"
-  Primary font family for translated text: 번역된 텍스트의 기본 글꼴 패밀리
-  Protection threshold for figures and tables (lines within figures/tables will not be processed): 그림 및 표 보호 임계값 (그림/표 내부의 선은 처리되지 않음)
-  Put translated pages first in dual mode: "듀얼 모드에서 번역된 페이지를 먼저 표시"
-  QPS (Queries Per Second): "QPS (초당 쿼리 수)"
-  RPC service for document layout analysis (optional): 문서 레이아웃 분석을 위한 RPC 서비스 (선택 사항)
-  RPM (Requests Per Minute): "RPM (분당 요청 수)"
-  Rate Limit Mode: "속도 제한 모드"
-  Remove non-formula lines: "수식이 아닌 줄 제거"
-  Remove non-formula lines within paragraph areas: 단락 영역 내에서 수식이 아닌 줄 제거
-  ? Select the rate limit mode that best suits your API provider, system will automatically convert the rate limiting values of RPM or Concurrent Requests to QPS and Pool Max Workers when you click the Translate button
-  : API 제공자에 가장 적합한 속도 제한 모드를 선택하세요. '변환' 버튼을 클릭하면 시스템이 RPM 또는 동시 요청 속도 제한 값을 QPS 및 Pool Max Workers 로 자동 변환합니다.
+  File: 파일
+  Link: 링크
+  Type: 유형
+  '## Translation Options': '## 번역 옵션'
+  Free translation service provided by [SiliconFlow](https://siliconflow.cn): '[SiliconFlow](https://siliconflow.cn)
+    에서 제공하는 무료 번역 서비스'
   Service: 서비스
-  Skip clean (maybe improve compatibility): "클린 작업 건너뛰기 (호환성 향상 가능)"
-  Skip formula offset calculation: "수식 오프셋 계산 건너뛰기"
-  Skip formula offset calculation during processing: 처리 중 수식 오프셋 계산 건너뛰기
-  Skip scanned detection: "스캔 감지 건너뛰기"
+  Translate from: 번역 출처
+  Translate to: 번역하기
+  Pages: 페이지
+  Page range (e.g., 1,3,5-10,-5): '페이지 범위 (예: 1,3,5-10,-5)'
+  e.g., 1,3,5-10: '예: 1,3,5-10'
+  Effective only when a page range is specified.: 페이지 범위가 지정된 경우에만 효과적입니다.
+  Only include translated pages in the output PDF.: 출력 PDF 에 번역된 페이지만 포함하세요.
+  RPM (Requests Per Minute): RPM (분당 요청 수)
+  Concurrent Requests: 동시 요청
+  Custom: 사용자 지정
+  ? Select the rate limit mode that best suits your API provider, system will automatically
+    convert the rate limiting values of RPM or Concurrent Requests to QPS and Pool
+    Max Workers when you click the Translate button
+  : API 제공자에 가장 적합한 속도 제한 모드를 선택하세요. '변환' 버튼을 클릭하면 시스템이 RPM 또는 동시 요청 속도 제한 값을 QPS
+    및 Pool Max Workers 로 자동 변환합니다.
+  Rate Limit Mode: 속도 제한 모드
+  'Most API providers provide this parameter, such as OpenAI GPT-4: 500 RPM': 대부분의
+    API 제공업체는 이 매개변수를 제공합니다. 예를 들어 OpenAI GPT-4 의 경우 500 RPM 입니다.
+  Maximum number of requests processed simultaneously: 동시에 처리되는 최대 요청 수
+  Concurrent Threads: 동시 스레드
+  Number of requests sent per second: 초당 전송된 요청 수
+  QPS (Queries Per Second): QPS (초당 쿼리 수)
+  If not set or set to 0, QPS will be used as the number of workers: 설정하지 않거나 0 으로
+    설정할 경우 QPS 가 작업자 수로 사용됩니다
+  Pool Max Workers: 풀 최대 작업자 수
+  '## PDF Output Options': '## PDF 출력 옵션'
+  Disable monolingual output: 단일 언어 출력 비활성화
+  Disable bilingual output: 이중 언어 출력 비활성화
+  Put translated pages first in dual mode: 듀얼 모드에서 번역된 페이지를 먼저 표시
+  Use alternating pages for dual PDF: PDF 양면 인쇄 시 번갈아 사용
+  Watermarked: 워터마크 처리된
+  No Watermark: 워터마크 없음
+  Watermark mode: 워터마크 모드
+  Custom prompt for translation: 번역을 위한 사용자 지정 프롬프트
+  Custom prompt for the translator: 번역기를 위한 사용자 지정 프롬프트
+  Custom System Prompt: 사용자 정의 시스템 프롬프트
+  e.g. /no_think You are a professional, authentic machine translation engine.: e.g.
+    /no_think You are a professional, authentic machine translation engine.
+  Minimum text length to translate: 번역할 최소 텍스트 길이
+  RPC service for document layout analysis (optional): 문서 레이아웃 분석을 위한 RPC 서비스 (선택
+    사항)
+  Disable auto extract glossary: 자동 용어집 추출 비활성화
+  save automatically extracted glossary: 자동 추출된 용어집 저장
+  Primary font family for translated text: 번역된 텍스트의 기본 글꼴 패밀리
+  Glossary File: 용어집 파일
+  '### PDF Options': '### PDF 옵션'
+  Skip clean (maybe improve compatibility): 클린 작업 건너뛰기 (호환성 향상 가능)
+  Disable rich text translation (maybe improve compatibility): 서식 있는 텍스트 번역 비활성화 (호환성
+    향상 가능)
+  Enhance compatibility (auto-enables skip_clean and disable_rich_text): 호환성 향상 (skip_clean
+    및 disable_rich_text 자동 활성화)
+  Force split short lines into different paragraphs: 짧은 줄을 강제로 다른 단락으로 분할
   Split threshold factor for short lines: 짧은 줄에 대한 분할 임계값 계수
+  Translate table text (experimental): 표 텍스트 번역 (실험적 기능)
+  Skip scanned detection: 스캔 감지 건너뛰기
+  OCR workaround (experimental, will auto enable Skip scanned detection in backend): OCR
+    우회 방법 (실험적, 백엔드에서 '스캔된 문서 감지 건너뛰기' 자동 활성화됨)
+  Auto enable OCR workaround (enable automatic OCR workaround for heavily scanned documents): 자동
+    OCR 해결 방법 활성화 (스캔이 많이 된 문서에 대해 자동 OCR 해결 방법을 활성화합니다)
+  Maximum pages per part (for auto-split translation, 0 means no limit): 파트당 최대 페이지
+    수 (자동 분할 번역용, 0 은 제한 없음)
+  Font pattern to identify formula text (regex, not recommended to change): 수식 텍스트를
+    식별하기 위한 글꼴 패턴 (정규식, 변경 비권장)
+  Character pattern to identify formula text (regex, not recommended to change): 수식
+    텍스트를 식별할 문자 패턴 (정규 표현식, 변경하지 않는 것이 좋음)
+  Ignore cache: 캐시 무시
+  '#### BabelDOC Advanced Options': '#### BabelDOC 고급 옵션'
+  Handle alternating line numbers and text paragraphs in documents with line numbers: 줄
+    번호가 있는 문서에서 번호와 텍스트 단락을 번갈아 처리하기
+  Merge alternating line numbers: 교대로 줄 번호 병합
+  Remove non-formula lines within paragraph areas: 단락 영역 내에서 수식이 아닌 줄 제거
+  Remove non-formula lines: 수식이 아닌 줄 제거
+  IoU threshold for identifying non-formula lines: 수식이 아닌 줄을 식별하기 위한 IoU 임계값
+  Non-formula line IoU threshold: 비공식 라인 IoU 임계값
+  Protection threshold for figures and tables (lines within figures/tables will not be processed): 그림
+    및 표 보호 임계값 (그림/표 내부의 선은 처리되지 않음)
+  Figure/table protection threshold: 그림/표 보호 임계값
+  Skip formula offset calculation during processing: 처리 중 수식 오프셋 계산 건너뛰기
+  Skip formula offset calculation: 수식 오프셋 계산 건너뛰기
+  Advanced Options: 고급 옵션
+  '## Translated': '## 번역됨'
+  Download Translation (Mono): 번역본 다운로드 (모노)
+  Download Translation (Dual): 번역본 다운로드 (이중 언어)
+  Download automatically extracted glossary: 자동으로 추출된 용어집 다운로드
   Translate: 번역
-  Translate from: "번역 출처"
-  Translate table text (experimental): "표 텍스트 번역 (실험적 기능)"
-  Translate to: "번역하기"
-  Type: "유형"
-  Use alternating pages for dual PDF: "PDF 양면 인쇄 시 번갈아 사용"
-  Watermark mode: "워터마크 모드"
-  Watermarked: "워터마크 처리된"
-  e.g. /no_think You are a professional, authentic machine translation engine.: e.g. /no_think You are a professional, authentic machine translation engine.
-  e.g., 1,3,5-10: "예: 1,3,5-10"
-  save automatically extracted glossary: "자동 추출된 용어집 저장"
+  Cancel: 취소
+  Save Config: Save Config
+  '## Preview': '## 미리보기'
+  Document Preview: 문서 미리 보기
 pt:
-  '## File': "## Arquivo"
-  '## PDF Output Options': "## Opções de Saída em PDF"
-  '## Preview': "## Visualização"
-  '## Translated': '## Traduzido'
-  '## Translation Options': "## Opções de Tradução"
+  UI Language: UI Language
+  '## File': '## Arquivo'
+  File: Arquivo
+  Link: Link
+  Type: Tipo
+  '## Translation Options': '## Opções de Tradução'
+  Free translation service provided by [SiliconFlow](https://siliconflow.cn): Serviço
+    de tradução gratuito fornecido por [SiliconFlow](https://siliconflow.cn)
+  Service: Serviço
+  Translate from: Traduzir de
+  Translate to: Traduzir para
+  Pages: Páginas
+  Page range (e.g., 1,3,5-10,-5): 'Intervalo de páginas (ex.: 1,3,5-10,-5)'
+  e.g., 1,3,5-10: por exemplo, 1,3,5-10
+  Effective only when a page range is specified.: Efetivo apenas quando um intervalo
+    de páginas é especificado.
+  Only include translated pages in the output PDF.: Incluir apenas páginas traduzidas
+    no PDF de saída.
+  RPM (Requests Per Minute): RPM (Solicitações Por Minuto)
+  Concurrent Requests: Requisições Simultâneas
+  Custom: Personalizado
+  ? Select the rate limit mode that best suits your API provider, system will automatically
+    convert the rate limiting values of RPM or Concurrent Requests to QPS and Pool
+    Max Workers when you click the Translate button
+  : Selecione o modo de limite de taxa que melhor se adapta ao seu provedor de API.
+    O sistema converterá automaticamente os valores de limitação de taxa de RPM ou
+    Solicitações Simultâneas para QPS e Pool Max Workers quando você clicar no botão
+    Traduzir
+  Rate Limit Mode: Modo de Limite de Taxa
+  'Most API providers provide this parameter, such as OpenAI GPT-4: 500 RPM': 'A maioria
+    dos provedores de API fornecem esse parâmetro, como OpenAI GPT-4: 500 RPM'
+  Maximum number of requests processed simultaneously: Número máximo de solicitações
+    processadas simultaneamente
+  Concurrent Threads: Threads Simultâneas
+  Number of requests sent per second: Número de solicitações enviadas por segundo
+  QPS (Queries Per Second): QPS (Consultas Por Segundo)
+  If not set or set to 0, QPS will be used as the number of workers: Se não for definido
+    ou definido como 0, o QPS será usado como o número de workers
+  Pool Max Workers: Pool Máximo de Trabalhadores
+  '## PDF Output Options': '## Opções de Saída em PDF'
+  Disable monolingual output: Desativar saída monolíngue
+  Disable bilingual output: Desativar saída bilíngue
+  Put translated pages first in dual mode: Colocar páginas traduzidas primeiro no
+    modo duplo
+  Use alternating pages for dual PDF: Usar páginas alternadas para PDF duplo
+  Watermarked: Marcado d''água
+  No Watermark: Sem Marca d''Água
+  Watermark mode: Modo de marca d''água
+  Custom prompt for translation: Prompt personalizado para tradução
+  Custom prompt for the translator: Prompt personalizado para o tradutor
+  Custom System Prompt: Prompt Personalizado do Sistema
+  e.g. /no_think You are a professional, authentic machine translation engine.: e.g.
+    /no_think You are a professional, authentic machine translation engine.
+  Minimum text length to translate: Comprimento mínimo do texto para traduzir
+  RPC service for document layout analysis (optional): Serviço RPC para análise de
+    layout de documentos (opcional)
+  Disable auto extract glossary: Desativar extração automática de glossário
+  save automatically extracted glossary: salvar glossário extraído automaticamente
+  Primary font family for translated text: Família de fonte principal para texto traduzido
+  Glossary File: Arquivo de Glossário
   '### PDF Options': '### Opções de PDF'
+  Skip clean (maybe improve compatibility): Ignorar limpeza (pode melhorar a compatibilidade)
+  Disable rich text translation (maybe improve compatibility): Desativar tradução
+    de texto rico (pode melhorar a compatibilidade)
+  Enhance compatibility (auto-enables skip_clean and disable_rich_text): Melhorar
+    compatibilidade (ativa automaticamente skip_clean e disable_rich_text)
+  Force split short lines into different paragraphs: Forçar a divisão de linhas curtas
+    em parágrafos diferentes
+  Split threshold factor for short lines: Fator de limite de divisão para linhas curtas
+  Translate table text (experimental): Traduzir texto da tabela (experimental)
+  Skip scanned detection: Ignorar detecção digitalizada
+  OCR workaround (experimental, will auto enable Skip scanned detection in backend): Solução
+    alternativa de OCR (experimental, ativará automaticamente a opção Pular detecção
+    de digitalizado no backend)
+  Auto enable OCR workaround (enable automatic OCR workaround for heavily scanned documents): Ativar
+    automaticamente solução alternativa de OCR (habilitar solução alternativa automática
+    de OCR para documentos muito digitalizados)
+  Maximum pages per part (for auto-split translation, 0 means no limit): Máximo de
+    páginas por parte (para tradução automática dividida, 0 significa sem limite)
+  Font pattern to identify formula text (regex, not recommended to change): Padrão
+    de fonte para identificar texto de fórmula (regex, não recomendado alterar)
+  Character pattern to identify formula text (regex, not recommended to change): Padrão
+    de caracteres para identificar texto de fórmula (regex, não recomendado alterar)
+  Ignore cache: Ignorar cache
   '#### BabelDOC Advanced Options': '#### Opções Avançadas do BabelDOC'
-  Advanced Options: "Opções Avançadas"
-  Auto enable OCR workaround (enable automatic OCR workaround for heavily scanned documents): "Ativar automaticamente solução alternativa de OCR (habilitar solução alternativa automática de OCR para documentos muito digitalizados)"
-  Cancel: "Cancelar"
-  Character pattern to identify formula text (regex, not recommended to change): "Padrão de caracteres para identificar texto de fórmula (regex, não recomendado alterar)"
-  Concurrent Requests: "Requisições Simultâneas"
-  Concurrent Threads: "Threads Simultâneas"
-  Custom: "Personalizado"
-  Custom System Prompt: "Prompt Personalizado do Sistema"
-  Custom prompt for the translator: "Prompt personalizado para o tradutor"
-  Custom prompt for translation: "Prompt personalizado para tradução"
-  Disable auto extract glossary: "Desativar extração automática de glossário"
-  Disable bilingual output: "Desativar saída bilíngue"
-  Disable monolingual output: "Desativar saída monolíngue"
-  Disable rich text translation (maybe improve compatibility): "Desativar tradução de texto rico (pode melhorar a compatibilidade)"
-  Document Preview: "Pré-visualização do Documento"
-  Download Translation (Dual): "Baixar Tradução (Dual)"
-  Download Translation (Mono): "Baixar Tradução (Mono)"
-  Download automatically extracted glossary: "Baixar glossário extraído automaticamente"
-  Effective only when a page range is specified.: "Efetivo apenas quando um intervalo de páginas é especificado."
-  Enhance compatibility (auto-enables skip_clean and disable_rich_text): "Melhorar compatibilidade (ativa automaticamente skip_clean e disable_rich_text)"
-  Figure/table protection threshold: "Limite de proteção de figuras/tabelas"
-  File: "Arquivo"
-  Font pattern to identify formula text (regex, not recommended to change): "Padrão de fonte para identificar texto de fórmula (regex, não recomendado alterar)"
-  Force split short lines into different paragraphs: "Forçar a divisão de linhas curtas em parágrafos diferentes"
-  Free translation service provided by [SiliconFlow](https://siliconflow.cn): "Serviço de tradução gratuito fornecido por [SiliconFlow](https://siliconflow.cn)"
-  Glossary File: "Arquivo de Glossário"
-  Handle alternating line numbers and text paragraphs in documents with line numbers: "Lidar com números de linha alternados e parágrafos de texto em documentos com numeração de linhas"
-  If not set or set to 0, QPS will be used as the number of workers: "Se não for definido ou definido como 0, o QPS será usado como o número de workers"
-  Ignore cache: "Ignorar cache"
-  IoU threshold for identifying non-formula lines: "Limiar de IoU para identificar linhas não fórmulas"
-  Language: "Idioma"
-  Link: "Link"
-  Maximum number of requests processed simultaneously: "Número máximo de solicitações processadas simultaneamente"
-  Maximum pages per part (for auto-split translation, 0 means no limit): "Máximo de páginas por parte (para tradução automática dividida, 0 significa sem limite)"
-  Merge alternating line numbers: "Mesclar numeração de linhas alternadas"
-  Minimum text length to translate: "Comprimento mínimo do texto para traduzir"
-  'Most API providers provide this parameter, such as OpenAI GPT-4: 500 RPM': "A maioria dos provedores de API fornecem esse parâmetro, como OpenAI GPT-4: 500 RPM"
-  No Watermark: "Sem Marca d''Água"
-  Non-formula line IoU threshold: "Limiar de IoU para linha não-formulada"
-  Number of requests sent per second: "Número de solicitações enviadas por segundo"
-  OCR workaround (experimental, will auto enable Skip scanned detection in backend): "Solução alternativa de OCR (experimental, ativará automaticamente a opção Pular detecção de digitalizado no backend)"
-  Only include translated pages in the output PDF.: "Incluir apenas páginas traduzidas no PDF de saída."
-  Page range (e.g., 1,3,5-10,-5): "Intervalo de páginas (ex.: 1,3,5-10,-5)"
-  Pages: "Páginas"
-  Pool Max Workers: "Pool Máximo de Trabalhadores"
-  Primary font family for translated text: "Família de fonte principal para texto traduzido"
-  Protection threshold for figures and tables (lines within figures/tables will not be processed): "Limiar de proteção para figuras e tabelas (linhas dentro de figuras/tabelas não serão processadas)"
-  Put translated pages first in dual mode: "Colocar páginas traduzidas primeiro no modo duplo"
-  QPS (Queries Per Second): "QPS (Consultas Por Segundo)"
-  RPC service for document layout analysis (optional): "Serviço RPC para análise de layout de documentos (opcional)"
-  RPM (Requests Per Minute): "RPM (Solicitações Por Minuto)"
-  Rate Limit Mode: "Modo de Limite de Taxa"
-  Remove non-formula lines: "Remover linhas não-formuladas"
-  Remove non-formula lines within paragraph areas: "Remover linhas que não são fórmulas dentro de áreas de parágrafo"
-  ? Select the rate limit mode that best suits your API provider, system will automatically convert the rate limiting values of RPM or Concurrent Requests to QPS and Pool Max Workers when you click the Translate button
-  : "Selecione o modo de limite de taxa que melhor se adapta ao seu provedor de API. O sistema converterá automaticamente os valores de limitação de taxa de RPM ou Solicitações Simultâneas para QPS e Pool Max Workers quando você clicar no botão Traduzir"
-  Service: "Serviço"
-  Skip clean (maybe improve compatibility): "Ignorar limpeza (pode melhorar a compatibilidade)"
-  Skip formula offset calculation: "Pular cálculo de deslocamento da fórmula"
-  Skip formula offset calculation during processing: "Pular cálculo de deslocamento de fórmula durante o processamento"
-  Skip scanned detection: "Ignorar detecção digitalizada"
-  Split threshold factor for short lines: "Fator de limite de divisão para linhas curtas"
-  Translate: "Traduzir"
-  Translate from: "Traduzir de"
-  Translate table text (experimental): "Traduzir texto da tabela (experimental)"
-  Translate to: "Traduzir para"
-  Type: "Tipo"
-  Use alternating pages for dual PDF: "Usar páginas alternadas para PDF duplo"
-  Watermark mode: "Modo de marca d''água"
-  Watermarked: "Marcado d''água"
-  e.g. /no_think You are a professional, authentic machine translation engine.: e.g. /no_think You are a professional, authentic machine translation engine.
-  e.g., 1,3,5-10: "por exemplo, 1,3,5-10"
-  save automatically extracted glossary: "salvar glossário extraído automaticamente"
+  Handle alternating line numbers and text paragraphs in documents with line numbers: Lidar
+    com números de linha alternados e parágrafos de texto em documentos com numeração
+    de linhas
+  Merge alternating line numbers: Mesclar numeração de linhas alternadas
+  Remove non-formula lines within paragraph areas: Remover linhas que não são fórmulas
+    dentro de áreas de parágrafo
+  Remove non-formula lines: Remover linhas não-formuladas
+  IoU threshold for identifying non-formula lines: Limiar de IoU para identificar
+    linhas não fórmulas
+  Non-formula line IoU threshold: Limiar de IoU para linha não-formulada
+  Protection threshold for figures and tables (lines within figures/tables will not be processed): Limiar
+    de proteção para figuras e tabelas (linhas dentro de figuras/tabelas não serão
+    processadas)
+  Figure/table protection threshold: Limite de proteção de figuras/tabelas
+  Skip formula offset calculation during processing: Pular cálculo de deslocamento
+    de fórmula durante o processamento
+  Skip formula offset calculation: Pular cálculo de deslocamento da fórmula
+  Advanced Options: Opções Avançadas
+  '## Translated': '## Traduzido'
+  Download Translation (Mono): Baixar Tradução (Mono)
+  Download Translation (Dual): Baixar Tradução (Dual)
+  Download automatically extracted glossary: Baixar glossário extraído automaticamente
+  Translate: Traduzir
+  Cancel: Cancelar
+  Save Config: Save Config
+  '## Preview': '## Visualização'
+  Document Preview: Pré-visualização do Documento
 ru:
+  UI Language: UI Language
   '## File': '## Файл'
-  '## PDF Output Options': '## Параметры вывода в PDF'
-  '## Preview': '## Предпросмотр'
-  '## Translated': '## Переведено'
-  '## Translation Options': '## Параметры перевода'
-  '### PDF Options': '### Параметры PDF'
-  '#### BabelDOC Advanced Options': '#### Расширенные настройки BabelDOC'
-  Advanced Options: "Дополнительные настройки"
-  Auto enable OCR workaround (enable automatic OCR workaround for heavily scanned documents): "Автоматически включать обходное решение для OCR (включить автоматическое обходное решение для сильно сканированных документов)"
-  Cancel: Отмена
-  Character pattern to identify formula text (regex, not recommended to change): "Шаблон символов для определения текста формулы (regex, не рекомендуется изменять)"
-  Concurrent Requests: "Параллельные запросы"
-  Concurrent Threads: "Параллельные потоки"
-  Custom: "Настроить"
-  Custom System Prompt: "Пользовательский системный промпт"
-  Custom prompt for the translator: "Пользовательский запрос для переводчика"
-  Custom prompt for translation: "Пользовательский запрос для перевода"
-  Disable auto extract glossary: "Отключить автоматическое извлечение глоссария"
-  Disable bilingual output: Отключить двуязычный вывод
-  Disable monolingual output: Отключить одноязычный вывод
-  Disable rich text translation (maybe improve compatibility): "Отключить форматированный перевод (может улучшить совместимость)"
-  Document Preview: "Просмотр документа"
-  Download Translation (Dual): "Скачать перевод (Двойной)"
-  Download Translation (Mono): "Скачать перевод (Моно)"
-  Download automatically extracted glossary: "Скачать автоматически извлеченный глоссарий"
-  Effective only when a page range is specified.: Действительно только при указании диапазона страниц.
-  Enhance compatibility (auto-enables skip_clean and disable_rich_text): "Повысить совместимость (автоматически включает skip_clean и disable_rich_text)"
-  Figure/table protection threshold: "Порог защиты рисунков/таблиц"
   File: Файл
-  Font pattern to identify formula text (regex, not recommended to change): "Шаблон шрифта для распознавания формул (регулярное выражение, не рекомендуется изменять)"
-  Force split short lines into different paragraphs: "Принудительно разделять короткие строки на разные абзацы"
-  Free translation service provided by [SiliconFlow](https://siliconflow.cn): "Бесплатный сервис перевода предоставлен [SiliconFlow](https://siliconflow.cn)"
-  Glossary File: Файл глоссария
-  Handle alternating line numbers and text paragraphs in documents with line numbers: "Обрабатывать чередующиеся номера строк и текстовые абзацы в документах с нумерацией строк"
-  If not set or set to 0, QPS will be used as the number of workers: "Если значение не задано или равно 0, в качестве количества рабочих процессов будет использоваться QPS"
-  Ignore cache: "Игнорировать кэш"
-  IoU threshold for identifying non-formula lines: "Порог IoU для определения строк без формул"
-  Language: Язык
   Link: Ссылка
-  Maximum number of requests processed simultaneously: "Максимальное количество одновременно обрабатываемых запросов"
-  Maximum pages per part (for auto-split translation, 0 means no limit): "Максимальное количество страниц на часть (для автоматического разделения перевода, 0 означает без ограничений)"
-  Merge alternating line numbers: "Объединить чередующиеся номера строк"
-  Minimum text length to translate: Минимальная длина текста для перевода
-  'Most API providers provide this parameter, such as OpenAI GPT-4: 500 RPM': "Большинство API-провайдеров предоставляют этот параметр, например OpenAI GPT-4: 500 RPM"
-  No Watermark: "Без водяного знака"
-  Non-formula line IoU threshold: "Порог IoU для неформульных строк"
-  Number of requests sent per second: "Количество запросов в секунду"
-  OCR workaround (experimental, will auto enable Skip scanned detection in backend): "Обходной путь для OCR (экспериментальный, автоматически отключит проверку сканированных изображений в бэкенде)"
-  Only include translated pages in the output PDF.: "Включать в выходной PDF только переведенные страницы."
-  Page range (e.g., 1,3,5-10,-5): "Диапазон страниц (например, 1,3,5-10,-5)"
-  Pages: "Страницы"
-  Pool Max Workers: "Максимальное количество рабочих процессов"
-  Primary font family for translated text: Основное семейство шрифтов для переведённого текста
-  Protection threshold for figures and tables (lines within figures/tables will not be processed): "Порог защиты для рисунков и таблиц (строки внутри рисунков/таблиц обрабатываться не будут)"
-  Put translated pages first in dual mode: "Показывать переведённые страницы первыми в двойном режиме"
-  QPS (Queries Per Second): QPS (запросов в секунду)
-  RPC service for document layout analysis (optional): "Сервис RPC для анализа структуры документа (опционально)"
-  RPM (Requests Per Minute): "RPM (запросов в минуту)"
-  Rate Limit Mode: "Режим ограничения скорости"
-  Remove non-formula lines: Удалить строки без формул
-  Remove non-formula lines within paragraph areas: Удалить строки без формул в пределах абзацев
-  ? Select the rate limit mode that best suits your API provider, system will automatically convert the rate limiting values of RPM or Concurrent Requests to QPS and Pool Max Workers when you click the Translate button
-  : "Выберите режим ограничения скорости, который лучше всего подходит для вашего API-провайдера. Система автоматически преобразует значения ограничения скорости RPM или количества одновременных запросов в QPS и максимальное количество рабочих процессов (Pool Max Workers) при нажатии кнопки «Перевести»."
+  Type: Тип
+  '## Translation Options': '## Параметры перевода'
+  Free translation service provided by [SiliconFlow](https://siliconflow.cn): Бесплатный
+    сервис перевода предоставлен [SiliconFlow](https://siliconflow.cn)
   Service: Сервис
-  Skip clean (maybe improve compatibility): "Пропустить очистку (может улучшить совместимость)"
-  Skip formula offset calculation: "Пропустить расчет смещения формулы"
-  Skip formula offset calculation during processing: "Пропустить расчет смещения формулы во время обработки"
-  Skip scanned detection: "Пропустить обнаружение сканирования"
-  Split threshold factor for short lines: "Коэффициент порога разделения для коротких строк"
-  Translate: "Перевести"
-  Translate from: "Перевести с"
-  Translate table text (experimental): "Перевести текст таблицы (экспериментальная функция)"
-  Translate to: "Перевести на"
-  Type: "Тип"
-  Use alternating pages for dual PDF: "Использовать чередующиеся страницы для двойного PDF"
+  Translate from: Перевести с
+  Translate to: Перевести на
+  Pages: Страницы
+  Page range (e.g., 1,3,5-10,-5): Диапазон страниц (например, 1,3,5-10,-5)
+  e.g., 1,3,5-10: напр., 1,3,5-10
+  Effective only when a page range is specified.: Действительно только при указании
+    диапазона страниц.
+  Only include translated pages in the output PDF.: Включать в выходной PDF только
+    переведенные страницы.
+  RPM (Requests Per Minute): RPM (запросов в минуту)
+  Concurrent Requests: Параллельные запросы
+  Custom: Настроить
+  ? Select the rate limit mode that best suits your API provider, system will automatically
+    convert the rate limiting values of RPM or Concurrent Requests to QPS and Pool
+    Max Workers when you click the Translate button
+  : Выберите режим ограничения скорости, который лучше всего подходит для вашего API-провайдера.
+    Система автоматически преобразует значения ограничения скорости RPM или количества
+    одновременных запросов в QPS и максимальное количество рабочих процессов (Pool
+    Max Workers) при нажатии кнопки «Перевести».
+  Rate Limit Mode: Режим ограничения скорости
+  'Most API providers provide this parameter, such as OpenAI GPT-4: 500 RPM': 'Большинство
+    API-провайдеров предоставляют этот параметр, например OpenAI GPT-4: 500 RPM'
+  Maximum number of requests processed simultaneously: Максимальное количество одновременно
+    обрабатываемых запросов
+  Concurrent Threads: Параллельные потоки
+  Number of requests sent per second: Количество запросов в секунду
+  QPS (Queries Per Second): QPS (запросов в секунду)
+  If not set or set to 0, QPS will be used as the number of workers: Если значение
+    не задано или равно 0, в качестве количества рабочих процессов будет использоваться
+    QPS
+  Pool Max Workers: Максимальное количество рабочих процессов
+  '## PDF Output Options': '## Параметры вывода в PDF'
+  Disable monolingual output: Отключить одноязычный вывод
+  Disable bilingual output: Отключить двуязычный вывод
+  Put translated pages first in dual mode: Показывать переведённые страницы первыми
+    в двойном режиме
+  Use alternating pages for dual PDF: Использовать чередующиеся страницы для двойного
+    PDF
+  Watermarked: С водяным знаком
+  No Watermark: Без водяного знака
   Watermark mode: Режим водяного знака
-  Watermarked: "С водяным знаком"
-  e.g. /no_think You are a professional, authentic machine translation engine.: e.g. /no_think You are a professional, authentic machine translation engine.
-  e.g., 1,3,5-10: "напр., 1,3,5-10"
-  save automatically extracted glossary: "сохранить автоматически извлечённый глоссарий"
+  Custom prompt for translation: Пользовательский запрос для перевода
+  Custom prompt for the translator: Пользовательский запрос для переводчика
+  Custom System Prompt: Пользовательский системный промпт
+  e.g. /no_think You are a professional, authentic machine translation engine.: e.g.
+    /no_think You are a professional, authentic machine translation engine.
+  Minimum text length to translate: Минимальная длина текста для перевода
+  RPC service for document layout analysis (optional): Сервис RPC для анализа структуры
+    документа (опционально)
+  Disable auto extract glossary: Отключить автоматическое извлечение глоссария
+  save automatically extracted glossary: сохранить автоматически извлечённый глоссарий
+  Primary font family for translated text: Основное семейство шрифтов для переведённого
+    текста
+  Glossary File: Файл глоссария
+  '### PDF Options': '### Параметры PDF'
+  Skip clean (maybe improve compatibility): Пропустить очистку (может улучшить совместимость)
+  Disable rich text translation (maybe improve compatibility): Отключить форматированный
+    перевод (может улучшить совместимость)
+  Enhance compatibility (auto-enables skip_clean and disable_rich_text): Повысить
+    совместимость (автоматически включает skip_clean и disable_rich_text)
+  Force split short lines into different paragraphs: Принудительно разделять короткие
+    строки на разные абзацы
+  Split threshold factor for short lines: Коэффициент порога разделения для коротких
+    строк
+  Translate table text (experimental): Перевести текст таблицы (экспериментальная
+    функция)
+  Skip scanned detection: Пропустить обнаружение сканирования
+  OCR workaround (experimental, will auto enable Skip scanned detection in backend): Обходной
+    путь для OCR (экспериментальный, автоматически отключит проверку сканированных
+    изображений в бэкенде)
+  Auto enable OCR workaround (enable automatic OCR workaround for heavily scanned documents): Автоматически
+    включать обходное решение для OCR (включить автоматическое обходное решение для
+    сильно сканированных документов)
+  Maximum pages per part (for auto-split translation, 0 means no limit): Максимальное
+    количество страниц на часть (для автоматического разделения перевода, 0 означает
+    без ограничений)
+  Font pattern to identify formula text (regex, not recommended to change): Шаблон
+    шрифта для распознавания формул (регулярное выражение, не рекомендуется изменять)
+  Character pattern to identify formula text (regex, not recommended to change): Шаблон
+    символов для определения текста формулы (regex, не рекомендуется изменять)
+  Ignore cache: Игнорировать кэш
+  '#### BabelDOC Advanced Options': '#### Расширенные настройки BabelDOC'
+  Handle alternating line numbers and text paragraphs in documents with line numbers: Обрабатывать
+    чередующиеся номера строк и текстовые абзацы в документах с нумерацией строк
+  Merge alternating line numbers: Объединить чередующиеся номера строк
+  Remove non-formula lines within paragraph areas: Удалить строки без формул в пределах
+    абзацев
+  Remove non-formula lines: Удалить строки без формул
+  IoU threshold for identifying non-formula lines: Порог IoU для определения строк
+    без формул
+  Non-formula line IoU threshold: Порог IoU для неформульных строк
+  Protection threshold for figures and tables (lines within figures/tables will not be processed): Порог
+    защиты для рисунков и таблиц (строки внутри рисунков/таблиц обрабатываться не
+    будут)
+  Figure/table protection threshold: Порог защиты рисунков/таблиц
+  Skip formula offset calculation during processing: Пропустить расчет смещения формулы
+    во время обработки
+  Skip formula offset calculation: Пропустить расчет смещения формулы
+  Advanced Options: Дополнительные настройки
+  '## Translated': '## Переведено'
+  Download Translation (Mono): Скачать перевод (Моно)
+  Download Translation (Dual): Скачать перевод (Двойной)
+  Download automatically extracted glossary: Скачать автоматически извлеченный глоссарий
+  Translate: Перевести
+  Cancel: Отмена
+  Save Config: Save Config
+  '## Preview': '## Предпросмотр'
+  Document Preview: Просмотр документа
 zh:
-  '## File': "## 文件"
-  '## PDF Output Options': "## PDF 输出选项"
-  '## Preview': "## 预览"
-  '## Translated': "## 已翻译"
-  '## Translation Options': "## 翻译选项"
-  '### PDF Options': '### PDF 选项'
-  '#### BabelDOC Advanced Options': '#### BabelDOC 高级选项'
-  Advanced Options: 高级选项
-  Auto enable OCR workaround (enable automatic OCR workaround for heavily scanned documents): 自动启用 OCR 变通方案（为重度扫描文档启用自动 OCR 变通方案）
-  Cancel: 取消
-  Character pattern to identify formula text (regex, not recommended to change): 用于识别公式文本的字符模式（正则表达式，不建议更改）
-  Concurrent Requests: 并发请求
-  Concurrent Threads: "并发线程"
-  Custom: 自定义
-  Custom System Prompt: "自定义系统提示"
-  Custom prompt for the translator: "翻译器的自定义提示"
-  Custom prompt for translation: "翻译自定义提示"
-  Disable auto extract glossary: "禁用自动提取术语表"
-  Disable bilingual output: "禁用双语输出"
-  Disable monolingual output: 禁用单语输出
-  Disable rich text translation (maybe improve compatibility): 禁用富文本翻译（可能提升兼容性）
-  Document Preview: 文档预览
-  Download Translation (Dual): "下载翻译（双语）"
-  Download Translation (Mono): "下载翻译（单语）"
-  Download automatically extracted glossary: 下载自动提取的术语表
-  Effective only when a page range is specified.: "仅在指定页面范围时生效"
-  Enhance compatibility (auto-enables skip_clean and disable_rich_text): "增强兼容性（自动启用 skip_clean 和 disable_rich_text）"
-  Figure/table protection threshold: "图表保护阈值"
+  UI Language: UI Language
+  '## File': '## 文件'
   File: 文件
-  Font pattern to identify formula text (regex, not recommended to change): 用于识别公式文本的字体模式（正则表达式，不建议更改）
-  Force split short lines into different paragraphs: "强制将短行分割为不同段落"
-  Free translation service provided by [SiliconFlow](https://siliconflow.cn): "免费翻译服务由 [SiliconFlow](https://siliconflow.cn) 提供"
-  Glossary File: 术语表文件
-  Handle alternating line numbers and text paragraphs in documents with line numbers: 处理带行号文档中的交替行号与文本段落
-  If not set or set to 0, QPS will be used as the number of workers: 如果未设置或设置为 0，QPS 将用作工作线程数
-  Ignore cache: 忽略缓存
-  IoU threshold for identifying non-formula lines: 用于识别非公式行的 IoU 阈值
-  Language: 语言
   Link: 链接
-  Maximum number of requests processed simultaneously: "同时处理的最大请求数量"
-  Maximum pages per part (for auto-split translation, 0 means no limit): "每部分最大页数（用于自动拆分翻译，0 表示无限制）"
-  Merge alternating line numbers: 合并交替行号
-  Minimum text length to translate: "最小翻译文本长度"
-  'Most API providers provide this parameter, such as OpenAI GPT-4: 500 RPM': 大多数 API 提供商都提供此参数，例如 OpenAI GPT-4:500 RPM
-  No Watermark: "无水印"
-  Non-formula line IoU threshold: 非公式行 IoU 阈值
-  Number of requests sent per second: 每秒发送的请求数
-  OCR workaround (experimental, will auto enable Skip scanned detection in backend): OCR 变通方案（实验性，将自动在后端启用跳过扫描检测）
-  Only include translated pages in the output PDF.: "仅在输出的 PDF 中包含翻译后的页面。"
-  Page range (e.g., 1,3,5-10,-5): "页码范围（例如：1,3,5-10,-5）"
-  Pages: 页面
-  Pool Max Workers: "池最大工作线程数"
-  Primary font family for translated text: 翻译文本的主要字体
-  Protection threshold for figures and tables (lines within figures/tables will not be processed): 图表保护阈值（图表内的内容将不会被处理）
-  Put translated pages first in dual mode: 在双栏模式下优先显示翻译页面
-  QPS (Queries Per Second): "QPS (每秒查询数)"
-  RPC service for document layout analysis (optional): 文档布局分析的 RPC 服务（可选）
-  RPM (Requests Per Minute): "RPM（每分钟请求数）"
-  Rate Limit Mode: "速率限制模式"
-  Remove non-formula lines: 移除非公式行
-  Remove non-formula lines within paragraph areas: 移除段落区域内的非公式行
-  ? Select the rate limit mode that best suits your API provider, system will automatically convert the rate limiting values of RPM or Concurrent Requests to QPS and Pool Max Workers when you click the Translate button
-  : 请选择最适合您 API 提供商的速率限制模式，当您点击"沉浸式翻译"按钮时，系统会自动将 RPM 或并发请求的限流值转换为 QPS 和池最大工作线程数。
+  Type: 类型
+  '## Translation Options': '## 翻译选项'
+  Free translation service provided by [SiliconFlow](https://siliconflow.cn): 免费翻译服务由
+    [SiliconFlow](https://siliconflow.cn) 提供
   Service: 服务
-  Skip clean (maybe improve compatibility): "跳过清理（可能提高兼容性）"
-  Skip formula offset calculation: 跳过公式偏移计算
-  Skip formula offset calculation during processing: 处理过程中跳过公式偏移计算
-  Skip scanned detection: "跳过扫描检测"
-  Split threshold factor for short lines: "短行分割阈值系数"
-  Translate: "翻译"
-  Translate from: "从...翻译"
-  Translate table text (experimental): 翻译表格文本（实验性功能）
-  Translate to: "翻译为"
-  Type: "类型"
-  Use alternating pages for dual PDF: "使用交替页面进行双页 PDF"
-  Watermark mode: "水印模式"
-  Watermarked: "加水印"
-  e.g. /no_think You are a professional, authentic machine translation engine.: e.g. /no_think You are a professional, authentic machine translation engine.
-  e.g., 1,3,5-10: "例如：1、3、5-10"
+  Translate from: 从...翻译
+  Translate to: 翻译为
+  Pages: 页面
+  Page range (e.g., 1,3,5-10,-5): 页码范围（例如：1,3,5-10,-5）
+  e.g., 1,3,5-10: 例如：1、3、5-10
+  Effective only when a page range is specified.: 仅在指定页面范围时生效
+  Only include translated pages in the output PDF.: 仅在输出的 PDF 中包含翻译后的页面。
+  RPM (Requests Per Minute): RPM（每分钟请求数）
+  Concurrent Requests: 并发请求
+  Custom: 自定义
+  ? Select the rate limit mode that best suits your API provider, system will automatically
+    convert the rate limiting values of RPM or Concurrent Requests to QPS and Pool
+    Max Workers when you click the Translate button
+  : 请选择最适合您 API 提供商的速率限制模式，当您点击"沉浸式翻译"按钮时，系统会自动将 RPM 或并发请求的限流值转换为 QPS 和池最大工作线程数。
+  Rate Limit Mode: 速率限制模式
+  'Most API providers provide this parameter, such as OpenAI GPT-4: 500 RPM': 大多数
+    API 提供商都提供此参数，例如 OpenAI GPT-4:500 RPM
+  Maximum number of requests processed simultaneously: 同时处理的最大请求数量
+  Concurrent Threads: 并发线程
+  Number of requests sent per second: 每秒发送的请求数
+  QPS (Queries Per Second): QPS (每秒查询数)
+  If not set or set to 0, QPS will be used as the number of workers: 如果未设置或设置为 0，QPS
+    将用作工作线程数
+  Pool Max Workers: 池最大工作线程数
+  '## PDF Output Options': '## PDF 输出选项'
+  Disable monolingual output: 禁用单语输出
+  Disable bilingual output: 禁用双语输出
+  Put translated pages first in dual mode: 在双栏模式下优先显示翻译页面
+  Use alternating pages for dual PDF: 使用交替页面进行双页 PDF
+  Watermarked: 加水印
+  No Watermark: 无水印
+  Watermark mode: 水印模式
+  Custom prompt for translation: 翻译自定义提示
+  Custom prompt for the translator: 翻译器的自定义提示
+  Custom System Prompt: 自定义系统提示
+  e.g. /no_think You are a professional, authentic machine translation engine.: e.g.
+    /no_think You are a professional, authentic machine translation engine.
+  Minimum text length to translate: 最小翻译文本长度
+  RPC service for document layout analysis (optional): 文档布局分析的 RPC 服务（可选）
+  Disable auto extract glossary: 禁用自动提取术语表
   save automatically extracted glossary: 保存自动提取的术语表
-zh-TW:
-  '## File': '## 檔案'
-  '## PDF Output Options': "## PDF 輸出選項"
-  '## Preview': '## 預覽'
-  '## Translated': '## 已翻譯'
-  '## Translation Options': "## 翻譯選項"
-  '### PDF Options': '### PDF 選項'
-  '#### BabelDOC Advanced Options': '#### BabelDOC 進階選項'
-  Advanced Options: "進階選項"
-  Auto enable OCR workaround (enable automatic OCR workaround for heavily scanned documents): 自動啟用 OCR 解決方案（針對高度掃描的文件啟用自動 OCR 解決方案）
+  Primary font family for translated text: 翻译文本的主要字体
+  Glossary File: 术语表文件
+  '### PDF Options': '### PDF 选项'
+  Skip clean (maybe improve compatibility): 跳过清理（可能提高兼容性）
+  Disable rich text translation (maybe improve compatibility): 禁用富文本翻译（可能提升兼容性）
+  Enhance compatibility (auto-enables skip_clean and disable_rich_text): 增强兼容性（自动启用
+    skip_clean 和 disable_rich_text）
+  Force split short lines into different paragraphs: 强制将短行分割为不同段落
+  Split threshold factor for short lines: 短行分割阈值系数
+  Translate table text (experimental): 翻译表格文本（实验性功能）
+  Skip scanned detection: 跳过扫描检测
+  OCR workaround (experimental, will auto enable Skip scanned detection in backend): OCR
+    变通方案（实验性，将自动在后端启用跳过扫描检测）
+  Auto enable OCR workaround (enable automatic OCR workaround for heavily scanned documents): 自动启用
+    OCR 变通方案（为重度扫描文档启用自动 OCR 变通方案）
+  Maximum pages per part (for auto-split translation, 0 means no limit): 每部分最大页数（用于自动拆分翻译，0
+    表示无限制）
+  Font pattern to identify formula text (regex, not recommended to change): 用于识别公式文本的字体模式（正则表达式，不建议更改）
+  Character pattern to identify formula text (regex, not recommended to change): 用于识别公式文本的字符模式（正则表达式，不建议更改）
+  Ignore cache: 忽略缓存
+  '#### BabelDOC Advanced Options': '#### BabelDOC 高级选项'
+  Handle alternating line numbers and text paragraphs in documents with line numbers: 处理带行号文档中的交替行号与文本段落
+  Merge alternating line numbers: 合并交替行号
+  Remove non-formula lines within paragraph areas: 移除段落区域内的非公式行
+  Remove non-formula lines: 移除非公式行
+  IoU threshold for identifying non-formula lines: 用于识别非公式行的 IoU 阈值
+  Non-formula line IoU threshold: 非公式行 IoU 阈值
+  Protection threshold for figures and tables (lines within figures/tables will not be processed): 图表保护阈值（图表内的内容将不会被处理）
+  Figure/table protection threshold: 图表保护阈值
+  Skip formula offset calculation during processing: 处理过程中跳过公式偏移计算
+  Skip formula offset calculation: 跳过公式偏移计算
+  Advanced Options: 高级选项
+  '## Translated': '## 已翻译'
+  Download Translation (Mono): 下载翻译（单语）
+  Download Translation (Dual): 下载翻译（双语）
+  Download automatically extracted glossary: 下载自动提取的术语表
+  Translate: 翻译
   Cancel: 取消
-  Character pattern to identify formula text (regex, not recommended to change): 「識別公式文字的字元模式（正則表達式，不建議更改）」
-  Concurrent Requests: 「並行請求」
-  Concurrent Threads: "並行執行緒"
-  Custom: 自訂
-  Custom System Prompt: 自訂系統提示
-  Custom prompt for the translator: 翻譯器的自訂提示
-  Custom prompt for translation: 「翻譯自訂提示」
-  Disable auto extract glossary: "停用自動提取詞彙表"
-  Disable bilingual output: 停用雙語輸出
-  Disable monolingual output: "停用單語輸出"
-  Disable rich text translation (maybe improve compatibility): 停用富文本翻譯（可能提升相容性）
-  Document Preview: "文件預覽"
-  Download Translation (Dual): 「下載翻譯（雙語版）」
-  Download Translation (Mono): "下載翻譯（單聲道）"
-  Download automatically extracted glossary: 「下載自動提取的詞彙表」
-  Effective only when a page range is specified.: 僅在指定頁面範圍時有效
-  Enhance compatibility (auto-enables skip_clean and disable_rich_text): "增強相容性 (自動啟用 skip_clean 和 disable_rich_text)"
-  Figure/table protection threshold: "圖表保護閾值"
-  File: "檔案"
-  Font pattern to identify formula text (regex, not recommended to change): 用於識別公式文字的字型模式（正則表達式，不建議更改）
-  Force split short lines into different paragraphs: 強制將短行分割為不同段落
-  Free translation service provided by [SiliconFlow](https://siliconflow.cn): "[SiliconFlow](https://siliconflow.cn) 提供的免費翻譯服務"
-  Glossary File: 「詞彙表檔案」
-  Handle alternating line numbers and text paragraphs in documents with line numbers: 處理文件中交替的行號與文字段落（含行號的文件）
-  If not set or set to 0, QPS will be used as the number of workers: 若未設定或設為 0，將使用 QPS 作為工作執行緒數量
-  Ignore cache: 忽略快取
-  IoU threshold for identifying non-formula lines: 用於識別非公式線條的 IoU 閾值
-  Language: 語言
-  Link: "連結"
-  Maximum number of requests processed simultaneously: 同時處理的最大請求數量
-  Maximum pages per part (for auto-split translation, 0 means no limit): 「每部分最大頁數（用於自動分割翻譯，0 表示無限制）」
-  Merge alternating line numbers: "合併交替行號"
-  Minimum text length to translate: 「最小翻譯文字長度」
-  'Most API providers provide this parameter, such as OpenAI GPT-4: 500 RPM': 大多數 API 提供商都提供此參數，例如 OpenAI GPT-4:500 RPM
-  No Watermark: "無浮水印"
-  Non-formula line IoU threshold: "非公式線條 IoU 閾值"
-  Number of requests sent per second: 每秒發送的請求數量
-  OCR workaround (experimental, will auto enable Skip scanned detection in backend): OCR 解決方案 (實驗性，後端將自動啟用「跳過掃描檢測」)
-  Only include translated pages in the output PDF.: "僅在輸出 PDF 中包含已翻譯的頁面。"
-  Page range (e.g., 1,3,5-10,-5): "頁數範圍（例如：1,3,5-10,-5）"
-  Pages: "頁面"
-  Pool Max Workers: "池最大工作者數"
-  Primary font family for translated text: 翻譯文字的主要字型家族
-  Protection threshold for figures and tables (lines within figures/tables will not be processed): 圖表和表格的保護閾值（圖表/表格內的線條將不被處理）
-  Put translated pages first in dual mode: 「在雙重模式下優先顯示翻譯頁面」
-  QPS (Queries Per Second): 「QPS (每秒查詢數)」
-  RPC service for document layout analysis (optional): 用於文件版面分析的 RPC 服務（可選）
-  RPM (Requests Per Minute): 「RPM（每分鐘請求數）」
-  Rate Limit Mode: 「速率限制模式」
-  Remove non-formula lines: "移除非公式行"
-  Remove non-formula lines within paragraph areas: 移除段落區域內的非公式行
-  ? Select the rate limit mode that best suits your API provider, system will automatically convert the rate limiting values of RPM or Concurrent Requests to QPS and Pool Max Workers when you click the Translate button
-  : 「選擇最適合您 API 供應商的速率限制模式，當您點擊轉換按鈕時，系統會自動將 RPM 或並發請求的速率限制值轉換為 QPS 和池最大工作線程數」
-  Service: "服務"
-  Skip clean (maybe improve compatibility): "跳過清理（可能提高相容性）"
-  Skip formula offset calculation: "跳過公式偏移計算"
-  Skip formula offset calculation during processing: "處理期間跳過公式偏移計算"
-  Skip scanned detection: "跳過掃描檢測"
-  Split threshold factor for short lines: 「短行分割閾值因子」
-  Translate: "翻譯"
-  Translate from: "從...翻譯"
-  Translate table text (experimental): 翻譯表格文字（實驗性功能）
-  Translate to: "翻譯成"
+  Save Config: Save Config
+  '## Preview': '## 预览'
+  Document Preview: 文档预览
+zh-TW:
+  UI Language: UI Language
+  '## File': '## 檔案'
+  File: 檔案
+  Link: 連結
   Type: 「類型」
+  '## Translation Options': '## 翻譯選項'
+  Free translation service provided by [SiliconFlow](https://siliconflow.cn): '[SiliconFlow](https://siliconflow.cn)
+    提供的免費翻譯服務'
+  Service: 服務
+  Translate from: 從...翻譯
+  Translate to: 翻譯成
+  Pages: 頁面
+  Page range (e.g., 1,3,5-10,-5): 頁數範圍（例如：1,3,5-10,-5）
+  e.g., 1,3,5-10: 例如：1,3,5-10
+  Effective only when a page range is specified.: 僅在指定頁面範圍時有效
+  Only include translated pages in the output PDF.: 僅在輸出 PDF 中包含已翻譯的頁面。
+  RPM (Requests Per Minute): 「RPM（每分鐘請求數）」
+  Concurrent Requests: 「並行請求」
+  Custom: 自訂
+  ? Select the rate limit mode that best suits your API provider, system will automatically
+    convert the rate limiting values of RPM or Concurrent Requests to QPS and Pool
+    Max Workers when you click the Translate button
+  : 「選擇最適合您 API 供應商的速率限制模式，當您點擊轉換按鈕時，系統會自動將 RPM 或並發請求的速率限制值轉換為 QPS 和池最大工作線程數」
+  Rate Limit Mode: 「速率限制模式」
+  'Most API providers provide this parameter, such as OpenAI GPT-4: 500 RPM': 大多數
+    API 提供商都提供此參數，例如 OpenAI GPT-4:500 RPM
+  Maximum number of requests processed simultaneously: 同時處理的最大請求數量
+  Concurrent Threads: 並行執行緒
+  Number of requests sent per second: 每秒發送的請求數量
+  QPS (Queries Per Second): 「QPS (每秒查詢數)」
+  If not set or set to 0, QPS will be used as the number of workers: 若未設定或設為 0，將使用
+    QPS 作為工作執行緒數量
+  Pool Max Workers: 池最大工作者數
+  '## PDF Output Options': '## PDF 輸出選項'
+  Disable monolingual output: 停用單語輸出
+  Disable bilingual output: 停用雙語輸出
+  Put translated pages first in dual mode: 「在雙重模式下優先顯示翻譯頁面」
   Use alternating pages for dual PDF: 「使用交替頁面進行雙頁 PDF」
+  Watermarked: 浮水印
+  No Watermark: 無浮水印
   Watermark mode: 浮水印模式
-  Watermarked: "浮水印"
-  e.g. /no_think You are a professional, authentic machine translation engine.: e.g. /no_think You are a professional, authentic machine translation engine.
-  e.g., 1,3,5-10: "例如：1,3,5-10"
-  save automatically extracted glossary: "儲存自動提取的詞彙表"
+  Custom prompt for translation: 「翻譯自訂提示」
+  Custom prompt for the translator: 翻譯器的自訂提示
+  Custom System Prompt: 自訂系統提示
+  e.g. /no_think You are a professional, authentic machine translation engine.: e.g.
+    /no_think You are a professional, authentic machine translation engine.
+  Minimum text length to translate: 「最小翻譯文字長度」
+  RPC service for document layout analysis (optional): 用於文件版面分析的 RPC 服務（可選）
+  Disable auto extract glossary: 停用自動提取詞彙表
+  save automatically extracted glossary: 儲存自動提取的詞彙表
+  Primary font family for translated text: 翻譯文字的主要字型家族
+  Glossary File: 「詞彙表檔案」
+  '### PDF Options': '### PDF 選項'
+  Skip clean (maybe improve compatibility): 跳過清理（可能提高相容性）
+  Disable rich text translation (maybe improve compatibility): 停用富文本翻譯（可能提升相容性）
+  Enhance compatibility (auto-enables skip_clean and disable_rich_text): 增強相容性 (自動啟用
+    skip_clean 和 disable_rich_text)
+  Force split short lines into different paragraphs: 強制將短行分割為不同段落
+  Split threshold factor for short lines: 「短行分割閾值因子」
+  Translate table text (experimental): 翻譯表格文字（實驗性功能）
+  Skip scanned detection: 跳過掃描檢測
+  OCR workaround (experimental, will auto enable Skip scanned detection in backend): OCR
+    解決方案 (實驗性，後端將自動啟用「跳過掃描檢測」)
+  Auto enable OCR workaround (enable automatic OCR workaround for heavily scanned documents): 自動啟用
+    OCR 解決方案（針對高度掃描的文件啟用自動 OCR 解決方案）
+  Maximum pages per part (for auto-split translation, 0 means no limit): 「每部分最大頁數（用於自動分割翻譯，0
+    表示無限制）」
+  Font pattern to identify formula text (regex, not recommended to change): 用於識別公式文字的字型模式（正則表達式，不建議更改）
+  Character pattern to identify formula text (regex, not recommended to change): 「識別公式文字的字元模式（正則表達式，不建議更改）」
+  Ignore cache: 忽略快取
+  '#### BabelDOC Advanced Options': '#### BabelDOC 進階選項'
+  Handle alternating line numbers and text paragraphs in documents with line numbers: 處理文件中交替的行號與文字段落（含行號的文件）
+  Merge alternating line numbers: 合併交替行號
+  Remove non-formula lines within paragraph areas: 移除段落區域內的非公式行
+  Remove non-formula lines: 移除非公式行
+  IoU threshold for identifying non-formula lines: 用於識別非公式線條的 IoU 閾值
+  Non-formula line IoU threshold: 非公式線條 IoU 閾值
+  Protection threshold for figures and tables (lines within figures/tables will not be processed): 圖表和表格的保護閾值（圖表/表格內的線條將不被處理）
+  Figure/table protection threshold: 圖表保護閾值
+  Skip formula offset calculation during processing: 處理期間跳過公式偏移計算
+  Skip formula offset calculation: 跳過公式偏移計算
+  Advanced Options: 進階選項
+  '## Translated': '## 已翻譯'
+  Download Translation (Mono): 下載翻譯（單聲道）
+  Download Translation (Dual): 「下載翻譯（雙語版）」
+  Download automatically extracted glossary: 「下載自動提取的詞彙表」
+  Translate: 翻譯
+  Cancel: 取消
+  Save Config: Save Config
+  '## Preview': '## 預覽'
+  Document Preview: 文件預覽
