@@ -46,6 +46,9 @@ dependencies = [
     "chardet>=5.2.0",
     "gradio-i18n>=0.3.1",
     "pyyaml>=6.0.2",
+    "redis>=6.4.0",
+    "celery>=5.5.3",
+
 ]
 
 [dependency-groups]
