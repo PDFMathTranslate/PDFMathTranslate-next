@@ -1,97 +1,73 @@
-> [!CAUTION]
->
-> This document is outdated, please do not refer to it.
 
-<h2 id="toc">Table of Content</h2>
-The present project supports two types of APIs, All methods need the Redis;
+## Running
 
-- [Functional calls in Python](#api-python)
-- [HTTP protocols](#api-http)
+You need **two processes**:
+
+1. **Celery worker**
+2. **FastAPI server**
+
+### Start the Celery worker
+
+```bash
+# Linux / macOS
+gelery -A pdf2zh_next.http_api.celery_app worker --loglevel=info
+
+# Windows (solo pool required)
+celery -A pdf2zh_next.http_api.celery_app worker --loglevel=info --pool=solo
+```
+
+### Run the FastAPI server
+
+```bash
+uvicorn pdf2zh_next.http_api:app --host 0.0.0.0 --port 8000 --reload
+```
+
+Swagger UI → [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs)
+
 
 ---
 
-<h2 id="api-python">Python</h2>
+## Using the HTTP API
 
-As `pdf2zh` is an installed module in Python, we expose two methods for other programs to call in any Python scripts.
+### 1) Submit a translate task
 
-For example, if you want translate a document from English to Chinese using Google Translate, you may use the following code:
-
-```python
-from pdf2zh_next import translate, translate_stream
-
-params = {
-    'lang_in': 'en',
-    'lang_out': 'zh',
-    'service': 'google',
-    'thread': 4,
-}
-```
-Translate with files:
-```python
-(file_mono, file_dual) = translate(files=['example.pdf'], **params)[0]
-```
-Translate with stream:
-```python
-with open('example.pdf', 'rb') as f:
-    (stream_mono, stream_dual) = translate_stream(stream=f.read(), **params)
+```bash
+curl -X POST "http://127.0.0.1:8000/v1/translate" \
+  -F "file=@/path/to/input.pdf" \
+  -F 'settings={"translation":{"lang_in":"tr","lang_out":"en"},"translate_engine_settings":{"translate_engine_type":"Google"}}'
 ```
 
-[⬆️ Back to top](#toc)
+**Response**
+
+```json
+{"id": "f8a61b9e-d93f-495c-afce-50b2fe23c90c"}
+```
 
 ---
 
-<h2 id="api-http">HTTP</h2>
+### 2) Check the task status
 
-In a more flexible way, you can communicate with the program using HTTP protocols, if:
+```bash
+curl -X GET "http://127.0.0.1:8000/v1/translate/<task-id>" -H 'accept: application/json'
+```
 
-1. Install and run backend
+**Example**
 
-   ```bash
-   pip install pdf2zh_next[backend]
-   pdf2zh_next --flask
-   pdf2zh_next --celery worker
-   ```
+```json
+{"state": "PROGRESS"}
+```
 
-2. Using HTTP protocols as follows:
 
-   - Submit translate task
+---
 
-     ```bash
-     curl http://localhost:11008/v1/translate -F "file=@example.pdf" -F "data={\"lang_in\":\"en\",\"lang_out\":\"zh\",\"service\":\"google\",\"thread\":4}"
-     {"id":"d9894125-2f4e-45ea-9d93-1a9068d2045a"}
-     ```
+### 3) Download the translated PDF
 
-   - Check Progress
+```bash
+# mono
+curl -X GET "http://127.0.0.1:8000/v1/translate/<task-id>/mono" -o output.mono.pdf
 
-     ```bash
-     curl http://localhost:11008/v1/translate/d9894125-2f4e-45ea-9d93-1a9068d2045a
-     {"info":{"n":13,"total":506},"state":"PROGRESS"}
-     ```
-
-   - Check Progress _(if finished)_
-
-     ```bash
-     curl http://localhost:11008/v1/translate/d9894125-2f4e-45ea-9d93-1a9068d2045a
-     {"state":"SUCCESS"}
-     ```
-
-   - Save monolingual file
-
-     ```bash
-     curl http://localhost:11008/v1/translate/d9894125-2f4e-45ea-9d93-1a9068d2045a/mono --output example-mono.pdf
-     ```
-
-   - Save bilingual file
-
-     ```bash
-     curl http://localhost:11008/v1/translate/d9894125-2f4e-45ea-9d93-1a9068d2045a/dual --output example-dual.pdf
-     ```
-
-   - Interrupt if running and delete the task
-     ```bash
-     curl http://localhost:11008/v1/translate/d9894125-2f4e-45ea-9d93-1a9068d2045a -X DELETE
-     ```
-
-[⬆️ Back to top](#toc)
+# dual
+curl -X GET "http://127.0.0.1:8000/v1/translate/<task-id>/dual" -o output.dual.pdf
+```
 
 ---
