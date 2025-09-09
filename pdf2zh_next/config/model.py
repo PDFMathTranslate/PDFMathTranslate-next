@@ -11,7 +11,7 @@ from pydantic import Field
 from pdf2zh_next.config.translate_engine_model import TRANSLATION_ENGINE_SETTING_TYPE
 
 log = logging.getLogger(__name__)
-
+logger = log
 # Very Important!
 # Only the following fields can be used for Field:
 # default
@@ -238,6 +238,10 @@ class SettingsModel(BaseModel):
         if self.basic.warmup:
             # warmup mode only download and verify assets
             # so no need to validate other settings
+            logger.critical(
+                "Please use `babeldoc --warmup` instead, pdf2zh_next --warmup is not implemented"
+            )
+            exit(1)
             return
 
         if self.basic.generate_offline_assets and self.basic.restore_offline_assets:
