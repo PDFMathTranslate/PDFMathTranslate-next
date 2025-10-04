@@ -99,6 +99,21 @@ async def main() -> int:
 
 
 def cli():
+    # Ensure PyInstaller-frozen multiprocessing works reliably on macOS
+    import multiprocessing as mp
+    try:
+        mp.set_start_method("spawn", force=True)
+    except RuntimeError:
+        pass
+    mp.freeze_support()
+
+    # Ensure tiktoken plugins are importable in frozen runtime
+    try:
+        # Prefer the internal plugin namespace shipped with tiktoken 0.11+
+        import tiktoken_ext.openai_public  # noqa: F401
+    except Exception:
+        pass
+
     sys.exit(asyncio.run(main()))
 
 

@@ -1,0 +1,260 @@
+name: build-macos-pyinstaller
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+  workflow_dispatch: {}
+
+jobs:
+  build-arm64:
+    name: macOS arm64 (macos-14)
+    runs-on: macos-14
+    env:
+      PIP_DISABLE_PIP_VERSION_CHECK: "1"
+      PIP_NO_PYTHON_VERSION_WARNING: "1"
+      PIP_ONLY_BINARY: ":all:"
+      PIP_CONSTRAINT: constraints-macos.txt
+      MACOSX_DEPLOYMENT_TARGET: "11.0"
+      PYTHONUTF8: "1"
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Create venv
+        run: |
+          python -m venv .venv
+          source .venv/bin/activate
+          python -m pip install -v -U -c constraints-macos.txt pip wheel setuptools
+
+      - name: Install build deps (arm64)
+        run: |
+          source .venv/bin/activate
+          python -m pip install -v -U -c constraints-macos.txt pyinstaller
+          # 先为 peewee 放开二进制轮子限制（peewee 无 macOS 轮子时会解析失败）
+          python -m pip install -v -U -c constraints-macos.txt --no-binary=peewee "peewee>=3.17.8"
+          # 安装项目：对其他依赖仍优先二进制轮子，仅对 peewee 允许 sdist
+          python -m pip install -v -U -c constraints-macos.txt tiktoken
+          python -m pip install -v -U -c constraints-macos.txt --only-binary=:all: --no-binary=peewee,untokenize .
+
+      - name: Diagnose tiktoken plugins (arm64)
+        run: |
+          source .venv/bin/activate
+          cat > diag_tiktoken.py <<'PY'
+          import sys
+          print("python:", sys.version)
+          try:
+              import tiktoken
+              print("tiktoken:", tiktoken.__version__)
+              try:
+                  from importlib.metadata import entry_points
+                  eps = entry_points(group="tiktoken_plugins")
+                  print("entry_points[tiktoken_plugins]:", [e.name for e in eps])
+              except Exception as e:
+                  print("entry_points error:", e)
+              try:
+                  import tiktoken_ext.openai_public  # noqa: F401
+                  print("import tiktoken_ext.openai_public: OK")
+              except Exception as e:
+                  print("import tiktoken_ext.openai_public: FAIL:", e)
+              try:
+                  names = list(tiktoken.list_encoding_names())
+                  print("has o200k_base:", "o200k_base" in names)
+                  print("encodings count:", len(names))
+              except Exception as e:
+                  print("list_encoding_names error:", e)
+          except Exception as e:
+              print("tiktoken import error:", e)
+          PY
+          python diag_tiktoken.py
+
+      # 移除单元测试，改为 E2E 测试
+
+      - name: Warmup optional assets
+        run: |
+          source .venv/bin/activate
+          babeldoc --version || true
+          babeldoc --warmup || true
+
+      - name: Build onefile (arm64)
+        run: |
+          source .venv/bin/activate
+          pyinstaller --version
+          pyinstaller --onefile -n pdf2zh \
+            --collect-all babeldoc \
+            --collect-all rapidocr_onnxruntime \
+            --collect-all gradio \
+            --collect-all gradio_pdf \
+            --collect-all tiktoken \
+            --collect-all tiktoken_ext \
+            --hidden-import tiktoken_ext.openai_public \
+            --collect-data tiktoken \
+            --collect-data langcodes \
+            --collect-data language_data \
+            --collect-data groovy \
+            --collect-data safehttpx \
+            --collect-data gradio_client \
+            --collect-data gradio \
+            --collect-data gradio_pdf \
+            --collect-data pdf2zh_next \
+            --collect-submodules tiktoken \
+            --collect-submodules pdf2zh_next.translator.translator_impl \
+            pdf2zh_next/main.py
+          file dist/pdf2zh
+          otool -L dist/pdf2zh | sed -n '1,120p'
+
+      - name: E2E test (arm64) - translate CLI samples
+        run: |
+          ./dist/pdf2zh --version
+          ./dist/pdf2zh ./test/file/translate.cli.plain.text.pdf --output ./test/file
+          ./dist/pdf2zh ./test/file/translate.cli.text.with.figure.pdf --output ./test/file
+
+      - name: Clear cache and test again (arm64)
+        run: |
+          rm -rf "$HOME/.cache/babeldoc" || true
+          ./dist/pdf2zh ./test/file/translate.cli.plain.text.pdf --output ./test/file
+
+      - name: Upload test results (arm64)
+        uses: actions/upload-artifact@v4
+        with:
+          name: test-results-arm64
+          path: ./test/file/
+
+      - name: Upload artifact (arm64)
+        uses: actions/upload-artifact@v4
+        with:
+          name: pdf2zh-arm64
+          path: dist/pdf2zh
+
+  build-x86_64:
+    name: macOS x86_64 (macos-13)
+    runs-on: macos-13
+    env:
+      PIP_DISABLE_PIP_VERSION_CHECK: "1"
+      PIP_NO_PYTHON_VERSION_WARNING: "1"
+      PIP_ONLY_BINARY: ":all:"
+      PIP_CONSTRAINT: constraints-macos.txt
+      MACOSX_DEPLOYMENT_TARGET: "11.0"
+      PYTHONUTF8: "1"
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Create venv
+        run: |
+          python -m venv .venv
+          source .venv/bin/activate
+          python -m pip install -v -U -c constraints-macos.txt pip wheel setuptools
+
+      - name: Install build deps (x86_64)
+        run: |
+          source .venv/bin/activate
+          python -m pip install -v -U -c constraints-macos.txt pyinstaller
+          # 先为 peewee 放开二进制轮子限制（peewee 无 macOS 轮子时会解析失败）
+          python -m pip install -v -U -c constraints-macos.txt --no-binary=peewee "peewee>=3.17.8"
+          # 安装项目：对其他依赖仍优先二进制轮子，仅对 peewee 允许 sdist
+          python -m pip install -v -U -c constraints-macos.txt tiktoken
+          python -m pip install -v -U -c constraints-macos.txt --only-binary=:all: --no-binary=peewee,untokenize .
+
+      - name: Diagnose tiktoken plugins (x86_64)
+        run: |
+          source .venv/bin/activate
+          cat > diag_tiktoken.py <<'PY'
+          import sys
+          print("python:", sys.version)
+          try:
+              import tiktoken
+              print("tiktoken:", tiktoken.__version__)
+              try:
+                  from importlib.metadata import entry_points
+                  eps = entry_points(group="tiktoken_plugins")
+                  print("entry_points[tiktoken_plugins]:", [e.name for e in eps])
+              except Exception as e:
+                  print("entry_points error:", e)
+              try:
+                  import tiktoken_ext.openai_public  # noqa: F401
+                  print("import tiktoken_ext.openai_public: OK")
+              except Exception as e:
+                  print("import tiktoken_ext.openai_public: FAIL:", e)
+              try:
+                  names = list(tiktoken.list_encoding_names())
+                  print("has o200k_base:", "o200k_base" in names)
+                  print("encodings count:", len(names))
+              except Exception as e:
+                  print("list_encoding_names error:", e)
+          except Exception as e:
+              print("tiktoken import error:", e)
+          PY
+          python diag_tiktoken.py
+
+      # 移除单元测试，改为 E2E 测试
+
+      - name: Warmup optional assets
+        run: |
+          source .venv/bin/activate
+          python -m pip install -U -c constraints-macos.txt --no-binary=untokenize babeldoc || true
+          babeldoc --version || true
+          babeldoc --warmup || true
+
+      - name: Build onefile (x86_64)
+        run: |
+          source .venv/bin/activate
+          pyinstaller --version
+          pyinstaller --onefile -n pdf2zh \
+            --collect-all babeldoc \
+            --collect-all rapidocr_onnxruntime \
+            --collect-all gradio \
+            --collect-all gradio_pdf \
+            --collect-all tiktoken \
+            --collect-all tiktoken_ext \
+            --hidden-import tiktoken_ext.openai_public \
+            --collect-data tiktoken \
+            --collect-data langcodes \
+            --collect-data language_data \
+            --collect-data groovy \
+            --collect-data safehttpx \
+            --collect-data gradio_client \
+            --collect-data gradio \
+            --collect-data gradio_pdf \
+            --collect-data pdf2zh_next \
+            --collect-submodules tiktoken \
+            --collect-submodules pdf2zh_next.translator.translator_impl \
+            pdf2zh_next/main.py
+          file dist/pdf2zh
+          otool -L dist/pdf2zh | sed -n '1,120p'
+
+      - name: E2E test (x86_64) - translate CLI samples
+        run: |
+          ./dist/pdf2zh --version
+          ./dist/pdf2zh ./test/file/translate.cli.plain.text.pdf --output ./test/file
+          ./dist/pdf2zh ./test/file/translate.cli.text.with.figure.pdf --output ./test/file
+
+      - name: Clear cache and test again (x86_64)
+        run: |
+          rm -rf "$HOME/.cache/babeldoc" || true
+          ./dist/pdf2zh ./test/file/translate.cli.plain.text.pdf --output ./test/file
+
+      - name: Upload test results (x86_64)
+        uses: actions/upload-artifact@v4
+        with:
+          name: test-results-x86_64
+          path: ./test/file/
+
+      - name: Upload artifact (x86_64)
+        uses: actions/upload-artifact@v4
+        with:
+          name: pdf2zh-x86_64
+          path: dist/pdf2zh
+
+

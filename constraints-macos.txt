@@ -1,0 +1,38 @@
+# macOS build constraints to help pip resolver and prefer compatible wheels
+
+# Cap pip to a stable resolver that avoids excessive backtracking on complex graphs
+pip==24.3.1
+
+# Narrow tenacity to a stable release to reduce candidate explosion
+tenacity==9.0.0
+
+# Pin tiktoken to a version with available macOS wheels for CPython 3.11
+tiktoken==0.11.0
+
+# Reduce resolver backtracking by pinning xsdata and its CLI formatter dependency
+xsdata==24.12
+docformatter==1.7.2
+
+# Constrain scikit-image dependency chain to reduce resolver depth
+scikit-image==0.25.2
+# Newest tifffile (2025.x) may trigger deep resolution; pin to a stable 2024 build
+tifffile==2024.8.30
+
+# Core scientific stack pins compatible with CPython 3.11, NumPy 2, and macOS wheels
+# Align with babeldoc (requires numpy>=2.0.2)
+numpy==2.0.2
+scipy==1.15.3
+networkx==3.2.1
+pillow==10.3.0
+imageio==2.34.1
+PyWavelets==1.5.0
+lazy_loader==0.4
+packaging==23.2
+
+# scikit-learn stack (align with numpy 2.x)
+scikit-learn==1.7.1
+joblib==1.4.2
+threadpoolctl==3.5.0
+
+
+ 
