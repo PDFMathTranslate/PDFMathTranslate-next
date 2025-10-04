@@ -169,6 +169,7 @@ jobs:
         run: |
           mkdir -p dist
           lipo -create artifacts/arm64/pdf2zh artifacts/x86_64/pdf2zh -output dist/pdf2zh
+          chmod +x dist/pdf2zh
           file dist/pdf2zh
           lipo -info dist/pdf2zh
           otool -L dist/pdf2zh | sed -n '1,120p'
