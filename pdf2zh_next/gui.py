@@ -415,6 +415,7 @@ def _build_translate_settings(
     base_settings: CLIEnvSettingsModel,
     file_path: Path,
     output_dir: Path,
+    dry_run: bool,
     ui_inputs: dict,
 ) -> SettingsModel:
     """
@@ -649,18 +650,30 @@ def _build_translate_settings(
 
     # Validate settings before proceeding
     try:
-        translate_settings.validate_settings()
-        settings = translate_settings.to_settings_model()
-        translate_settings.translation.output = original_output
-        translate_settings.pdf.pages = original_pages
-        translate_settings.gui_settings = original_gui_settings
-        translate_settings.basic.gui = False
-        translate_settings.basic.debug = False
-        translate_settings.translation.glossaries = None
-        if not settings.gui_settings.disable_config_auto_save:
-            config_manager.write_user_default_config_file(settings=translate_settings)
-        settings.validate_settings()
-        return settings
+        if dry_run:
+            translate_settings.validate_settings()
+            settings = translate_settings.to_settings_model()
+            translate_settings.translation.output = original_output
+            translate_settings.pdf.pages = original_pages
+            translate_settings.gui_settings = original_gui_settings
+            translate_settings.basic.gui = False
+            translate_settings.basic.debug = False
+            translate_settings.translation.glossaries = None
+            if not settings.gui_settings.disable_config_auto_save:
+                config_manager.write_user_default_config_file(
+                    settings=translate_settings
+                )
+            settings.validate_settings()
+            return settings
+        else:
+            settings = translate_settings.to_settings_model()
+            translate_settings.translation.output = original_output
+            translate_settings.pdf.pages = original_pages
+            translate_settings.gui_settings = original_gui_settings
+            translate_settings.basic.gui = False
+            translate_settings.basic.debug = False
+            translate_settings.translation.glossaries = None
+            return settings
     except ValueError as e:
         raise gr.Error(f"Invalid settings: {e}") from e
 
@@ -946,7 +959,7 @@ async def translate_file(
 
         # Step 2: Build translation settings
         translate_settings = _build_translate_settings(
-            settings.clone(), file_path, output_dir, ui_inputs
+            settings.clone(), file_path, output_dir, True, ui_inputs
         )
 
         # Step 3: Create and run the translation task
@@ -1006,6 +1019,159 @@ async def translate_file(
     finally:
         # Clear task reference
         state["current_task"] = None
+
+
+def save_config(
+    service,
+    lang_from,
+    lang_to,
+    page_range,
+    page_input,
+    # PDF Output Options
+    no_mono,
+    no_dual,
+    dual_translate_first,
+    use_alternating_pages_dual,
+    watermark_output_mode,
+    # Rate Limit Mode
+    rate_limit_mode,
+    rpm_input,
+    concurrent_threads,
+    custom_qps,
+    custom_pool_workers,
+    # Advanced Options
+    prompt,
+    min_text_length,
+    rpc_doclayout,
+    # New input for custom_system_prompt
+    custom_system_prompt_input,
+    glossary_file,
+    save_auto_extracted_glossary,
+    # New advanced translation options
+    no_auto_extract_glossary,
+    primary_font_family,
+    skip_clean,
+    disable_rich_text_translate,
+    enhance_compatibility,
+    split_short_lines,
+    short_line_split_factor,
+    translate_table_text,
+    skip_scanned_detection,
+    max_pages_per_part,
+    formular_font_pattern,
+    formular_char_pattern,
+    ignore_cache,
+    state,
+    ocr_workaround,
+    auto_enable_ocr_workaround,
+    only_include_translated_page,
+    # BabelDOC v0.5.1 new options
+    merge_alternating_line_numbers,
+    remove_non_formula_lines,
+    non_formula_line_iou_threshold,
+    figure_table_protection_threshold,
+    skip_formula_offset_calculation,
+    *translation_engine_arg_inputs,
+    progress=None,
+):
+    """
+    This function translates a PDF file from one language to another using the new architecture.
+
+    Inputs:
+        - file_type: The type of file to translate
+        - file_input: The file to translate
+        - link_input: The link to the file to translate
+        - service: The translation service to use
+        - lang_from: The language to translate from
+        - lang_to: The language to translate to
+        - page_range: The range of pages to translate
+        - page_input: The input for the page range
+        - prompt: The custom prompt for the llm
+        - threads: The number of threads to use
+        - skip_clean: Whether to skip subsetting fonts
+        - ignore_cache: Whether to ignore the translation cache
+        - state: The state of the translation process
+        - translation_engine_arg_inputs: The translator engine args
+        - progress: The progress bar
+    """
+    # Setup progress tracking
+    if progress is None:
+        progress = gr.Progress()
+
+    # Initialize session and output directory
+    session_id = str(uuid.uuid4())
+    state["session_id"] = session_id
+
+    # Track progress
+    progress(0, desc="Starting translation...")
+
+    # Prepare output directory
+    output_dir = Path("pdf2zh_files") / session_id
+    output_dir.mkdir(parents=True, exist_ok=True)
+
+    # Collection of UI inputs for config building
+    ui_inputs = {
+        "service": service,
+        "lang_from": lang_from,
+        "lang_to": lang_to,
+        "page_range": page_range,
+        "page_input": page_input,
+        # PDF Output Options
+        "no_mono": no_mono,
+        "no_dual": no_dual,
+        "dual_translate_first": dual_translate_first,
+        "use_alternating_pages_dual": use_alternating_pages_dual,
+        "watermark_output_mode": watermark_output_mode,
+        # Rate Limit Options
+        "rate_limit_mode": rate_limit_mode,
+        "rpm_input": rpm_input,
+        "concurrent_threads": concurrent_threads,
+        "custom_qps": custom_qps,
+        "custom_pool_workers": custom_pool_workers,
+        # Advanced Options
+        "prompt": prompt,
+        "min_text_length": min_text_length,
+        "rpc_doclayout": rpc_doclayout,
+        "custom_system_prompt_input": custom_system_prompt_input,
+        "glossaries": _build_glossary_list(glossary_file, service),
+        "save_auto_extracted_glossary": save_auto_extracted_glossary,
+        # New advanced translation options
+        "no_auto_extract_glossary": no_auto_extract_glossary,
+        "primary_font_family": primary_font_family,
+        "skip_clean": skip_clean,
+        "disable_rich_text_translate": disable_rich_text_translate,
+        "enhance_compatibility": enhance_compatibility,
+        "split_short_lines": split_short_lines,
+        "short_line_split_factor": short_line_split_factor,
+        "translate_table_text": translate_table_text,
+        "skip_scanned_detection": skip_scanned_detection,
+        "max_pages_per_part": max_pages_per_part,
+        "formular_font_pattern": formular_font_pattern,
+        "formular_char_pattern": formular_char_pattern,
+        "ignore_cache": ignore_cache,
+        "ocr_workaround": ocr_workaround,
+        "auto_enable_ocr_workaround": auto_enable_ocr_workaround,
+        "only_include_translated_page": only_include_translated_page,
+        # BabelDOC v0.5.1 new options
+        "merge_alternating_line_numbers": merge_alternating_line_numbers,
+        "remove_non_formula_lines": remove_non_formula_lines,
+        "non_formula_line_iou_threshold": non_formula_line_iou_threshold,
+        "figure_table_protection_threshold": figure_table_protection_threshold,
+        "skip_formula_offset_calculation": skip_formula_offset_calculation,
+    }
+    for arg_name, arg_input in zip(
+        __gui_service_arg_names, translation_engine_arg_inputs, strict=False
+    ):
+        ui_inputs[arg_name] = arg_input
+    # Step 1: Prepare input file
+    file_path = Path()
+
+    # Step 2: Build translation settings
+    translate_settings = _build_translate_settings(
+        settings.clone(), file_path, output_dir, False, ui_inputs
+    )
+    config_manager.write_user_default_config_file(settings=translate_settings)
+    return
 
 
 # Custom theme definition
@@ -1577,6 +1743,7 @@ with gr.Blocks(
                 )
                 translate_btn = gr.Button(_("Translate"), variant="primary")
                 cancel_btn = gr.Button(_("Cancel"), variant="secondary")
+                save_btn = gr.Button(_("Save"), variant="secondary")
 
                 tech_details = gr.Markdown(
                     tech_details_string,
@@ -1862,6 +2029,62 @@ with gr.Blocks(
         cancel_btn.click(
             stop_translate_file,
             inputs=[state],
+        )
+
+        # Translation button click handler
+        save_btn.click(
+            save_config,
+            inputs=[
+                service,
+                lang_from,
+                lang_to,
+                page_range,
+                page_input,
+                # PDF Output Options
+                no_mono,
+                no_dual,
+                dual_translate_first,
+                use_alternating_pages_dual,
+                watermark_output_mode,
+                # Rate Limit Options
+                rate_limit_mode,
+                rpm_input,
+                concurrent_threads_input,
+                custom_qps_input,
+                custom_pool_max_workers_input,
+                # Advanced Options
+                prompt,
+                min_text_length,
+                rpc_doclayout,
+                custom_system_prompt_input,
+                glossary_file,
+                save_auto_extracted_glossary,
+                # New advanced translation options
+                no_auto_extract_glossary,
+                primary_font_family,
+                skip_clean,
+                disable_rich_text_translate,
+                enhance_compatibility,
+                split_short_lines,
+                short_line_split_factor,
+                translate_table_text,
+                skip_scanned_detection,
+                max_pages_per_part,
+                formular_font_pattern,
+                formular_char_pattern,
+                ignore_cache,
+                state,
+                ocr_workaround,
+                auto_enable_ocr_workaround,
+                only_include_translated_page,
+                # BabelDOC v0.5.1 new options
+                merge_alternating_line_numbers,
+                remove_non_formula_lines,
+                non_formula_line_iou_threshold,
+                figure_table_protection_threshold,
+                skip_formula_offset_calculation,
+                *translation_engine_arg_inputs,
+            ],
         )
 
 

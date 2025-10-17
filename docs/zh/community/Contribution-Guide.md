@@ -118,6 +118,8 @@
 - **high_level.py**：基于 BabelDOC 的高级接口。
 - **http_api.py**：提供 HTTP API（未启动）。
 
+通过 AI 了解项目：[DeepWiki](https://deepwiki.com/PDFMathTranslate/PDFMathTranslate-next)
+
 ## 联系我们
 
 如果您有任何问题，请通过 Issue 提交反馈或加入我们的 Telegram 群组。感谢您的贡献！
