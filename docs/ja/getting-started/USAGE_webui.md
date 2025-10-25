@@ -18,13 +18,19 @@ WebUI インターフェースを開く方法はいくつかあります。**Win
     pdf2zh_next --gui
     ```
 
-4. ブラウザが自動的に起動しない場合は、以下にアクセス：
+4. ブラウザが自動的に起動しない場合、次の URL にアクセス：
 
     ```bash
     http://localhost:7860/
     ```
 
-    `PDF` ファイルをウィンドウにドロップして、`Translate` をクリックしてください。
+    PDF ファイルをウィンドウにドロップし、`Translate` をクリック。
+
+5. PDFMathTranslate を docker でデプロイし、PDFMathTranslate のバックエンド LLM として ollama を使用している場合、「Ollama host」に次のように入力：
+
+   ```bash
+   http://host.docker.internal:11434
+   ```
 
 <!-- <img src="./../../images/gui.gif" width="500"/> -->
 <img src='./../../images/gui.gif' width="500"/>
@@ -43,7 +49,7 @@ WebUI インターフェースを開く方法はいくつかあります。**Win
 
 ## メンテナンス
 
-[Rongxin](https://github.com/reycn) がメンテナンスする GUI
+GUI は [Rongxin](https://github.com/reycn) によってメンテナンスされています
 
 <div align="right"> 
 <h6><small>このページの一部のコンテンツは GPT によって翻訳されており、エラーが含まれている可能性があります。</small></h6>

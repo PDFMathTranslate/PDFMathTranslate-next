@@ -12,7 +12,7 @@
       "start_line_no": 1
     },
     {
-      "id": "h_rule_cdc4a3db",
+      "id": "h_rule_cd8270c0",
       "raw_content": "---\n",
       "metadata": {
         "chunk_type": "h_rule",
@@ -52,8 +52,8 @@
       "start_line_no": 9
     },
     {
-      "id": "chunk_2A12C8AD",
-      "raw_content": "1. Python installed (3.10 <= version <= 3.12)\n\n2. Install our package:\n\n3. Start using in browser:\n\n    ```bash\n    pdf2zh_next --gui\n    ```\n\n4. If your browswer has not been started automatically, goto\n\n    ```bash\n    http://localhost:7860/\n    ```\n\n    Drop the PDF file into the window and click `Translate`.\n",
+      "id": "chunk_3B3548CA",
+      "raw_content": "1. Python installed (3.10 <= version <= 3.12)\n\n2. Install our package:\n\n3. Start using in browser:\n\n    ```bash\n    pdf2zh_next --gui\n    ```\n\n4. If your browswer has not been started automatically, goto\n\n    ```bash\n    http://localhost:7860/\n    ```\n\n    Drop the PDF file into the window and click `Translate`.\n\n5. If you deploy PDFMathTranslate with docker, and you are using ollama as PDFMathTranslate's backend LLM, you should fill \"Ollama host\" with\n\n   ```bash\n   http://host.docker.internal:11434\n   ```\n",
       "metadata": {
         "chunk_type": "list",
         "level": null,
@@ -69,7 +69,7 @@
         "level": null,
         "language": null
       },
-      "start_line_no": 29
+      "start_line_no": 35
     },
     {
       "id": "chunk_B79CAF04",
@@ -79,7 +79,7 @@
         "level": null,
         "language": null
       },
-      "start_line_no": 30
+      "start_line_no": 36
     },
     {
       "id": "chunk_2FDC0409",
@@ -89,7 +89,7 @@
         "level": 3,
         "language": null
       },
-      "start_line_no": 32
+      "start_line_no": 38
     },
     {
       "id": "chunk_7865A8EB",
@@ -99,7 +99,7 @@
         "level": null,
         "language": null
       },
-      "start_line_no": 34
+      "start_line_no": 40
     },
     {
       "id": "chunk_104D91B6",
@@ -109,7 +109,7 @@
         "level": null,
         "language": null
       },
-      "start_line_no": 36
+      "start_line_no": 42
     },
     {
       "id": "chunk_EEBEC547",
@@ -119,7 +119,7 @@
         "level": 2,
         "language": null
       },
-      "start_line_no": 39
+      "start_line_no": 45
     },
     {
       "id": "chunk_433E69C5",
@@ -129,7 +129,7 @@
         "level": null,
         "language": null
       },
-      "start_line_no": 41
+      "start_line_no": 47
     },
     {
       "id": "chunk_64A11402",
@@ -139,7 +139,7 @@
         "level": null,
         "language": null
       },
-      "start_line_no": 42
+      "start_line_no": 48
     },
     {
       "id": "chunk_742C5FE6",
@@ -149,17 +149,17 @@
         "level": 2,
         "language": null
       },
-      "start_line_no": 44
+      "start_line_no": 50
     },
     {
-      "id": "chunk_3D5EA421",
-      "raw_content": "GUI maintained by [Rongxin](https://github.com/reycn)",
+      "id": "chunk_7E834869",
+      "raw_content": "GUI maintained by [Rongxin](https://github.com/reycn)\n",
       "metadata": {
         "chunk_type": "paragraph",
         "level": null,
         "language": null
       },
-      "start_line_no": 46
+      "start_line_no": 52
     }
   ]
 }

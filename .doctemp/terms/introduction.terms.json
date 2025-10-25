@@ -21,6 +21,9 @@
         "Supported Languages": "支持的语言",
         "Community": "社区",
         "FAQ": "常见问题",
+        "Aliyun": "阿里云",
+        "SiliconFlow": "硅基流动",
+        "For Translators": "文档翻译贡献指南",
         "Immersive Translate": "沉浸式翻译"
       }
     },
@@ -38,7 +41,10 @@
         "Advanced": "高級選項",
         "Supported Languages": "支持的語言",
         "Community": "社區",
-        "FAQ": "常見問題"
+        "FAQ": "常見問題",
+        "Aliyun": "阿里雲",
+        "SiliconFlow": "硅基流動",
+        "For Translators": "文檔翻譯貢獻指南"
       }
     },
     "ja": {
@@ -56,6 +62,7 @@
         "Supported Languages": "サポート言語",
         "Community": "コミュニティ",
         "FAQ": "よくある質問",
+        "For Translators": "文書翻訳貢献ガイド",
         "Immersive Translate": "没入型翻訳"
       }
     },
@@ -73,7 +80,8 @@
         "Advanced": "고급 옵션",
         "Supported Languages": "지원 언어",
         "Community": "커뮤니티",
-        "FAQ": "자주 묻는 질문"
+        "FAQ": "자주 묻는 질문",
+        "For Translators": "문서 번역 기여 가이드"
       }
     },
     "ru": {
@@ -90,7 +98,8 @@
         "Advanced": "Расширенные параметры",
         "Supported Languages": "Поддерживаемые языки",
         "Community": "Сообщество",
-        "FAQ": "Часто задаваемые вопросы"
+        "FAQ": "Часто задаваемые вопросы",
+        "For Translators": "Руководство по внесению вклада в переводы"
       }
     },
     "es": {
@@ -107,7 +116,8 @@
         "Advanced": "Opciones avanzadas",
         "Supported Languages": "Idiomas soportados",
         "Community": "Comunidad",
-        "FAQ": "Preguntas frecuentes"
+        "FAQ": "Preguntas frecuentes",
+        "For Translators": "Guía de contribución de traducciones"
       }
     },
     "fr": {
@@ -124,7 +134,8 @@
         "Advanced": "Options avancées",
         "Supported Languages": "Langues supportées",
         "Community": "Communauté",
-        "FAQ": "FAQ"
+        "FAQ": "FAQ",
+        "For Translators": "Guide de contribution des traductions"
       }
     },
     "de": {
@@ -141,7 +152,8 @@
         "Advanced": "Erweiterte Optionen",
         "Supported Languages": "Unterstützte Sprachen",
         "Community": "Gemeinschaft",
-        "FAQ": "Häufig gestellte Fragen"
+        "FAQ": "Häufig gestellte Fragen",
+        "For Translators": "Guide de contribution des traductions"
       }
     },
     "it": {
@@ -158,7 +170,8 @@
         "Advanced": "Opzioni avanzate",
         "Supported Languages": "Lingue supportate",
         "Community": "Comunità",
-        "FAQ": "Domande frequenti"
+        "FAQ": "Domande frequenti",
+        "For Translators": "Guida alla contribuzione per le traduzioni"
       }
     },
     "pt": {
@@ -175,7 +188,8 @@
         "Advanced": "Opções avançadas",
         "Supported Languages": "Idiomas suportados",
         "Community": "Comunidade",
-        "FAQ": "Perguntas frequentes"
+        "FAQ": "Perguntas frequentes",
+        "For Translators": "Guia de contribuição para traduções"
       }
     }
   }

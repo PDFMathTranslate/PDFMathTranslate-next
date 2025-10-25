@@ -4,13 +4,8 @@
 
 <h3 id="toc">Tabla de Contenidos</h3>
 
-- [Argumentos de Línea de Comandos](#argumentos-de-línea-de-comandos)
-  - [Argumentos](#argumentos)
-  - [Argumentos de GUI](#argumentos-de-gui)
-- [#### Guía de Configuración de Límite de Tasa](#####-guía-de-configuración-de-límite-de-tasa)
-  - [#### Limitación de tasa RPM (Solicitudes Por Minuto)](#####-limitación-de-tasa-rpm-solicitudes-por-minuto)
-  - [#### Limitación de conexiones concurrentes](#####-limitación-de-conexiones-concurrentes)
-  - [#### Mejores prácticas](#####-mejores-prácticas)
+- [Argumentos de línea de comandos](#argumentos-de-línea-de-comandos)
+- [Guía de configuración de límite de tasa](#guía-de-configuración-de-límite-de-tasa)
 - [Traducción parcial](#traducción-parcial)
 - [Especificar idiomas de origen y destino](#especificar-idiomas-de-origen-y-destino)
 - [Traducir con excepciones](#traducir-con-excepciones)
@@ -18,7 +13,7 @@
 - [Configuración personalizada](#configuración-personalizada)
 - [Omitir limpieza](#omitir-limpieza)
 - [Caché de traducción](#caché-de-traducción)
-- [Despliegue como servicios públicos](#despliegue-como-servicios-públicos)
+- [Despliegue como servicio público](#despliegue-como-servicio-público)
 - [Autenticación y página de bienvenida](#autenticación-y-página-de-bienvenida)
 - [Soporte de glosario](#soporte-de-glosario)
 
