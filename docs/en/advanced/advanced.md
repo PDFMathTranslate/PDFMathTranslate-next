@@ -5,12 +5,7 @@
 <h3 id="toc">Table of Contents</h3>
 
 - [Command Line Args](#command-line-args)
-  - [Args](#args)
-  - [GUI Args](#gui-args)
 - [Rate Limiting Configuration Guide](#rate-limiting-configuration-guide)
-  - [RPM (Requests Per Minute) Rate Limiting](#rpm-requests-per-minute-rate-limiting)
-  - [Concurrent Connection Limiting](#concurrent-connection-limiting)
-  - [Best Practices](#best-practices)
 - [Partial translation](#partial-translation)
 - [Specify source and target languages](#specify-source-and-target-languages)
 - [Translate wih exceptions](#translate-wih-exceptions)

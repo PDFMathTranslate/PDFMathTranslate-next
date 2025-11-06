@@ -10,7 +10,7 @@
 
 1. 已安装 Python（3.10 <= 版本 <= 3.12）
 
-2. 安装我们的包：
+2. 安装我们的软件包：
 
 3. 在浏览器中开始使用：
 
@@ -25,6 +25,12 @@
     ```
 
     将 `PDF` 文件拖入窗口并点击 `Translate`。
+
+5. 如果您通过 docker 部署 PDFMathTranslate，并使用 ollama 作为 PDFMathTranslate 的后端 `LLM`，则应在 "Ollama host" 中填写
+
+   ```bash
+   http://host.docker.internal:11434
+   ```
 
 <!-- <img src="./../../images/gui.gif" width="500"/> -->
 <img src='./../../images/gui.gif' width="500"/>

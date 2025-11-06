@@ -5,22 +5,17 @@
 <h3 id="toc">Indice</h3>
 
 - [Argomenti della riga di comando](#argomenti-della-riga-di-comando)
-  - [Argomenti](#argomenti)
-  - [Argomenti GUI](#argomenti-gui)
-- [#### Guida alla configurazione del limite di velocità](#guida-alla-configurazione-del-limite-di-velocità)
-  - [#### Limitazione della velocità RPM (Richieste al minuto)](#limitazione-della-velocità-rpm-richieste-al-minuto)
-  - [#### Limitazione delle connessioni simultanee](#limitazione-delle-connessioni-simultanee)
-  - [#### Best Practices](#best-practices)
+- [Guida alla configurazione del rate limiting](#guida-alla-configurazione-del-rate-limiting)
 - [Traduzione parziale](#traduzione-parziale)
 - [Specificare le lingue di origine e di destinazione](#specificare-le-lingue-di-origine-e-di-destinazione)
-- [Traduzione con eccezioni](#traduzione-con-eccezioni)
+- [Tradurre con eccezioni](#tradurre-con-eccezioni)
 - [Prompt personalizzato](#prompt-personalizzato)
 - [Configurazione personalizzata](#configurazione-personalizzata)
-- [Salta pulizia](#salta-pulizia)
-- [Cache di traduzione](#cache-di-traduzione)
+- [Salta la pulizia](#salta-la-pulizia)
+- [Cache delle traduzioni](#cache-delle-traduzioni)
 - [Distribuzione come servizi pubblici](#distribuzione-come-servizi-pubblici)
 - [Autenticazione e pagina di benvenuto](#autenticazione-e-pagina-di-benvenuto)
-- [Supporto glossario](#supporto-glossario)
+- [Supporto per il glossario](#supporto-per-il-glossario)
 
 ---
 

@@ -21,8 +21,10 @@
         "Supported Languages": "支持的语言",
         "Community": "社区",
         "FAQ": "常见问题",
-        "Immersive Translate": "沉浸式翻译",
-        "# Aliyun Qwen": "# 阿里云通义千问"
+        "Aliyun": "阿里云",
+        "SiliconFlow": "硅基流动",
+        "For Translators": "文档翻译贡献指南",
+        "Immersive Translate": "沉浸式翻译"
       }
     },
     "zh_TW": {
@@ -40,7 +42,9 @@
         "Supported Languages": "支持的語言",
         "Community": "社區",
         "FAQ": "常見問題",
-        "# Aliyun Qwen": "# 阿里雲 Qwen"
+        "Aliyun": "阿里雲",
+        "SiliconFlow": "硅基流動",
+        "For Translators": "文檔翻譯貢獻指南"
       }
     },
     "ja": {
@@ -58,8 +62,8 @@
         "Supported Languages": "サポート言語",
         "Community": "コミュニティ",
         "FAQ": "よくある質問",
-        "Immersive Translate": "没入型翻訳",
-        "# Aliyun Qwen": "# 阿里雲 Qwen"
+        "For Translators": "文書翻訳貢献ガイド",
+        "Immersive Translate": "没入型翻訳"
       }
     },
     "ko": {
@@ -77,7 +81,7 @@
         "Supported Languages": "지원 언어",
         "Community": "커뮤니티",
         "FAQ": "자주 묻는 질문",
-        "# Aliyun Qwen": "# Aliyun Qwen"
+        "For Translators": "문서 번역 기여 가이드"
       }
     },
     "ru": {
@@ -95,7 +99,7 @@
         "Supported Languages": "Поддерживаемые языки",
         "Community": "Сообщество",
         "FAQ": "Часто задаваемые вопросы",
-        "# Aliyun Qwen": "# Aliyun Qwen"
+        "For Translators": "Руководство по внесению вклада в переводы"
       }
     },
     "es": {
@@ -113,7 +117,7 @@
         "Supported Languages": "Idiomas soportados",
         "Community": "Comunidad",
         "FAQ": "Preguntas frecuentes",
-        "# Aliyun Qwen": "# Aliyun Qwen"
+        "For Translators": "Guía de contribución de traducciones"
       }
     },
     "fr": {
@@ -131,7 +135,7 @@
         "Supported Languages": "Langues supportées",
         "Community": "Communauté",
         "FAQ": "FAQ",
-        "# Aliyun Qwen": "# Aliyun Qwen"
+        "For Translators": "Guide de contribution des traductions"
       }
     },
     "de": {
@@ -149,7 +153,7 @@
         "Supported Languages": "Unterstützte Sprachen",
         "Community": "Gemeinschaft",
         "FAQ": "Häufig gestellte Fragen",
-        "# Aliyun Qwen": "# Aliyun Qwen"
+        "For Translators": "Guide de contribution des traductions"
       }
     },
     "it": {
@@ -167,7 +171,7 @@
         "Supported Languages": "Lingue supportate",
         "Community": "Comunità",
         "FAQ": "Domande frequenti",
-        "# Aliyun Qwen": "# Aliyun Qwen"
+        "For Translators": "Guida alla contribuzione per le traduzioni"
       }
     },
     "pt": {
@@ -185,7 +189,7 @@
         "Supported Languages": "Idiomas suportados",
         "Community": "Comunidade",
         "FAQ": "Perguntas frequentes",
-        "# Aliyun Qwen": "# Aliyun Qwen"
+        "For Translators": "Guia de contribuição para traduções"
       }
     }
   }

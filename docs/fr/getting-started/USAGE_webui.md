@@ -8,7 +8,7 @@
 
 Il existe plusieurs méthodes pour ouvrir l'interface WebUI. Si vous utilisez **Windows**, veuillez consulter [cet article](./INSTALLATION_winexe.md);
 
-1. Python installé (3.10 <= version <= 3.12)
+1. Python installé (version 3.10 <= version <= 3.12)
 
 2. Installez notre package :
 
@@ -25,6 +25,12 @@ Il existe plusieurs méthodes pour ouvrir l'interface WebUI. Si vous utilisez **
     ```
 
     Déposez le fichier PDF dans la fenêtre et cliquez sur `Translate`.
+
+5. Si vous déployez PDFMathTranslate avec docker, et que vous utilisez ollama comme backend LLM de PDFMathTranslate, vous devez remplir "Ollama host" avec
+
+   ```bash
+   http://host.docker.internal:11434
+   ```
 
 <!-- <img src="./../../images/gui.gif" width="500"/> -->
 <img src='./../../images/gui.gif' width="500"/>

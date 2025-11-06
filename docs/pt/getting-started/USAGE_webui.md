@@ -18,13 +18,19 @@ Existem vários métodos para abrir a interface WebUI. Se você estiver usando *
     pdf2zh_next --gui
     ```
 
-4. Se o seu navegador não tiver sido iniciado automaticamente, acesse
+4. Se o seu navegador não foi iniciado automaticamente, acesse
 
     ```bash
     http://localhost:7860/
     ```
 
-    Arraste o arquivo `PDF` para a janela e clique em `Translate`.
+    Arraste o arquivo PDF para a janela e clique em `Translate`.
+
+5. Se você implantar o PDFMathTranslate com docker e estiver usando o ollama como o LLM de backend do PDFMathTranslate, você deve preencher "Ollama host" com
+
+   ```bash
+   http://host.docker.internal:11434
+   ```
 
 <!-- <img src="./../../images/gui.gif" width="500"/> -->
 <img src='./../../images/gui.gif' width="500"/>
@@ -42,8 +48,6 @@ Você pode definir os idiomas de origem e destino usando variáveis de ambiente:
 <img src="./../../images/after.png" width="500"/>
 
 ## Manutenção
-
-### TRANSLATION
 
 GUI mantido por [Rongxin](https://github.com/reycn)
 

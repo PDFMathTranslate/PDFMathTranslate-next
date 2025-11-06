@@ -24,7 +24,13 @@
     http://localhost:7860/
     ```
 
-    將 `PDF` 文件拖曳至視窗中並點擊 `Translate`。
+    將 `PDF` 文件拖入視窗並點擊 `Translate`。
+
+5. 如果您使用 docker 部署 PDFMathTranslate，且使用 ollama 作為 PDFMathTranslate 的後端 LLM，應在「Ollama host」欄位填入
+
+   ```bash
+   http://host.docker.internal:11434
+   ```
 
 <!-- <img src="./../../images/gui.gif" width="500"/> -->
 <img src='./../../images/gui.gif' width="500"/>

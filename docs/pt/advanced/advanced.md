@@ -5,22 +5,17 @@
 <h3 id="toc">Índice</h3>
 
 - [Argumentos da Linha de Comando](#argumentos-da-linha-de-comando)
-  - [Argumentos](#argumentos)
-  - [Argumentos da GUI](#argumentos-da-gui)
-- [#### Guia de Configuração de Limitação de Taxa](#guia-de-configuração-de-limitação-de-taxa)
-  - [##### Limitação de Taxa RPM (Solicitações Por Minuto)](#limitação-de-taxa-rpm-solicitações-por-minuto)
-  - [##### Limitação de Conexões Simultâneas](#limitação-de-conexões-simultâneas)
-  - [##### Melhores práticas](#melhores-práticas)
+- [Guia de Configuração de Limitação de Taxa](#guia-de-configuração-de-limitação-de-taxa)
 - [Tradução parcial](#tradução-parcial)
 - [Especificar idiomas de origem e destino](#especificar-idiomas-de-origem-e-destino)
-- [Tradução com exceções](#tradução-com-exceções)
+- [Traduzir com exceções](#traduzir-com-exceções)
 - [Prompt personalizado](#prompt-personalizado)
 - [Configuração personalizada](#configuração-personalizada)
 - [Pular limpeza](#pular-limpeza)
 - [Cache de tradução](#cache-de-tradução)
-- [Implantaçãocomo serviço público](#implantação-como-serviço-público)
+- [Implantação como serviços públicos](#implantação-como-serviços-públicos)
 - [Autenticação e página de boas-vindas](#autenticação-e-página-de-boas-vindas)
-- [Suporte a glossário](#suporte-a-glossário)
+- [Suporte a Glossário](#suporte-a-glossário)
 
 ---
 

@@ -133,7 +133,7 @@ Note that the computing resources of the demo are limited, so please avoid abusi
 2. [**Docker**](https://pdf2zh-next.com/getting-started/INSTALLATION_docker.html) <small>Recommand for Linux</small>
 3. [**uv** (a Python package manager)](https://pdf2zh-next.com/getting-started/INSTALLATION_uv.html) <small>Recommand for macOS</small>
 
-<!-- CHUNK ID: h_rule_64259f0c  CHUNK TYPE: h_rule START_LINE:94 -->
+<!-- CHUNK ID: h_rule_0c0b4bc7  CHUNK TYPE: h_rule START_LINE:94 -->
 ---
 
 <!-- CHUNK ID: chunk_047D6F23  CHUNK TYPE: header START_LINE:96 -->

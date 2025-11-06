@@ -5,22 +5,17 @@
 <h3 id="toc">Table des matières</h3>
 
 - [Arguments de ligne de commande](#arguments-de-ligne-de-commande)
-  - [Arguments](#arguments)
-  - [Arguments GUI](#arguments-gui)
-- [Guide de configuration des limites de débit](#guide-de-configuration-des-limites-de-débit)
-  - [Limitation du taux RPM (Requêtes Par Minute)](#limitation-du-taux-rpm-requêtes-par-minute)
-  - [Limitation des connexions simultanées](#limitation-des-connexions-simultanées)
-  - [Meilleures pratiques](#meilleures-pratiques)
+- [Guide de configuration de la limitation de débit](#guide-de-configuration-de-la-limitation-de-débit)
 - [Traduction partielle](#traduction-partielle)
 - [Spécifier les langues source et cible](#spécifier-les-langues-source-et-cible)
-- [Traduction avec exceptions](#traduction-avec-exceptions)
+- [Traduire avec exceptions](#traduire-avec-exceptions)
 - [Invite personnalisée](#invite-personnalisée)
 - [Configuration personnalisée](#configuration-personnalisée)
 - [Ignorer le nettoyage](#ignorer-le-nettoyage)
 - [Cache de traduction](#cache-de-traduction)
-- [Déploiement en tant que service public](#déploiement-en-tant-que-service-public)
+- [Déploiement en tant que services publics](#déploiement-en-tant-que-services-publics)
 - [Authentification et page d'accueil](#authentification-et-page-daccueil)
-- [Support du glossaire](#support-du-glossaire)
+- [Support de glossaire](#support-de-glossaire)
 
 ---
 

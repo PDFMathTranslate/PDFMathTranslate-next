@@ -26,6 +26,12 @@ WebUI 인터페이스를 여는 방법에는 여러 가지가 있습니다. **Wi
 
     PDF 파일을 창에 드롭하고 `Translate` 을 클릭하세요.
 
+5. docker 로 PDFMathTranslate 를 배포하고 ollama 를 PDFMathTranslate 의 백엔드 LLM 으로 사용하는 경우 "Ollama host"에 다음을 입력해야 합니다:
+
+   ```bash
+   http://host.docker.internal:11434
+   ```
+
 <!-- <img src="./../../images/gui.gif" width="500"/> -->
 <img src='./../../images/gui.gif' width="500"/>
 

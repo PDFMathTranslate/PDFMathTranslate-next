@@ -4,13 +4,8 @@
 
 <h3 id="toc">Inhaltsverzeichnis</h3>
 
-- [Befehlszeilenargumente](#befehlszeilenargumente)
-  - [Argumente](#argumente)
-  - [GUI-Argumente](#gui-argumente)
-- [#### Anleitung zur Ratenbegrenzungskonfiguration](#anleitung-zur-ratenbegrenzungskonfiguration)
-  - [#### RPM (Anfragen pro Minute) Ratenbegrenzung](#rpm-anfragen-pro-minute-ratenbegrenzung)
-  - [#### Begrenzung gleichzeitiger Verbindungen](#begrenzung-gleichzeitiger-verbindungen)
-  - [#### Best Practices](#best-practices)
+- [Kommandozeilenargumente](#kommandozeilenargumente)
+- [Rate-Limiting-Konfigurationsleitfaden](#rate-limiting-konfigurationsleitfaden)
 - [Partielle Übersetzung](#partielle-übersetzung)
 - [Quell- und Zielsprachen angeben](#quell--und-zielsprachen-angeben)
 - [Übersetzung mit Ausnahmen](#übersetzung-mit-ausnahmen)

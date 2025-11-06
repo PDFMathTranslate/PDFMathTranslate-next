@@ -21,7 +21,7 @@
       }
     },
     {
-      "chunk_id": "h_rule_cdc4a3db",
+      "chunk_id": "h_rule_cd8270c0",
       "chunk_type": "h_rule",
       "original_content": "---\n",
       "start_line_no": 3,
@@ -93,28 +93,28 @@
       }
     },
     {
-      "chunk_id": "chunk_2A12C8AD",
+      "chunk_id": "chunk_3B3548CA",
       "chunk_type": "list",
-      "original_content": "1. Python installed (3.10 <= version <= 3.12)\n\n2. Install our package:\n\n3. Start using in browser:\n\n    ```bash\n    pdf2zh_next --gui\n    ```\n\n4. If your browswer has not been started automatically, goto\n\n    ```bash\n    http://localhost:7860/\n    ```\n\n    Drop the PDF file into the window and click `Translate`.\n",
+      "original_content": "1. Python installed (3.10 <= version <= 3.12)\n\n2. Install our package:\n\n3. Start using in browser:\n\n    ```bash\n    pdf2zh_next --gui\n    ```\n\n4. If your browswer has not been started automatically, goto\n\n    ```bash\n    http://localhost:7860/\n    ```\n\n    Drop the PDF file into the window and click `Translate`.\n\n5. If you deploy PDFMathTranslate with docker, and you are using ollama as PDFMathTranslate's backend LLM, you should fill \"Ollama host\" with\n\n   ```bash\n   http://host.docker.internal:11434\n   ```\n",
       "start_line_no": 11,
       "translations": {
-        "ko": "1. Python 설치 (3.10 <= 버전 <= 3.12)\n\n2. 패키지 설치:\n\n3. 브라우저에서 사용 시작:\n\n    ```bash\n    pdf2zh_next --gui\n    ```\n\n4. 브라우저가 자동으로 시작되지 않은 경우 다음으로 이동:\n\n    ```bash\n    http://localhost:7860/\n    ```\n\n    PDF 파일을 창에 드롭하고 `Translate` 을 클릭하세요.\n",
-        "zh_TW": "1. 已安裝 Python（3.10 <= 版本 <= 3.12）\n\n2. 安裝我們的套件：\n\n3. 在瀏覽器中開始使用：\n\n    ```bash\n    pdf2zh_next --gui\n    ```\n\n4. 如果瀏覽器未自動啟動，請前往\n\n    ```bash\n    http://localhost:7860/\n    ```\n\n    將 `PDF` 文件拖曳至視窗中並點擊 `Translate`。\n",
-        "fr": "1. Python installé (3.10 <= version <= 3.12)\n\n2. Installez notre package :\n\n3. Commencez à utiliser dans le navigateur :\n\n    ```bash\n    pdf2zh_next --gui\n    ```\n\n4. Si votre navigateur ne s'est pas lancé automatiquement, allez à\n\n    ```bash\n    http://localhost:7860/\n    ```\n\n    Déposez le fichier PDF dans la fenêtre et cliquez sur `Translate`.\n",
-        "ru": "1. Установленный Python (версия от 3.10 до 3.12)\n\n2. Установите наш пакет:\n\n3. Начните использование в браузере:\n\n    ```bash\n    pdf2zh_next --gui\n    ```\n\n4. Если ваш браузер не запустился автоматически, перейдите по адресу\n\n    ```bash\n    http://localhost:7860/\n    ```\n\n    Перетащите `PDF` файл в окно и нажмите `Translate`.\n",
-        "pt": "1. Python instalado (versão entre 3.10 e 3.12)\n\n2. Instale nosso pacote:\n\n3. Comece a usar no navegador:\n\n    ```bash\n    pdf2zh_next --gui\n    ```\n\n4. Se o seu navegador não tiver sido iniciado automaticamente, acesse\n\n    ```bash\n    http://localhost:7860/\n    ```\n\n    Arraste o arquivo `PDF` para a janela e clique em `Translate`.\n",
-        "ja": "1. Python がインストールされていること（3.10 <= バージョン <= 3.12）\n\n2. パッケージをインストール：\n\n3. ブラウザで使用開始：\n\n    ```bash\n    pdf2zh_next --gui\n    ```\n\n4. ブラウザが自動的に起動しない場合は、以下にアクセス：\n\n    ```bash\n    http://localhost:7860/\n    ```\n\n    `PDF` ファイルをウィンドウにドロップして、`Translate` をクリックしてください。\n",
-        "es": "1. Python instalado (versión 3.10 <= versión <= 3.12)\n\n2. Instala nuestro paquete:\n\n3. Comienza a usar en el navegador:\n\n    ```bash\n    pdf2zh_next --gui\n    ```\n\n4. Si tu navegador no se ha iniciado automáticamente, ve a\n\n    ```bash\n    http://localhost:7860/\n    ```\n\n    Arrastra el archivo `PDF` a la ventana y haz clic en `Translate`.\n",
-        "de": "1. Python installiert (3.10 <= Version <= 3.12)\n\n2. Installieren Sie unser Paket:\n\n3. Beginnen Sie mit der Verwendung im Browser:\n\n    ```bash\n    pdf2zh_next --gui\n    ```\n\n4. Falls Ihr Browser nicht automatisch gestartet wurde, gehen Sie zu\n\n    ```bash\n    http://localhost:7860/\n    ```\n\n    Ziehen Sie die `PDF`-Datei in das Fenster und klicken Sie auf `Translate`.\n",
-        "zh": "1. 已安装 Python（3.10 <= 版本 <= 3.12）\n\n2. 安装我们的包：\n\n3. 在浏览器中开始使用：\n\n    ```bash\n    pdf2zh_next --gui\n    ```\n\n4. 如果浏览器未自动启动，请访问\n\n    ```bash\n    http://localhost:7860/\n    ```\n\n    将 `PDF` 文件拖入窗口并点击 `Translate`。\n",
-        "it": "1. Python installato (versione 3.10 <= versione <= 3.12)\n\n2. Installa il nostro pacchetto:\n\n3. Inizia a utilizzare nel browser:\n\n    ```bash\n    pdf2zh_next --gui\n    ```\n\n4. Se il tuo browser non si è avviato automaticamente, vai a\n\n    ```bash\n    http://localhost:7860/\n    ```\n\n    Trascina il file `PDF` nella finestra e clicca `Translate`.\n"
+        "zh": "1. 已安装 Python（3.10 <= 版本 <= 3.12）\n\n2. 安装我们的软件包：\n\n3. 在浏览器中开始使用：\n\n    ```bash\n    pdf2zh_next --gui\n    ```\n\n4. 如果浏览器未自动启动，请访问\n\n    ```bash\n    http://localhost:7860/\n    ```\n\n    将 `PDF` 文件拖入窗口并点击 `Translate`。\n\n5. 如果您通过 docker 部署 PDFMathTranslate，并使用 ollama 作为 PDFMathTranslate 的后端 `LLM`，则应在 \"Ollama host\" 中填写\n\n   ```bash\n   http://host.docker.internal:11434\n   ```\n",
+        "es": "1. Python instalado (versión 3.10 <= versión <= 3.12)\n\n2. Instala nuestro paquete:\n\n3. Comienza a usar en el navegador:\n\n    ```bash\n    pdf2zh_next --gui\n    ```\n\n4. Si tu navegador no se ha iniciado automáticamente, ve a\n\n    ```bash\n    http://localhost:7860/\n    ```\n\n    Arrastra el archivo PDF a la ventana y haz clic en `Translate`.\n\n5. Si despliegas PDFMathTranslate con docker, y estás usando ollama como backend LLM de PDFMathTranslate, debes llenar \"Ollama host\" con\n\n   ```bash\n   http://host.docker.internal:11434\n   ```\n",
+        "de": "1. Python installiert (3.10 <= Version <= 3.12)\n\n2. Installieren Sie unser Paket:\n\n3. Beginnen Sie mit der Verwendung im Browser:\n\n    ```bash\n    pdf2zh_next --gui\n    ```\n\n4. Falls Ihr Browser nicht automatisch gestartet wurde, gehen Sie zu\n\n    ```bash\n    http://localhost:7860/\n    ```\n\n    Ziehen Sie die PDF-Datei in das Fenster und klicken Sie auf `Translate`.\n\n5. Wenn Sie PDFMathTranslate mit Docker bereitstellen und ollama als Backend-LLM für PDFMathTranslate verwenden, sollten Sie \"Ollama host\" mit folgendem Wert ausfüllen:\n\n   ```bash\n   http://host.docker.internal:11434\n   ```\n",
+        "ru": "1. Установленный Python (версия от 3.10 до 3.12)\n\n2. Установите наш пакет:\n\n3. Начните использование в браузере:\n\n    ```bash\n    pdf2zh_next --gui\n    ```\n\n4. Если ваш браузер не запустился автоматически, перейдите по адресу:\n\n    ```bash\n    http://localhost:7860/\n    ```\n\n    Перетащите `PDF` файл в окно и нажмите `Translate`.\n\n5. Если вы развертываете PDFMathTranslate с помощью docker и используете ollama в качестве бэкенд LLM для PDFMathTranslate, вам следует указать \"Ollama host\" как:\n\n   ```bash\n   http://host.docker.internal:11434\n   ```\n",
+        "it": "1. Python installato (versione 3.10 <= versione <= 3.12)\n\n2. Installa il nostro pacchetto:\n\n3. Inizia a utilizzare nel browser:\n\n    ```bash\n    pdf2zh_next --gui\n    ```\n\n4. Se il tuo browser non si è avviato automaticamente, vai a\n\n    ```bash\n    http://localhost:7860/\n    ```\n\n    Trascina il file PDF nella finestra e clicca `Translate`.\n\n5. Se distribuisci PDFMathTranslate con docker e stai utilizzando ollama come backend LLM di PDFMathTranslate, dovresti inserire \"Ollama host\" con\n\n   ```bash\n   http://host.docker.internal:11434\n   ```\n",
+        "pt": "1. Python instalado (versão entre 3.10 e 3.12)\n\n2. Instale nosso pacote:\n\n3. Comece a usar no navegador:\n\n    ```bash\n    pdf2zh_next --gui\n    ```\n\n4. Se o seu navegador não foi iniciado automaticamente, acesse\n\n    ```bash\n    http://localhost:7860/\n    ```\n\n    Arraste o arquivo PDF para a janela e clique em `Translate`.\n\n5. Se você implantar o PDFMathTranslate com docker e estiver usando o ollama como o LLM de backend do PDFMathTranslate, você deve preencher \"Ollama host\" com\n\n   ```bash\n   http://host.docker.internal:11434\n   ```\n",
+        "ko": "1. Python 설치 (3.10 <= 버전 <= 3.12)\n\n2. 패키지 설치:\n\n3. 브라우저에서 사용 시작:\n\n    ```bash\n    pdf2zh_next --gui\n    ```\n\n4. 브라우저가 자동으로 시작되지 않은 경우 다음으로 이동:\n\n    ```bash\n    http://localhost:7860/\n    ```\n\n    PDF 파일을 창에 드롭하고 `Translate` 을 클릭하세요.\n\n5. docker 로 PDFMathTranslate 를 배포하고 ollama 를 PDFMathTranslate 의 백엔드 LLM 으로 사용하는 경우 \"Ollama host\"에 다음을 입력해야 합니다:\n\n   ```bash\n   http://host.docker.internal:11434\n   ```\n",
+        "zh_TW": "1. 已安裝 Python（3.10 <= 版本 <= 3.12）\n\n2. 安裝我們的套件：\n\n3. 在瀏覽器中開始使用：\n\n    ```bash\n    pdf2zh_next --gui\n    ```\n\n4. 如果瀏覽器未自動啟動，請前往\n\n    ```bash\n    http://localhost:7860/\n    ```\n\n    將 `PDF` 文件拖入視窗並點擊 `Translate`。\n\n5. 如果您使用 docker 部署 PDFMathTranslate，且使用 ollama 作為 PDFMathTranslate 的後端 LLM，應在「Ollama host」欄位填入\n\n   ```bash\n   http://host.docker.internal:11434\n   ```\n",
+        "fr": "1. Python installé (version 3.10 <= version <= 3.12)\n\n2. Installez notre package :\n\n3. Commencez à utiliser dans le navigateur :\n\n    ```bash\n    pdf2zh_next --gui\n    ```\n\n4. Si votre navigateur ne s'est pas lancé automatiquement, allez à\n\n    ```bash\n    http://localhost:7860/\n    ```\n\n    Déposez le fichier PDF dans la fenêtre et cliquez sur `Translate`.\n\n5. Si vous déployez PDFMathTranslate avec docker, et que vous utilisez ollama comme backend LLM de PDFMathTranslate, vous devez remplir \"Ollama host\" avec\n\n   ```bash\n   http://host.docker.internal:11434\n   ```\n",
+        "ja": "1. Python がインストールされていること（3.10 <= バージョン <= 3.12）\n\n2. パッケージをインストール：\n\n3. ブラウザで使用開始：\n\n    ```bash\n    pdf2zh_next --gui\n    ```\n\n4. ブラウザが自動的に起動しない場合、次の URL にアクセス：\n\n    ```bash\n    http://localhost:7860/\n    ```\n\n    PDF ファイルをウィンドウにドロップし、`Translate` をクリック。\n\n5. PDFMathTranslate を docker でデプロイし、PDFMathTranslate のバックエンド LLM として ollama を使用している場合、「Ollama host」に次のように入力：\n\n   ```bash\n   http://host.docker.internal:11434\n   ```\n"
       }
     },
     {
       "chunk_id": "chunk_F5A7DD64",
       "chunk_type": "html_comment",
       "original_content": "<!-- <img src=\"./images/gui.gif\" width=\"500\"/> -->",
-      "start_line_no": 29,
+      "start_line_no": 35,
       "translations": {
         "zh": "<!-- <img src=\"./../../images/gui.gif\" width=\"500\"/> -->",
         "zh_TW": "<!-- <img src=\"./../../images/gui.gif\" width=\"500\"/> -->",
@@ -132,7 +132,7 @@
       "chunk_id": "chunk_B79CAF04",
       "chunk_type": "image",
       "original_content": "<img src='./../../images/gui.gif' width=\"500\"/>\n",
-      "start_line_no": 30,
+      "start_line_no": 36,
       "translations": {
         "zh": "<img src='./../../images/gui.gif' width=\"500\"/>\n",
         "zh_TW": "<img src='./../../images/gui.gif' width=\"500\"/>\n",
@@ -150,7 +150,7 @@
       "chunk_id": "chunk_2FDC0409",
       "chunk_type": "header",
       "original_content": "### Environment Variables\n",
-      "start_line_no": 32,
+      "start_line_no": 38,
       "translations": {
         "zh_TW": "### 環境變數\n",
         "ja": "### 環境変数\n",
@@ -168,7 +168,7 @@
       "chunk_id": "chunk_7865A8EB",
       "chunk_type": "paragraph",
       "original_content": "You can set the source and target languages using environment variables:\n",
-      "start_line_no": 34,
+      "start_line_no": 40,
       "translations": {
         "ru": "Вы можете установить исходный и целевой языки с помощью переменных среды:\n",
         "zh": "您可以通过环境变量设置源语言和目标语言：\n",
@@ -186,7 +186,7 @@
       "chunk_id": "chunk_104D91B6",
       "chunk_type": "list",
       "original_content": "- `PDF2ZH_LANG_FROM`: Sets the source language. Defaults to \"English\".\n- `PDF2ZH_LANG_TO`: Sets the target language. Defaults to \"Simplified Chinese\".\n",
-      "start_line_no": 36,
+      "start_line_no": 42,
       "translations": {
         "ko": "- `PDF2ZH_LANG_FROM`: 소스 언어를 설정합니다. 기본값은 \"English\"입니다.\n- `PDF2ZH_LANG_TO`: 대상 언어를 설정합니다. 기본값은 \"Simplified Chinese\"입니다.\n",
         "zh": "- `PDF2ZH_LANG_FROM`: 设置源语言。默认为 \"English\"。\n- `PDF2ZH_LANG_TO`: 设置目标语言。默认为 \"Simplified Chinese\"。\n",
@@ -204,7 +204,7 @@
       "chunk_id": "chunk_EEBEC547",
       "chunk_type": "header",
       "original_content": "## Preview\n",
-      "start_line_no": 39,
+      "start_line_no": 45,
       "translations": {
         "es": "## Vista previa\n",
         "ko": "## 미리보기\n",
@@ -222,7 +222,7 @@
       "chunk_id": "chunk_433E69C5",
       "chunk_type": "image",
       "original_content": "<img src=\"./../../images/before.png\" width=\"500\"/>",
-      "start_line_no": 41,
+      "start_line_no": 47,
       "translations": {
         "zh": "<img src=\"./../../images/before.png\" width=\"500\"/>",
         "zh_TW": "<img src=\"./../../images/before.png\" width=\"500\"/>",
@@ -240,7 +240,7 @@
       "chunk_id": "chunk_64A11402",
       "chunk_type": "image",
       "original_content": "<img src=\"./../../images/after.png\" width=\"500\"/>\n",
-      "start_line_no": 42,
+      "start_line_no": 48,
       "translations": {
         "zh": "<img src=\"./../../images/after.png\" width=\"500\"/>\n",
         "zh_TW": "<img src=\"./../../images/after.png\" width=\"500\"/>\n",
@@ -258,7 +258,7 @@
       "chunk_id": "chunk_742C5FE6",
       "chunk_type": "header",
       "original_content": "## Maintainance\n",
-      "start_line_no": 44,
+      "start_line_no": 50,
       "translations": {
         "ko": "## 유지 관리\n",
         "es": "## Mantenimiento\n",
@@ -273,21 +273,21 @@
       }
     },
     {
-      "chunk_id": "chunk_3D5EA421",
+      "chunk_id": "chunk_7E834869",
       "chunk_type": "paragraph",
-      "original_content": "GUI maintained by [Rongxin](https://github.com/reycn)",
-      "start_line_no": 46,
+      "original_content": "GUI maintained by [Rongxin](https://github.com/reycn)\n",
+      "start_line_no": 52,
       "translations": {
-        "ko": "[Rongxin](https://github.com/reycn) 이 유지 관리하는 GUI",
-        "fr": "GUI maintenu par [Rongxin](https://github.com/reycn)",
-        "de": "GUI gepflegt von [Rongxin](https://github.com/reycn)",
-        "zh_TW": "由 [Rongxin](https://github.com/reycn) 維護的 GUI",
-        "pt": "### TRANSLATION\n\nGUI mantido por [Rongxin](https://github.com/reycn)",
-        "ru": "Графический интерфейс поддерживается [Rongxin](https://github.com/reycn)",
-        "it": "GUI mantenuta da [Rongxin](https://github.com/reycn)",
-        "zh": "由 [Rongxin](https://github.com/reycn) 维护的 GUI",
-        "ja": "[Rongxin](https://github.com/reycn) がメンテナンスする GUI",
-        "es": "### TRANSLATION\n\nGUI mantenido por [Rongxin](https://github.com/reycn)"
+        "fr": "GUI maintenu par [Rongxin](https://github.com/reycn)\n",
+        "de": "GUI wird von [Rongxin](https://github.com/reycn) gepflegt\n",
+        "es": "GUI mantenida por [Rongxin](https://github.com/reycn)\n",
+        "zh": "由 [Rongxin](https://github.com/reycn) 维护的 GUI\n",
+        "pt": "GUI mantido por [Rongxin](https://github.com/reycn)\n",
+        "zh_TW": "由 [Rongxin](https://github.com/reycn) 維護的 GUI\n",
+        "ko": "[Rongxin](https://github.com/reycn) 이 유지 관리하는 GUI\n",
+        "it": "GUI mantenuta da [Rongxin](https://github.com/reycn)\n",
+        "ru": "GUI поддерживается [Rongxin](https://github.com/reycn)\n",
+        "ja": "GUI は [Rongxin](https://github.com/reycn) によってメンテナンスされています\n"
       }
     }
   ]
