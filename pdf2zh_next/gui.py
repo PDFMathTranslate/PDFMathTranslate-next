@@ -1595,7 +1595,7 @@ def on_file_upload(files, state):
     )
 
 
-def on_file_clear(files, state):
+def on_file_clear(_files, state):
     """
     Handle file clear/delete event to clean up state and UI.
     When user clicks the X button on file input, this function removes uploaded files
